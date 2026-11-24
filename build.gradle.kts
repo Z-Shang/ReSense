@@ -29,3 +29,12 @@ tasks.register<Exec>("assembleSharedDebug") {
     dependsOn(listOf("launcher", "weather", "phone", "contacts", "messages", "lockscreen", "sense-services").map { ":$it:assembleDebug" })
     commandLine("python3", rootProject.file("tools/build_shared_framework.py"))
 }
+
+ tasks.register<Copy>("assembleBundleDebug") {
+    group = "build"
+    description = "Build one bootstrap APK containing the complete shared Sense suite"
+    dependsOn(":installer:assembleDebug")
+    from(project(":installer").layout.buildDirectory.file("outputs/apk/debug/installer-debug.apk"))
+    into(layout.buildDirectory.dir("outputs/bundle-debug"))
+    rename { "sense-suite-debug.apk" }
+}

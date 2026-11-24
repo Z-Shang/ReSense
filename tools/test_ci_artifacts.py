@@ -18,6 +18,7 @@ class ArtifactCollectionTest(unittest.TestCase):
             self.put(f'{module}/build/outputs/apk/debug/{module}-debug.apk',module.encode())
         self.put('build/outputs/shared-debug/distribution.json',b'{"version":1}')
         self.put('sense-framework/build/outputs/aar/sense-framework-debug.aar',b'library')
+        self.put('build/outputs/bundle-debug/sense-suite-debug.apk',b'bundle')
         self.output=Path(self.temporary.name)/'artifacts'
 
     def put(self,name,data):
