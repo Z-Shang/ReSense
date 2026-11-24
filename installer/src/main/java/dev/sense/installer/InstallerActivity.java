@@ -20,6 +20,7 @@ public final class InstallerActivity extends Activity {
     private static volatile boolean preparing;
     private android.content.SharedPreferences state;
     private JSONArray packages;
+    private String payload;
     private final BroadcastReceiver updates = new BroadcastReceiver() {
         @Override public void onReceive(Context c, Intent i) { render(); }
     };
@@ -27,7 +28,17 @@ public final class InstallerActivity extends Activity {
         super.onCreate(saved);
         state = getSharedPreferences("install", 0);
         try (InputStream input = getAssets().open("suite/manifest.json")) {
-            packages = new JSONObject(new String(input.readAllBytes(), java.nio.charset.StandardCharsets.UTF_8)).getJSONArray("packages");
+            byte[] manifest = input.readAllBytes();
+            StringBuilder fingerprint = new StringBuilder();
+            for (byte b : MessageDigest.getInstance("SHA-256").digest(manifest)) fingerprint.append(String.format("%02x", b & 255));
+            payload = fingerprint.toString();
+            packages = new JSONObject(new String(manifest, java.nio.charset.StandardCharsets.UTF_8)).getJSONArray("packages");
+            if (!payload.equals(state.getString("payload", ""))) {
+                int previous = state.getInt("session", -1);
+                state.edit().clear().putString("payload", payload).commit();
+                confirmation = null;
+                if (previous >= 0) try { getPackageManager().getPackageInstaller().abandonSession(previous); } catch (Exception ignored) {}
+            }
         } catch (Exception e) { throw new IllegalStateException("Invalid suite payload", e); }
         LinearLayout root = new LinearLayout(this);
         root.setOrientation(LinearLayout.VERTICAL);
@@ -49,7 +60,7 @@ public final class InstallerActivity extends Activity {
             int id = state.getInt("session", -1);
             if (id >= 0) try { getPackageManager().getPackageInstaller().abandonSession(id); } catch (Exception ignored) {}
             confirmation = null;
-            state.edit().clear().apply(); render();
+            state.edit().clear().putString("payload", payload).apply(); render();
         }); root.addView(stop);
         setContentView(root);
         registerReceiver(updates, new IntentFilter("dev.sense.installer.UPDATE"), RECEIVER_NOT_EXPORTED);
