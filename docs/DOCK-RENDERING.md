@@ -8,7 +8,7 @@ The current renderer uses geometry deformation rather than alpha masking. It imp
 
 The visual dock body is **64dp**, reduced from the prior approximately 84dp layout. Button source rectangles are 48dp high with 6dp corner radii. The curved top shortens the outer visible ends. The background spans the screen width and extends below the body through the navigation inset, with a straight screen-bottom edge. Controls remain above system navigation.
 
-Build inputs remain the user’s local ROM and two generated images under ignored `launcher/build/generated/senseDock/`. No HTC runtime code is used.
+Build inputs are the extracted resources under `assets/htc/launcher/res`. The ROM is required only for explicit asset regeneration. No HTC runtime code is used.
 
 ## Verification
 

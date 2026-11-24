@@ -1,0 +1,337 @@
+[
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/add_people.png",
+    "resource": "people_add_people.png",
+    "sha256": "7682a185b3ad30f71b73a53b6297dbfc0c596fcd35de1decd859b4e01a5aa4f3"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/block_people.png",
+    "resource": "people_block_people.png",
+    "sha256": "f6aceac1e20bd25e7a2922149107aaae3734a722e4db19d648d8b60abf4bbb22"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/call_history.png",
+    "resource": "people_call_history.png",
+    "sha256": "b76c755cf88a1f6b847ef5a2f93259cdc166b27fd44a1d2b13d2741377809d92"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_detail_icon_contacts_on.png",
+    "resource": "people_common_detail_icon_contacts_on.png",
+    "sha256": "7402cbd04fbb5054954579cd330ecffbce01078424f0f54fa9d783a952c7a80b"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_detail_icon_contacts_rest.png",
+    "resource": "people_common_detail_icon_contacts_rest.png",
+    "sha256": "2c25c86ef72bfa029f8aaeb3a4fae59ca30cd53fcde2bf14b01f94c3c285f1e9"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_detail_icon_voice_on.png",
+    "resource": "people_common_detail_icon_voice_on.png",
+    "sha256": "b243d3717537563404e3fb2956ba2cfab12c013f70edd7ac255768185cb73b96"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_detail_icon_voice_rest.png",
+    "resource": "people_common_detail_icon_voice_rest.png",
+    "sha256": "e8143ec693ebf5b6ea5a8d1a56f3b7122502d3f4dbf23b4d820467582cc403a7"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_icon_contact.png",
+    "resource": "people_common_icon_contact.png",
+    "sha256": "1a28afb152fa524171f866f10a6026bee49c01a7bb9cb521c0fb6024e6b2dad6"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_icon_diverted_on.png",
+    "resource": "people_common_icon_diverted_on.png",
+    "sha256": "a8db6442492df7ccd3fde64b3006de5f72aa2c5dcbf5eeca6a2ba0d943be7d9a"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_icon_diverted_rest.png",
+    "resource": "people_common_icon_diverted_rest.png",
+    "sha256": "bfb634b7245781330afeeffbda73476d243d7d9fd15371611e6351e8ec7876cb"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_icon_overlay_diverted.png",
+    "resource": "people_common_icon_overlay_diverted.png",
+    "sha256": "1bce28e6008be92da816dfa49426cc34681290c7cf49fde201003780dfe730a1"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_icon_video_call_on.png",
+    "resource": "people_common_icon_video_call_on.png",
+    "sha256": "f1610a499c4c27bb1124a6b4f93cfe111e27dbf7ea484354afdb5e83d231af58"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_icon_video_call_overlay.png",
+    "resource": "people_common_icon_video_call_overlay.png",
+    "sha256": "c17c5ed662c8ab4e9f430ae929abd478a17b88b38b5955f5be07522af62de91c"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_icon_video_call_rest.png",
+    "resource": "people_common_icon_video_call_rest.png",
+    "sha256": "56a83cda62af2cf6a08aa3a50aa4d6f4684a506b33768773ebfda9abcdb7567a"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_icon_vip.png",
+    "resource": "people_common_icon_vip.png",
+    "sha256": "4f33d77d892711be1ed8d19fd116a2c84b4d829f5854fb909a1273f92e85acaf"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_icon_vip_on.png",
+    "resource": "people_common_icon_vip_on.png",
+    "sha256": "73dd508b59e270d86803fadd51e5bd26ca112ae824d21f29539ba7fd07d4d501"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/common_icon_vip_rest.png",
+    "resource": "people_common_icon_vip_rest.png",
+    "sha256": "33a82a6ed2413f7ad897dc0039673599039e3c48e55f7a325956957c5f351b99"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/dialer.png",
+    "resource": "people_dialer.png",
+    "sha256": "78ef5522542729b79b8acadec769e1061fcf5e62d237bf1a107a6ffe94b0a499"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/email.png",
+    "resource": "people_email.png",
+    "sha256": "e421d41f0aad206d7464bd39786290fbf5bd3a1548757c066aabe79d4abf974e"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/gallery_folder_rest.png",
+    "resource": "people_gallery_folder_rest.png",
+    "sha256": "06db56f2fb8862e9dd835d4f579b8efba83e5cf307958d39a5badd383e13b5ee"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/ic_contact_picture_180_holo_dark.png",
+    "resource": "people_ic_contact_picture_180_holo_dark.png",
+    "sha256": "6a2f6fb9106d2264a7e8aff96217177dad9403db2b19aa2dced36237b9ed50c4"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/ic_contact_picture_180_holo_light.png",
+    "resource": "people_ic_contact_picture_180_holo_light.png",
+    "sha256": "9363eecea5ec540447472a32b0b06191d27343fc1c04c6ab38b5b871aa18cc6d"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/ic_contact_picture_holo_dark.png",
+    "resource": "people_ic_contact_picture_holo_dark.png",
+    "sha256": "570cea91ab17fddc792972c9a9519cdaebc5ff3782392473b7e0717a67f76387"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/ic_contact_picture_holo_light.png",
+    "resource": "people_ic_contact_picture_holo_light.png",
+    "sha256": "e3b34f9124fe04313ab67b82b305aa93934d47dfacf2db384ee99fb37d71fad5"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/ic_launcher_folder_live_contacts.png",
+    "resource": "people_ic_launcher_folder_live_contacts.png",
+    "sha256": "b82481a913dfe3b94f559cc23b7102c3a3e7edae945f174e2f7c488d5d43a071"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/ic_launcher_folder_live_contacts_phone.png",
+    "resource": "people_ic_launcher_folder_live_contacts_phone.png",
+    "sha256": "509a819d13ac40ca9e9790b3ad119a18e91b4e440b6afb372e49c4e8fbe77b53"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/ic_launcher_folder_live_contacts_starred.png",
+    "resource": "people_ic_launcher_folder_live_contacts_starred.png",
+    "sha256": "6b1e2c9e4f29560c3513d0ec68dae7dfb6c4088f0ac86e5c28b7d6b38b289796"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/ic_launcher_shortcut_contact.png",
+    "resource": "people_ic_launcher_shortcut_contact.png",
+    "sha256": "8280853505292781a6fd28e66ea545093f912a3640eb9196c9066a102a9842c3"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/ic_launcher_shortcut_directdial.png",
+    "resource": "people_ic_launcher_shortcut_directdial.png",
+    "sha256": "b85aec1616076d7dedbbc991bd4628398a2626aa88834123cb096d4bda362f1d"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/ic_launcher_shortcut_directmessage.png",
+    "resource": "people_ic_launcher_shortcut_directmessage.png",
+    "sha256": "a5c10d3b36eb3c0904323b6dbfad5f293e21be2a4eed5c70ccf372767d13fc91"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/icon_camera.png",
+    "resource": "people_icon_camera.png",
+    "sha256": "2ab1559de7d10831bd1650457a1733d0078e11740e272bafbb9c61c0f77bb52a"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/icon_menu_contact_pim.png",
+    "resource": "people_icon_menu_contact_pim.png",
+    "sha256": "9153c8a56297a7a534533d042a478d26d9992e70085b4e52e9496f43f7200f99"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/icon_menu_set_aab.png",
+    "resource": "people_icon_menu_set_aab.png",
+    "sha256": "ac301fe4192da7210f7b1540fec7b4945adb538c6e774debf37c487714ca13b0"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/list_background_grey_bottom.9.png",
+    "resource": "people_list_background_grey_bottom.png",
+    "sha256": "d8a4815d7b8952f3d3f71e289c6434abc434577190380555389e057dd8d01057"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/list_background_grey_top.9.png",
+    "resource": "people_list_background_grey_top.png",
+    "sha256": "806a12ddb05448d54cdd45347ea0ad6fdf4bbf1e36c70bb15f05a946dc0576b8"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/messages.png",
+    "resource": "people_messages.png",
+    "sha256": "9515f09f0ff5db9aba252ea9530878aa7c127a39296a6863fa0834d3c2676987"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people.png",
+    "resource": "people_people.png",
+    "sha256": "f7ec8714d866c9c5886b01ca9d9294711a7f777108a1035e42b40c4e45e748cf"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_browse_callhistory_calllog.png",
+    "resource": "people_people_browse_callhistory_calllog.png",
+    "sha256": "df1ce6a7806d435a7b76ae0dda9f447a6e1ecc67f318c40815aa3d7bdc5581f2"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_button.png",
+    "resource": "people_people_button.png",
+    "sha256": "e24aba02676949d6b9a236e2d4dcb55ae756a8d30db4b8b7a1c4cb0f027a8f7f"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_icon_assistant.png",
+    "resource": "people_people_icon_assistant.png",
+    "sha256": "59a791713b430d9d7077099ec01495763fe8bdc1c2957e393ad214edfef039d5"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_icon_call_home.png",
+    "resource": "people_people_icon_call_home.png",
+    "sha256": "cc3636d668426f3fb195759336b102bbfe4f88a86cf0869018f646f99a3a0b8b"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_icon_call_mobile.png",
+    "resource": "people_people_icon_call_mobile.png",
+    "sha256": "4466dccddc44c03c61b1d35463c8be69ca34505e5fcd750e8cf58b36ff37ab0d"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_icon_call_work.png",
+    "resource": "people_people_icon_call_work.png",
+    "sha256": "0ff0e1326c1ee6fd2b058705e317035de1f48cd19491a55ab9a55524669ad32c"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_icon_car.png",
+    "resource": "people_people_icon_car.png",
+    "sha256": "8c6a022a7d0828c481250865a7cfdf0bd6441f1be78dfff373ea3cfe66176023"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_icon_contact.png",
+    "resource": "people_people_icon_contact.png",
+    "sha256": "a1d211f3ba3da508ab3dfb7eb4cea8fa2d901a7ae512f0bd635814f366f9b55b"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_icon_mail.png",
+    "resource": "people_people_icon_mail.png",
+    "sha256": "dfb316ca0e6b3a6b694acb75577f77a9dc54f70f1343f95871e5f2497671b933"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_icon_pager.png",
+    "resource": "people_people_icon_pager.png",
+    "sha256": "fb5794169d5b04cf791248a111c16c868d3d26aea420d175d1f514adb1eb1e50"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_icon_radio.png",
+    "resource": "people_people_icon_radio.png",
+    "sha256": "ac8e6831962e1955f2211a29fbbf3298ce43b4da6d477816c5cc45a5b9d22794"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_icon_sms.png",
+    "resource": "people_people_icon_sms.png",
+    "sha256": "9b097b91a6835aef221a3ff4747a92a3d7404fbc9d058d5233121688f8269fcb"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/people_indicator_locked.png",
+    "resource": "people_people_indicator_locked.png",
+    "sha256": "490a444b8a06e8e26413f077d15e3af9eab288c99d736de146f1ca059d9b9803"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/person_icon_quick_contact.png",
+    "resource": "people_person_icon_quick_contact.png",
+    "sha256": "ceff2637dfcad379c9a289e99702853421179b715fa9d7f45af0ea89be5b5f6f"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/phone_icon_addcontact.png",
+    "resource": "people_phone_icon_addcontact.png",
+    "sha256": "6b2f6229a2cfed0a9c21a331bd27adb409e0c43a35bb8aa129abb1f27b0e26b8"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/phone_icon_contactcard.png",
+    "resource": "people_phone_icon_contactcard.png",
+    "sha256": "6d5dad525b6f16890b859d1c7794b78588f1956616e6139548e4e0a647a927de"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/qik_video_chat.png",
+    "resource": "people_qik_video_chat.png",
+    "sha256": "636996548ed7af0a507e9300c0ae242dc0830ad1bbb65cb40d004af4a5af328e"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/search_company_directory_on.png",
+    "resource": "people_search_company_directory_on.png",
+    "sha256": "8204ff6aa09812ed6ad36d54f65fa15aa1496e53d3208d55c3eb6845c0d4838b"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/search_company_directory_rest.png",
+    "resource": "people_search_company_directory_rest.png",
+    "sha256": "d1d213cf8be3ec808b88fc9c8aca9a32a0eba8afbb2425a6ee0b8feb05eca70b"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/stat_notify_htc_sence_link.png",
+    "resource": "people_stat_notify_htc_sence_link.png",
+    "sha256": "f0015cc8efdc281b2c1ff8cd5650e5dbf532c19e9285f499ed3316a25a4a3fa5"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/stat_notify_link.png",
+    "resource": "people_stat_notify_link.png",
+    "sha256": "fd2c7b455d03c9035737c9dfa9115c27ec228885e41106c4f0442c383166a0d5"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/sym_action_map.png",
+    "resource": "people_sym_action_map.png",
+    "sha256": "2db2ee23e85f0d49243d9728cc5f7c094feb6af94153413df55878a83b7a08b9"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/sym_action_organization.png",
+    "resource": "people_sym_action_organization.png",
+    "sha256": "d6bcddf9c7eda392a5a272417a5a1be07ca7d236127a0627d700c5f82cb49435"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/sym_action_sms.png",
+    "resource": "people_sym_action_sms.png",
+    "sha256": "74cf26db547b26fd930b0a005150f8cb1e979ecde2e1f5285214f3352e5de714"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/sym_note.png",
+    "resource": "people_sym_note.png",
+    "sha256": "3b4c844d3732109af08d0fe94e67ac4ab64c3914ea004cebf4bdd0da13a7a1cf"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/tab_focused_bottom.9.png",
+    "resource": "people_tab_focused_bottom.png",
+    "sha256": "99dc54281d4809b9a9d6d8b6ec145142f8c506e9bfaf5f0f795ef6f7dd0bea8c"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/tab_left_arrow.png",
+    "resource": "people_tab_left_arrow.png",
+    "sha256": "f77204f1aa49e2dad710ed7bed92fda5e9957c62ebb8a6edeeaa5c311a714d5a"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/tab_pressed_bottom.9.png",
+    "resource": "people_tab_pressed_bottom.png",
+    "sha256": "f997970f17f998efc230a70577382e8cc2ba481bec5eebc1735e56b31b634e47"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/tab_right_arrow.png",
+    "resource": "people_tab_right_arrow.png",
+    "sha256": "9a08aa6f8fb0bf4604b20eaa9e7ec9feb42dd48cf93a5a0b0419bf3df12114f4"
+  },
+  {
+    "source": "system/app/HtcContacts.apk!/res/drawable-hdpi/tab_selected_bottom.9.png",
+    "resource": "people_tab_selected_bottom.png",
+    "sha256": "cf6d55fbfd8aeb2c982c0ca9ddf713dc5b42a8add56e4bb4d2ea48abdb3854b2"
+  }
+]

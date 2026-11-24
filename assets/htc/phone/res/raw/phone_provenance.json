@@ -1,0 +1,1192 @@
+[
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/accumulator_icon_voice_pressed.png",
+    "resource": "dial_accumulator_icon_voice_pressed.png",
+    "sha256": "a3bf4e510148ed1b58782e0c1b4a741e8e4f0eda59af16cee0eba7ea31ddcae9"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/accumulator_icon_voice_rest.png",
+    "resource": "dial_accumulator_icon_voice_rest.png",
+    "sha256": "415ea9c08a33e4e78502baa271551d51a148730211ba9ebf096cd3f3670d0529"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/avatar_photo_mask.png",
+    "resource": "dial_avatar_photo_mask.png",
+    "sha256": "01f7a574d7c38c4e935e8b29a6e0510c166dbc26d16fe7ffcdf9440aab8ad112"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/call_history_on.png",
+    "resource": "dial_call_history_on.png",
+    "sha256": "3d63bd1b92ccf54ef5ef9a2e2f4596efc18751acf52a56908c63bb0ff6e88361"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/call_history_rest.png",
+    "resource": "dial_call_history_rest.png",
+    "sha256": "ad829ba1f7cab3d145adc32b234043f6e01f82b502245c6857bc2e9691447b10"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/common_icon_arrow_up.png",
+    "resource": "dial_common_icon_arrow_up.png",
+    "sha256": "3a9fc0c6c954616839f0e05b151bde2da439cf4ffe4e70e4a239cf5d72070800"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/common_icon_callhistory_on.png",
+    "resource": "dial_common_icon_callhistory_on.png",
+    "sha256": "f372da76b99db387ad32daab027b116170f761f7f3e657953c29baa1904d3cb0"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/common_icon_callhistory_rest.png",
+    "resource": "dial_common_icon_callhistory_rest.png",
+    "sha256": "7afb82c31385a7f55175dd8902bdc4650db221771a980d0a6c61730b157063ce"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/common_icon_indicator_hd_history.png",
+    "resource": "dial_common_icon_indicator_hd_history.png",
+    "sha256": "d06a1ccdadc15f7ba9667a2701f0ad919a880cd0798fc1c030390be201f40aa2"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/common_icon_indicator_video_history.png",
+    "resource": "dial_common_icon_indicator_video_history.png",
+    "sha256": "a5942821f7effb84d8c2cb464e5ae1ba0cb2769006f20d5f9ae94f24532a37ff"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/common_icon_toggle_handwriting_rest.png",
+    "resource": "dial_common_icon_toggle_handwriting_rest.png",
+    "sha256": "3e1fab1444a4792e85c7ca11ae95b5f260646a58f9eebf9405e5309a5a55f137"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/common_icon_toggle_keypad_rest.png",
+    "resource": "dial_common_icon_toggle_keypad_rest.png",
+    "sha256": "8fe664d6f9130ceba9d4ff574978021325c087a44327a480cac5a4cf3e9da5df"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/dialer.png",
+    "resource": "dial_dialer.png",
+    "sha256": "66bdda0329b2a3519be24157bdef08e5dcd2382fa7715cb2beb54f4941f76a82"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/dialer_items_arrow_left.png",
+    "resource": "dial_dialer_items_arrow_left.png",
+    "sha256": "b3caadd2214b20d37f0003d1610ea4a2a3becbe82276bbde6866f485c38298a9"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/dialer_items_arrow_right.png",
+    "resource": "dial_dialer_items_arrow_right.png",
+    "sha256": "4103d487af61a717f3190c4a2d8002ea3876a606a3de74df1d2aab1be5bb9c38"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/htc_pin_asset_pressed.9.png",
+    "resource": "dial_htc_pin_asset_pressed.png",
+    "sha256": "c9bfa68af561ea21f8edc1072cd901ee58b26f691883fd26d69a562d45f11459"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/htc_pin_asset_rest.9.png",
+    "resource": "dial_htc_pin_asset_rest.png",
+    "sha256": "fcc1c1256ec89e34d74268f20a0af5f7593999c654e78501ebe1a5bc7fd83d13"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/htc_pin_icon_ip.png",
+    "resource": "dial_htc_pin_icon_ip.png",
+    "sha256": "ea4ae0cff55377347fa0213fb275afc9848dc7ef93874e69a156c45f7aec1b25"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/htc_pin_icon_plus.png",
+    "resource": "dial_htc_pin_icon_plus.png",
+    "sha256": "9fa29c0e588590ed1b22cbfe4a751806897e558effd12a40ab68ed21dbe945b6"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/htc_pin_icon_pound.png",
+    "resource": "dial_htc_pin_icon_pound.png",
+    "sha256": "748a88ce800d4d1f1fec251f99573d46dd1ea0f3d6e077e296b0987582a58407"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/htc_pin_icon_record.png",
+    "resource": "dial_htc_pin_icon_record.png",
+    "sha256": "06eda193bc416e663b0f4d4b0df96ff40936f21b468e9ba4f3ddda7f314a2994"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/htc_pin_icon_star.png",
+    "resource": "dial_htc_pin_icon_star.png",
+    "sha256": "460aeed877a0a25471e84a3aac78665d7b9d7f39296e3c93e1d533abe09bb0d8"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/hwr_panel_bg.png",
+    "resource": "dial_hwr_panel_bg.png",
+    "sha256": "3b07f902fa127f741d70ffff129a7a0f46b3ff211aa0355551e94135899d1d44"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/icon_menu_about.png",
+    "resource": "dial_icon_menu_about.png",
+    "sha256": "033d0c26dd0cf63309a5633785e9d91176de527a62dacd090d92743b6274a342"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/icon_menu_all.png",
+    "resource": "dial_icon_menu_all.png",
+    "sha256": "a89d6a536c89fd34de192c072713370ddd78c49648bf6d637e049d76eebae6c8"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/icon_menu_blacklist.png",
+    "resource": "dial_icon_menu_blacklist.png",
+    "sha256": "adafd0778d676613ba410e8e9730d7e5aa50ca50ce78195692f332ae74f5fde6"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/icon_menu_camera_on.png",
+    "resource": "dial_icon_menu_camera_on.png",
+    "sha256": "0b70435bdcc41b48cfbf3ec1166efcc743aeceea5c598498ca08a512d384e5a4"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/icon_menu_icon_log.png",
+    "resource": "dial_icon_menu_icon_log.png",
+    "sha256": "da413932270d47174fb76d03660cac39e741c3f499794a83536c9825472969df"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/icon_menu_ip_dial.png",
+    "resource": "dial_icon_menu_ip_dial.png",
+    "sha256": "90f6c7529e5a728aa51080da4e8a7d977646fb0dc07bd41851760aa772a47364"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/icon_menu_outgoing.png",
+    "resource": "dial_icon_menu_outgoing.png",
+    "sha256": "54325696eaf2364237a273b821108684fb55817310691f6baae1f3bd90fb4cb5"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/icon_menu_speed_dial.png",
+    "resource": "dial_icon_menu_speed_dial.png",
+    "sha256": "587513fced547deaf7a2ab0c2774d17621b60b9c0e98422805e2bbed9f10b4f0"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/icon_menu_view_contact.png",
+    "resource": "dial_icon_menu_view_contact.png",
+    "sha256": "cfa31f58bd7b1604ea4882cc4057a474c549dc15df66248099857b46afde6f04"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_bg_people.png",
+    "resource": "dial_navipanel_bg_people.png",
+    "sha256": "ae44a05c1e91a373b1d8ede84af0613ec11cb2d79a973d776b997ceaf2f3830a"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_bg_people2.png",
+    "resource": "dial_navipanel_bg_people2.png",
+    "sha256": "28a41beff7bfe2e21395fa99481a35c7954878389718a8f5c64df467d5645a89"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_bg_people_mask.png",
+    "resource": "dial_navipanel_bg_people_mask.png",
+    "sha256": "535b6845c561b8bb1bc8fb8d3c3f83f05096c873f3476e20c6e94e04cd4474d8"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_bg_people_pressed.png",
+    "resource": "dial_navipanel_bg_people_pressed.png",
+    "sha256": "00bf0615be2c31d47a1eb9a5f9b45ff8ef033f9d5407a80bdd0a864ad64a5b56"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_bg_people_selected.png",
+    "resource": "dial_navipanel_bg_people_selected.png",
+    "sha256": "0153c496ce0a881b4e61ee7a9a11b654e0a6bdcf73a452f4ba03ead2b35b5f5f"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_button_disable.png",
+    "resource": "dial_navipanel_button_disable.png",
+    "sha256": "87ae91a5236cb64a9caa2e0256296a746dc17b8b9f6cdda4bbaf99c162ea3821"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_button_pressed.png",
+    "resource": "dial_navipanel_button_pressed.png",
+    "sha256": "0f70eea5985e93cd85c4f93e2100d0efe00d2eec0d10d38e4798376fc0f6cff6"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_button_rest.png",
+    "resource": "dial_navipanel_button_rest.png",
+    "sha256": "70a54d51e7938ede1f97b805c95ff69b6da93832ce2d07d10c14eee38a8a5715"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_button_selected.png",
+    "resource": "dial_navipanel_button_selected.png",
+    "sha256": "439ea8b972d6297ff5810a9ef62867758b7bf804c09a991d9e40b8fe1bf758c9"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_icon_callhistory.png",
+    "resource": "dial_navipanel_icon_callhistory.png",
+    "sha256": "d4914b51685ec274089c4764aa44ab76326d8beab95aaedfe1aca2019f17653f"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_icon_callhistory_disable.png",
+    "resource": "dial_navipanel_icon_callhistory_disable.png",
+    "sha256": "c503700376218e82b17974effcf2cd1123e8ec172b6933840ff60bae01ce8d84"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_icon_favorites.png",
+    "resource": "dial_navipanel_icon_favorites.png",
+    "sha256": "b3d4406651a81f146671b8cc96e0c2b1af4c9c4bd395acd3de77bb58f8065239"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_icon_favorites_disable.png",
+    "resource": "dial_navipanel_icon_favorites_disable.png",
+    "sha256": "2ca5c880e844d9f102f2ffeef0ae69c7befb61fc86a0558afd073ccdfe186c49"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/navipanel_icon_makecall_dialer.png",
+    "resource": "dial_navipanel_icon_makecall_dialer.png",
+    "sha256": "da0f9f5dbfdc586f54fc4283c53fc31756cd596e3fa9fa5163ae62c2b8542cd1"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/people_detail_vtcall.png",
+    "resource": "dial_people_detail_vtcall.png",
+    "sha256": "51d29ea06e821f95b7b74aa54ecdb3bd952539debfd162ac57c04f92f06504d5"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_accumulator_bg.9.png",
+    "resource": "dial_phone_accumulator_bg.png",
+    "sha256": "8d129448863a2dd69fb5a3b13cae3d5bbf37f7dfd4f4921478ccbc8501f66b4f"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_bg_keypad.png",
+    "resource": "dial_phone_bg_keypad.png",
+    "sha256": "76045c872bfc2ac40f4ef9a9af769cb7aec7ab0e7b20a01a1dd95381ba2921a6"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_bg_taskbar.png",
+    "resource": "dial_phone_bg_taskbar.png",
+    "sha256": "79f484c11a1d02592c1e5297b5d9abba439c7bcbd27ba3441793c8c2b1bd371b"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_bt_voice_press.png",
+    "resource": "dial_phone_bt_voice_press.png",
+    "sha256": "2009e23c40e7bf2192d2a6a72d59d5a91ccc3c76c2818c2a6310e2cf7686cb8f"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_bt_voice_rest.png",
+    "resource": "dial_phone_bt_voice_rest.png",
+    "sha256": "0e68257da08eb0121dc50397eb435463fb7c84252748127231112f5eb321be4e"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_bt_voice_selected.png",
+    "resource": "dial_phone_bt_voice_selected.png",
+    "sha256": "ccaaaf48e1f0b96c54bccb4b61c883160f81554a8e869cf12c57674f06e76156"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_btn_backspace_pressed.9.png",
+    "resource": "dial_phone_btn_backspace_pressed.png",
+    "sha256": "9e386da7d95873a6b24ddda18561ffb73bd655247b0973b859260dc3182efd35"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_btn_backspace_rest.9.png",
+    "resource": "dial_phone_btn_backspace_rest.png",
+    "sha256": "23b3c30d80602670ab022e9ca2e70e5c229f7a1c4287cd09c21e558f96e3d56e"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_btn_backspace_selected.9.png",
+    "resource": "dial_phone_btn_backspace_selected.png",
+    "sha256": "e3f0cfad3a0aec471b6793741b3fc2f871662eafc4f8ec0be0674cf29a10dcfd"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_btn_bg.9.png",
+    "resource": "dial_phone_btn_bg.png",
+    "sha256": "d26c4922824f5278bc642276acb4eeedd7a5a7a4de382ea6c8df22aabdf73931"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_btn_call_pressed.9.png",
+    "resource": "dial_phone_btn_call_pressed.png",
+    "sha256": "4d002cbe28c1194d564fac381e704eadb574324b518b9df7c65ea60a20ef883d"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_btn_call_rest.9.png",
+    "resource": "dial_phone_btn_call_rest.png",
+    "sha256": "c4bb3b54d530da8b5cc0cddd8d5df1c9904b526b93bd2c38ab8745d3397139d6"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_btn_call_selected.9.png",
+    "resource": "dial_phone_btn_call_selected.png",
+    "sha256": "4c0f7a49f93c8b87e11e67ed2e2ace22cabe38e6506c3fd86a08237c13fce5c3"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_addcontact.png",
+    "resource": "dial_phone_icon_addcontact.png",
+    "sha256": "2e8b90e5f531bd5310f0f27c21737f9739dc2cf1e846fbbaf2c24844fcb985cf"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_arrow_up.png",
+    "resource": "dial_phone_icon_arrow_up.png",
+    "sha256": "9f5b9b754dbc76b4d5d7f902618dfe32f5267041a778fdc61b91c7908ca4dc5b"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_backspace_pressed.png",
+    "resource": "dial_phone_icon_backspace_pressed.png",
+    "sha256": "e1f79f68bafa4009e7dccd67097493b8dc4baf86da8bd2e2ddf25c3ea4444e6e"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_backspace_rest.png",
+    "resource": "dial_phone_icon_backspace_rest.png",
+    "sha256": "61b94344ada7d858b22a77d5b32f9d8730a88a7cd17562b15ba04af0d34bf61a"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_contactcard.png",
+    "resource": "dial_phone_icon_contactcard.png",
+    "sha256": "06714a1d384dc0938fbec643b4947ec58457fd3fed84c0aebf5f911709b6e7a5"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_hend_writing.png",
+    "resource": "dial_phone_icon_hend_writing.png",
+    "sha256": "c31bac0f97137f9b8a49f42bdc6be8a8d614b05d432d01cf79dbf8ba99d6830f"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_key_pad.png",
+    "resource": "dial_phone_icon_key_pad.png",
+    "sha256": "8843d7825d01a51f8d482d1caf6a6babd0fd707093e7a7741021de75e35ceb79"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_keypad_disable.png",
+    "resource": "dial_phone_icon_keypad_disable.png",
+    "sha256": "0a5735c4895e374e4ff2efe259feaf523867b39f25fd3ba8a41a7b465e1d92b2"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_keypad_on.png",
+    "resource": "dial_phone_icon_keypad_on.png",
+    "sha256": "a1f86182fb41e3cbab0b64de2a1b373a46f25621b6560441440171827cb8c43b"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_keypad_rest.png",
+    "resource": "dial_phone_icon_keypad_rest.png",
+    "sha256": "0515a8f3df013131467464ec8b15b6e7120d55c0ae3bf336feaba7c5717f6502"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_voice_pressed.png",
+    "resource": "dial_phone_icon_voice_pressed.png",
+    "sha256": "b6ff6cd0eb731297c28a2429617a1e2d3377ee053da9094acdcdebac06c22e17"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_voice_pressed_m.png",
+    "resource": "dial_phone_icon_voice_pressed_m.png",
+    "sha256": "de6352583ee8d765e43b7e08d41964a9c9d130c71d20fd6685268bb896e9e1ef"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_voice_rest.png",
+    "resource": "dial_phone_icon_voice_rest.png",
+    "sha256": "8afaa5d87463dacc3b451339c61e786fc4340226caa79d595b27f0c77ffabab2"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_voice_rest_m.png",
+    "resource": "dial_phone_icon_voice_rest_m.png",
+    "sha256": "0fc62b6d5614c7dc5a6ae96a0bbead211d8d169d4932e97fee2b1876599f787e"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_icon_voice_tip.png",
+    "resource": "dial_phone_icon_voice_tip.png",
+    "sha256": "85843dab88d5a9597bfd3cf71b69e623f2169bea14ce9f67665b7d552d237cfa"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_keypad_shadow_left.9.png",
+    "resource": "dial_phone_keypad_shadow_left.png",
+    "sha256": "83275cd128b3b4ccc9e45226255c9d78139f29bf1838cd7c37340c05a92f4c24"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_number_1_press_sp.png",
+    "resource": "dial_phone_number_1_press_sp.png",
+    "sha256": "1911cff6c0ee31c3f2886cde99e215c476d99c8542604166a43d8a347d328d5c"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_number_1_rest_sp.png",
+    "resource": "dial_phone_number_1_rest_sp.png",
+    "sha256": "c3e1f3a385462c17087869ab362c1c39e8a521845d2d5da3a9b29e58943b2d6f"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_tutorial_1.png",
+    "resource": "dial_phone_tutorial_1.png",
+    "sha256": "be72cca40653f48a4ee4172752a12e2edee97b6a5b21db8d9ee7087e4bcae562"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_tutorial_2.png",
+    "resource": "dial_phone_tutorial_2.png",
+    "sha256": "36ed1e265c186d1bac7f438b1118b8c63e41bf5c644c0bfb41d666c9f966563f"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_tutorial_3.png",
+    "resource": "dial_phone_tutorial_3.png",
+    "sha256": "f25bdefca3765e08b12e20d284ad653d5dc7d9c08df21a8b84af3d6cae4a99f0"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_tutorial_4.png",
+    "resource": "dial_phone_tutorial_4.png",
+    "sha256": "537998d49b935ff3d2d33c143bc987b94e5328a8f056bd5fec2f4cbbf8082e9a"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_tutorial_5.png",
+    "resource": "dial_phone_tutorial_5.png",
+    "sha256": "271bf8696424943a9d9ee2ed4a7614853cd7b677edbb8c8fb9101e54af08e1ba"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_tutorial_6.png",
+    "resource": "dial_phone_tutorial_6.png",
+    "sha256": "aaea73d3be1070e5b8e547f83e1444b209eedc79c05afbac783a6b6882197917"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/phone_tutorial_7.png",
+    "resource": "dial_phone_tutorial_7.png",
+    "sha256": "af18d966b323cbf575cf04e421c69910dffc5aa3eb16d803765af98ba66f2042"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/simlock_cancel_press.9.png",
+    "resource": "dial_simlock_cancel_press.png",
+    "sha256": "30e0e80bbb0d097f449124850184c7b1f663012036e9732cb3dd675222a911de"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/simlock_cancel_rest.9.png",
+    "resource": "dial_simlock_cancel_rest.png",
+    "sha256": "5ecc9a026498b94783486a08cd2ae12007bfefeae982bca485d31928c3776b1a"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/simlock_cancel_selected.9.png",
+    "resource": "dial_simlock_cancel_selected.png",
+    "sha256": "c8fea52a65be81f7b1ddd02a02e613fa06600690ba47991000fd249fbd1533e0"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/simlock_ok_press.9.png",
+    "resource": "dial_simlock_ok_press.png",
+    "sha256": "04421808569305ad3640f0da1429b3394be59170bec6cf68f7046e721f4cc742"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/simlock_ok_rest.9.png",
+    "resource": "dial_simlock_ok_rest.png",
+    "sha256": "9f8c3515c9aa5e600d742b58bfae892a26794df045c24ced0225c1443b9e8c5c"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/simlock_ok_selected.9.png",
+    "resource": "dial_simlock_ok_selected.png",
+    "sha256": "f90776c08c9f41e87abc6ee55656e44530c8b977d3073bbeeeef84b977259d7c"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/smartsearchtutorial_01_01_1.png",
+    "resource": "dial_smartsearchtutorial_01_01_1.png",
+    "sha256": "22230c4ebc08ba9d83cc0a2fa0deb7d7c69204cd917b71e68f94fcacc6f63b16"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/smartsearchtutorial_01_01_2.png",
+    "resource": "dial_smartsearchtutorial_01_01_2.png",
+    "sha256": "5dc598aa658bc3f4e21ec07234a973b128055699335c75493926999fdca20dba"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/smartsearchtutorial_01_01_3.png",
+    "resource": "dial_smartsearchtutorial_01_01_3.png",
+    "sha256": "7df97887db9e20879591bfd5ba6e80b2fb524b6739f9ffd4b58c6d82456ee8ea"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/smartsearchtutorial_01_01_4.png",
+    "resource": "dial_smartsearchtutorial_01_01_4.png",
+    "sha256": "f7491b977b2e5f047cc9f8cff6415f6705edcd7020f7e8cd2f7b1e1b3c26fd6a"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/smartsearchtutorial_01_01_5.png",
+    "resource": "dial_smartsearchtutorial_01_01_5.png",
+    "sha256": "ab8df7d715f5f3674a6f540a15a28382c2d2c358fa2a05f4cf9e64f03400bfd0"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/smartsearchtutorial_01_01_6.png",
+    "resource": "dial_smartsearchtutorial_01_01_6.png",
+    "sha256": "3d9157991aa5c5bdad3f3940bf47c1c11851f695bdef26cb22ef0efb1049dbe0"
+  },
+  {
+    "source": "HtcDialer.apk!/res/drawable-hdpi/smartsearchtutorial_01_01_9.png",
+    "resource": "dial_smartsearchtutorial_01_01_9.png",
+    "sha256": "18d1a36cffb7f2b893caa42d729baf2ccbb748b7cf9cb7c347341a9233d1d89a"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/add_call_disable.png",
+    "resource": "call_add_call_disable.png",
+    "sha256": "6b4f653fb4d011d1504ac5c884016697dcd2c4d633787d22ec6d29e05de34906"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/add_call_pressed.png",
+    "resource": "call_add_call_pressed.png",
+    "sha256": "97278abef38b43b17ce809c958ad89e57c6cb71b851c8d269d854033947aa828"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/add_call_rest.png",
+    "resource": "call_add_call_rest.png",
+    "sha256": "a75475427890e0c02eced30b07554a25ffcc53957c085fc415c36095ab68acb4"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/all_people_on.png",
+    "resource": "call_all_people_on.png",
+    "sha256": "b218911d8ae717ccc686855886980e3a4bb6b60e2ccec0844c70d28269a59c88"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/all_people_rest.png",
+    "resource": "call_all_people_rest.png",
+    "sha256": "15d4a040113b4d90eb68e8ccffe5f42ad7b9fe2479509851e7e78259d78e5f4f"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/audio_icon.png",
+    "resource": "call_audio_icon.png",
+    "sha256": "ebc5cb26683d99a4dd4a684bda5d63eae5a5d1eae33b568c1c63bda0bcbcf34b"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/common_b_button_on.9.png",
+    "resource": "call_common_b_button_on.png",
+    "sha256": "61c3d28f0f547cf79989bc0a2983e1b5823cb69d7b698832aad08be2487f6636"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/common_icon_action_contact_disable.png",
+    "resource": "call_common_icon_action_contact_disable.png",
+    "sha256": "fee5b06fccf146287ece66c019500f1f02c1eb00241cb8aa137a484257b8d0c6"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/common_icon_glance_volume_on.png",
+    "resource": "call_common_icon_glance_volume_on.png",
+    "sha256": "ea2f912e7841d6d51bd3d493faed069fb7c084006f78606fc069d4c9338f2f38"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/common_icon_glance_volume_rest.png",
+    "resource": "call_common_icon_glance_volume_rest.png",
+    "sha256": "ea2f912e7841d6d51bd3d493faed069fb7c084006f78606fc069d4c9338f2f38"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/common_search_select_btn_disable.9.png",
+    "resource": "call_common_search_select_btn_disable.png",
+    "sha256": "ff22ea55b527ce9bbc3c612c310ed220587787794e1dd7ff340223f948988380"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/common_search_select_btn_on.9.png",
+    "resource": "call_common_search_select_btn_on.png",
+    "sha256": "aa5c6d0f6be67530eef100d8109fc145a0379be056391017d7b60a9ddd11ab4f"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/common_search_select_btn_pressed.9.png",
+    "resource": "call_common_search_select_btn_pressed.png",
+    "sha256": "df19a9f069b435ef7871def4cdbc101af4b290588c6942c21ff7beb89812f5e2"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/common_search_select_btn_rest.9.png",
+    "resource": "call_common_search_select_btn_rest.png",
+    "sha256": "9f42bb834027bec21c5b3478425e89751832b90c257af1a1d156494cb0dfcc25"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/common_search_select_btn_selected.9.png",
+    "resource": "call_common_search_select_btn_selected.png",
+    "sha256": "759e95eeb0825105fd8950fcdae9473d74d1975b18e0e31bed35c53f164adc06"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/common_select_photo_pressed.png",
+    "resource": "call_common_select_photo_pressed.png",
+    "sha256": "3c68c87d3da6e055e37f8956e53d9265180f70be3fd1229bc8f025f2ec686837"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/common_select_photo_rest.png",
+    "resource": "call_common_select_photo_rest.png",
+    "sha256": "756bdcbc5cf71c5d1342eb3f99bcfe2444d2c68d7a8bd081e77d3613ea91a0a2"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/contacts_sp_on.png",
+    "resource": "call_contacts_sp_on.png",
+    "sha256": "f005ffa5373883347c699780ea2b32526a34a50e852dc27594cb8ac064933b3f"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/contacts_sp_rest.png",
+    "resource": "call_contacts_sp_rest.png",
+    "sha256": "a8b1a3d3b8e9fccc0be691934c4e6c96de1a963177a3a47bbc06db65a47e9a1c"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/dialer.png",
+    "resource": "call_dialer.png",
+    "sha256": "66bdda0329b2a3519be24157bdef08e5dcd2382fa7715cb2beb54f4941f76a82"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/end_held_call_disable.png",
+    "resource": "call_end_held_call_disable.png",
+    "sha256": "9e44b9cc978c45ae5d0d0ff8d421c37049bd662f3b0034857c42ae0df74998f1"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/end_held_call_pressed.png",
+    "resource": "call_end_held_call_pressed.png",
+    "sha256": "867520a458214e825415d4af5083f3f3cd06ff2bda9ff04576c56b4f22922879"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/end_held_call_rest.png",
+    "resource": "call_end_held_call_rest.png",
+    "sha256": "a0dd0b71e30fa7bed2286a31f814812fcf3058d90f1a27f98f58b295485419f0"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/hold_call_disable.png",
+    "resource": "call_hold_call_disable.png",
+    "sha256": "4e2445e10a70b4aa3966b125d7b70b159b7eaa32b6b7d9a1e0742832917cdb7d"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/hold_call_on.png",
+    "resource": "call_hold_call_on.png",
+    "sha256": "ae709c73c89f6ecb189927fc5fd555fa956f1508249d0eb21549efde59ce37c3"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/hold_call_rest.png",
+    "resource": "call_hold_call_rest.png",
+    "sha256": "99342293a3f51399e6cf29aa75315a49e38267d0cbefb7b68f8d79bd82268298"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/htc_pin_asset_pressed.9.png",
+    "resource": "call_htc_pin_asset_pressed.png",
+    "sha256": "e9477f61f37ed8794b7d8907716d2c55e9dc550f8b56a3e7e1637a5b8299928d"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/htc_pin_asset_rest.9.png",
+    "resource": "call_htc_pin_asset_rest.png",
+    "sha256": "be4ec7b584f9a6983e228baa9217474acb37ca23c86ba564f33f8a9134c2f4d9"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/htc_pin_icon_plus.png",
+    "resource": "call_htc_pin_icon_plus.png",
+    "sha256": "0e6c3fb6e03ba5b1884515455b530c49311ac96f14330a4d0e3515b387ffdd86"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/htc_pin_icon_pound.png",
+    "resource": "call_htc_pin_icon_pound.png",
+    "sha256": "2dd7b1077547596fdb483e46867f46ee766629e4204bc98386a5b91a5384f7f6"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/htc_pin_icon_record.png",
+    "resource": "call_htc_pin_icon_record.png",
+    "sha256": "7896dc097738a9c9f6f0e7c5b5a3ede867e4927c996a369f3464e9e4ad79a3ce"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/htc_pin_icon_star.png",
+    "resource": "call_htc_pin_icon_star.png",
+    "sha256": "5e24ba01afc86c5c22d53bee3d8a9b82da8a6815060a873c177a60fd6a490ca9"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/ic_dialog_call.png",
+    "resource": "call_ic_dialog_call.png",
+    "sha256": "88725b789e102699b1f8bbe074e0638f0c87c9983bf39769bb700de663eb1296"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/ic_launcher_phone.png",
+    "resource": "call_ic_launcher_phone.png",
+    "sha256": "66bdda0329b2a3519be24157bdef08e5dcd2382fa7715cb2beb54f4941f76a82"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/ic_launcher_sip_call.png",
+    "resource": "call_ic_launcher_sip_call.png",
+    "sha256": "ba8c78fae6b8bb7afcee56bd6e35a1e21a2696631250aede9e25612f00f5460b"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/ic_menu_call.png",
+    "resource": "call_ic_menu_call.png",
+    "sha256": "6af10a2d5d7214cfc41f4a5e0d8481ddc3bf1c5bfcf9f40ced4b81647c84c211"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/ic_menu_contact.png",
+    "resource": "call_ic_menu_contact.png",
+    "sha256": "bb4888f6f95d62b0b8a4990cdd8074de177b3d9d0dc0d0274a7ea34689a10403"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_contact_picker_rest.png",
+    "resource": "call_icon_contact_picker_rest.png",
+    "sha256": "a0b8ea4e60a8e524547fd21b231f6dcdc764e309562cf3fa3629c905f4200553"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_add_call.png",
+    "resource": "call_icon_menu_add_call.png",
+    "sha256": "0d93499415aa5407c7ce63985b37f4879c130d8b8b255becf977753190c4e250"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_answer_and_end.png",
+    "resource": "call_icon_menu_answer_and_end.png",
+    "sha256": "6d761c741488d641b8c7637513d096c468f95657cec9b95595c93ac90f625f26"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_bluetooth.png",
+    "resource": "call_icon_menu_bluetooth.png",
+    "sha256": "5490de80484669c3b19bf30bed29359f93389f10ea74f68894c9056731554a0b"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_call_defer.png",
+    "resource": "call_icon_menu_call_defer.png",
+    "sha256": "8fd85fb7e23757c6a377548e7cf3d17f16f4c5858901f55e598c0240cef41087"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_end_call.png",
+    "resource": "call_icon_menu_end_call.png",
+    "sha256": "4968f706062043f7bb4f2709f8e4f0a90dfa23f79bfdcfec7e36f56f239c53ad"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_headset.png",
+    "resource": "call_icon_menu_headset.png",
+    "sha256": "4e0708d67e5e7a452b6936ce799abd9f9440a85b796f1b12f09406a03b740069"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_hold.png",
+    "resource": "call_icon_menu_hold.png",
+    "sha256": "4435b919d1ca7511de67fbaf15058eae8b872d6fc542d2b23d88a3f21d7a6780"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_hold_off.png",
+    "resource": "call_icon_menu_hold_off.png",
+    "sha256": "a317c4ab94377ddb4982454c456f08232b60babe73fdb7b8f7987c918ab1f4db"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_ignore.png",
+    "resource": "call_icon_menu_ignore.png",
+    "sha256": "8e9dfae83586e704db2369b86767ccc71f43243d465d7659e3dd4a214ad584bf"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_merge.png",
+    "resource": "call_icon_menu_merge.png",
+    "sha256": "5ac09f9471b7832d84851e0dba65d2ab943b67167fa36a57208043d9bf995fa5"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_mute.png",
+    "resource": "call_icon_menu_mute.png",
+    "sha256": "1d4b47f8af7a2782c055dfa63ccddd88ef805b2863a74b9c116cb12375b4f742"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_mute_ring.png",
+    "resource": "call_icon_menu_mute_ring.png",
+    "sha256": "8eb56f27b5d1cff10c0b5287147b703a0ce4d96032c139622b4dd8dd5cbf1f24"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_phone_bluetooth_headset.png",
+    "resource": "call_icon_menu_phone_bluetooth_headset.png",
+    "sha256": "520b6e63ffd45c81a43519329e19f073fbe4fc54ad0af2fa5619f6f4eb2ffdb7"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_send_text.png",
+    "resource": "call_icon_menu_send_text.png",
+    "sha256": "f7a9f992eb3a2978caff6bc6551f9700ab43d73e144178f67517a17fcaff6190"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_skype_audio_call.png",
+    "resource": "call_icon_menu_skype_audio_call.png",
+    "sha256": "40db761084a060df1eb04bfdb4dd51cbb3a001c125a5f89d501f486f1ec84115"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_skype_decline_call.png",
+    "resource": "call_icon_menu_skype_decline_call.png",
+    "sha256": "8e9dfae83586e704db2369b86767ccc71f43243d465d7659e3dd4a214ad584bf"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_skype_video_call.png",
+    "resource": "call_icon_menu_skype_video_call.png",
+    "sha256": "0b70435bdcc41b48cfbf3ec1166efcc743aeceea5c598498ca08a512d384e5a4"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_speaker_off.png",
+    "resource": "call_icon_menu_speaker_off.png",
+    "sha256": "19820caf0714138e4d63239828fe34319cbc9773aa652069685fb4ed0fe8e8c4"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_speaker_on.png",
+    "resource": "call_icon_menu_speaker_on.png",
+    "sha256": "1e6025ddc5578b048fc2a6260424a485b48faf0412cb3465b02a538727b7a220"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_swap.png",
+    "resource": "call_icon_menu_swap.png",
+    "sha256": "fa098a1990b8bfe93a4ce6bebfbca9a4b1f1517f74bdbb9bed4621606ca53a76"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_menu_voice_record.png",
+    "resource": "call_icon_menu_voice_record.png",
+    "sha256": "a7c2b4ce110d5fa8e57faae8691f7773cb675f2cc8783e11f104bc774af3d385"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/icon_no_sim.png",
+    "resource": "call_icon_no_sim.png",
+    "sha256": "0f46a7150bb3a0bb290e4ec969bdc09c6b9f627a8d8762f368cd0a7e73c613df"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/lockscreen_avatar.png",
+    "resource": "call_lockscreen_avatar.png",
+    "sha256": "39ff983b7926360b9decb3a9a11b7470b65876ce3376e0135a57ea3b43dabbab"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/lockscreen_bigicon_misscall.png",
+    "resource": "call_lockscreen_bigicon_misscall.png",
+    "sha256": "5a2e970d9623c783c8bf074ff17eb5a155d6fdeb7419f712ddb539a5178b1947"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/lockscreen_notification_indicator_missedcall.png",
+    "resource": "call_lockscreen_notification_indicator_missedcall.png",
+    "sha256": "afd12fee6843943f26ffa9cdb8b749aa1b66e9578fe107c0cd9c58a0e95b8f89"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/merge_calls_disable.png",
+    "resource": "call_merge_calls_disable.png",
+    "sha256": "b2bc9f800a434a3ed90c59f8ead679bc137dc83e88bd6e3399df14982aec1444"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/merge_calls_pressed.png",
+    "resource": "call_merge_calls_pressed.png",
+    "sha256": "fb3d78b1027e6457cc89f70f9a63449a005f4b2aa4a30dfc358b980037843639"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/merge_calls_rest.png",
+    "resource": "call_merge_calls_rest.png",
+    "sha256": "ed5e09c59b3739aaa7e3a3dd06004f08b6eea334fbe37703199578ff7d24d450"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/mute_disable.png",
+    "resource": "call_mute_disable.png",
+    "sha256": "d32572d480250ad9621720ae43eb0e32a1875ba7dbcf10a9c6bdba8aea993551"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/mute_on.png",
+    "resource": "call_mute_on.png",
+    "sha256": "9940a2b82d6a68d8902b1f865c74b13601c6a18b3466fc524a45cc3739bea1d6"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/mute_rest.png",
+    "resource": "call_mute_rest.png",
+    "sha256": "1082e639e9b501c5c3a0d8c28c7a6068deef32c3d7e0a92b54c88ff00e396595"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/notification_btn_endcall_press.9.png",
+    "resource": "call_notification_btn_endcall_press.png",
+    "sha256": "1fc5a7731381b5b6dbd107462fa45891da92a21e66c995e455990926d6c64c48"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/notification_btn_endcall_rest.9.png",
+    "resource": "call_notification_btn_endcall_rest.png",
+    "sha256": "fd76ffba8fa8c4e0e376fbfc596e4810baf1c1f19267efb9d2c9e2d5bfa10455"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/notification_btn_endcall_selected.9.png",
+    "resource": "call_notification_btn_endcall_selected.png",
+    "sha256": "1e0137ef2c7c25fcd8f39c90c83d2256d1c9854ff70fbdd21aab0a3d089d880a"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/notification_btn_icon_call.png",
+    "resource": "call_notification_btn_icon_call.png",
+    "sha256": "2691a3881106d8365eeedd36b7c1a96af86037ee1672159f4fce97486e64242b"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/notification_photo_shadow.png",
+    "resource": "call_notification_photo_shadow.png",
+    "sha256": "d96ef528d29b1afc939e2453cd242e9b5269dc183e72c68fec6f09639ca1f18a"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_accumulator_bg.9.png",
+    "resource": "call_phone_accumulator_bg.png",
+    "sha256": "cf3ff987a4efecc22028ca98fe004aeb92bab8b6d45a910fd969396e213539d5"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_bg_birthday.9.png",
+    "resource": "call_phone_bg_birthday.png",
+    "sha256": "627cfbc2a5aa91511e1ee9532dcf54ee9b2888f3799e545ecb8afa95b5749eb2"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_bg_facebook.9.png",
+    "resource": "call_phone_bg_facebook.png",
+    "sha256": "8894e3f6bb5401314ae5af38e4e3485fe6382bea2600600d8ff37ba77d571fdb"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_bg_keypad.png",
+    "resource": "call_phone_bg_keypad.png",
+    "sha256": "9208918dc9c37f39d2659824567d0ccf7344a4112b3a35b8b4c0d0b1923b9507"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_btn_answer_pressed.9.png",
+    "resource": "call_phone_btn_answer_pressed.png",
+    "sha256": "aa6af42c2293a0e9b19ef50333e54e72e8bf769a31b01d3c3a8c315269853a51"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_btn_answer_rest.9.png",
+    "resource": "call_phone_btn_answer_rest.png",
+    "sha256": "6aecd7aaf5ec01c5182fddb9698f378463cfa5deaf0472d0e752ed62431c13ff"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_btn_answer_selected.9.png",
+    "resource": "call_phone_btn_answer_selected.png",
+    "sha256": "de36e707ef89a77145a495013ddb0780ca274d29acedae834d11eec527b45710"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_btn_backspace_pressed.9.png",
+    "resource": "call_phone_btn_backspace_pressed.png",
+    "sha256": "c34a462027a14a5d928e3ce3150c2074825504a1e06b5f3ad0a5505f6419c213"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_btn_backspace_rest.9.png",
+    "resource": "call_phone_btn_backspace_rest.png",
+    "sha256": "7a2dc953d27f4e7da3b47df97f1ddbc8a65451420feae8889fd71eb687046f15"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_btn_backspace_selected.9.png",
+    "resource": "call_phone_btn_backspace_selected.png",
+    "sha256": "75b633c6c17e759063b4f4181beb74bddc999f53f303a6973b1940f8c7daf24c"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_btn_bg.9.png",
+    "resource": "call_phone_btn_bg.png",
+    "sha256": "bc20198c71e3acf8e8730ca4e032fe82acfb2c28476358aeb679b9c5b5726d93"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_btn_end_disable.9.png",
+    "resource": "call_phone_btn_end_disable.png",
+    "sha256": "0244d49350edd9cdcc2a64bf0e5ce8bda588fb6d86b1b7d25935687193dc9da5"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_btn_end_pressed.9.png",
+    "resource": "call_phone_btn_end_pressed.png",
+    "sha256": "d618e217a11417c3b41bcc5ba1d6192115c0990c1d17161c58b71569356cc130"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_btn_end_rest.9.png",
+    "resource": "call_phone_btn_end_rest.png",
+    "sha256": "3b83de9724a03720b747edaa30e0f8c6e7efcbaae58f8a62ece12c190aa3173a"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_btn_end_selected.9.png",
+    "resource": "call_phone_btn_end_selected.png",
+    "sha256": "6a58ddaa8cd9e4924c9fe79e670b35c8f83f9a333014d86a7924af9fd9f78f31"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_button_acc_call_press.9.png",
+    "resource": "call_phone_button_acc_call_press.png",
+    "sha256": "764a50ff5b342cc9ed87c9817aa0e9809137164dadd7b903d61478ddb2be0cb1"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_button_acc_call_rest.9.png",
+    "resource": "call_phone_button_acc_call_rest.png",
+    "sha256": "ae1e3d0b12dac7cc1caff55b86fddbea3e065dccdc27c417823cbed0fd6d22ca"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_caller_id_panel.png",
+    "resource": "call_phone_caller_id_panel.png",
+    "sha256": "fd62454d4f746814912047a9b16b2189343db1ef38f24f31465d9a097659b1f6"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_default.png",
+    "resource": "call_phone_default.png",
+    "sha256": "8d184de59ee55dfdea30d91c196c1821ba3e9ab8018f90967a810abce9dd12ea"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_default_incall.png",
+    "resource": "call_phone_default_incall.png",
+    "sha256": "51e41c1c014eb5c670fe6fa9d70b426231e68eff66fb8435237cc30f23917705"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_end_pressed.9.png",
+    "resource": "call_phone_end_pressed.png",
+    "sha256": "89185b36ce85c2aa673adae2c6c8b18c2941073e675a16ecb3585069c2bf731c"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_end_rest.9.png",
+    "resource": "call_phone_end_rest.png",
+    "sha256": "26da060e4aa42956f4f1cf59a61ae98bc103ca03a6c032b98990cbdd3ffc9ad7"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_addcontact_disabled.png",
+    "resource": "call_phone_icon_addcontact_disabled.png",
+    "sha256": "f0675d81e794d86ca094db33e20371d20021e0849ee0a012cbce6ccad6c7a146"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_arrow_down.png",
+    "resource": "call_phone_icon_arrow_down.png",
+    "sha256": "8ac77df1d78cae15df6e3f82b9326a47a8c8518edde52c3bdeb017da93d8f9ab"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_arrow_up.png",
+    "resource": "call_phone_icon_arrow_up.png",
+    "sha256": "620d14bf317f9b2fa4eb541b084c27f104f6ec9f968ac57cdbec6002c3a54174"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_backspace_pressed.png",
+    "resource": "call_phone_icon_backspace_pressed.png",
+    "sha256": "e1f79f68bafa4009e7dccd67097493b8dc4baf86da8bd2e2ddf25c3ea4444e6e"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_backspace_rest.png",
+    "resource": "call_phone_icon_backspace_rest.png",
+    "sha256": "61b94344ada7d858b22a77d5b32f9d8730a88a7cd17562b15ba04af0d34bf61a"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_birthday.png",
+    "resource": "call_phone_icon_birthday.png",
+    "sha256": "f8001e8ce53848eef5b382a1c6af7a13b48440cb3991382689a2f31f999aa15e"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_bluetooth_headset_disable.png",
+    "resource": "call_phone_icon_bluetooth_headset_disable.png",
+    "sha256": "e14fddcaffe741ee0a75d5176e9ce086dc1ee2fdee82d13e827e6170c812fe9f"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_bluetooth_headset_on.png",
+    "resource": "call_phone_icon_bluetooth_headset_on.png",
+    "sha256": "496dbbab223cb60472c71945f425fdfe06afaaa5436666c5c2f5a6194f382fca"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_bluetooth_headset_rest.png",
+    "resource": "call_phone_icon_bluetooth_headset_rest.png",
+    "sha256": "b72699f6ed019084f6057c87ae0586d5dd0793e7ea0ef21fd6b1aff90d0ac46f"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_call.png",
+    "resource": "call_phone_icon_call.png",
+    "sha256": "0fed01230e2b5b4ee305b4d55d021b1278ae27d146283d7824fa8cd89b09d456"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_contactcard_disabled.png",
+    "resource": "call_phone_icon_contactcard_disabled.png",
+    "sha256": "ef832c40b7be2dddee93895ed3d1c5ac2a30bc81acf895fc72f91bef937abbb4"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_headset_disable.png",
+    "resource": "call_phone_icon_headset_disable.png",
+    "sha256": "684410c5fd9b43503740ae737b1b1a9ab8d7ccb5423640e7a864110756f8550b"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_headset_on.png",
+    "resource": "call_phone_icon_headset_on.png",
+    "sha256": "4c840ebe5c2099f536207250ba8629b5ed5bbd8d3cd407a7fe381cb4c5c52b63"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_icon_headset_rest.png",
+    "resource": "call_phone_icon_headset_rest.png",
+    "sha256": "eaba7a8d5b4521406fe91d98d5052a1935c36bb58b6fb6dfa37b88f2cf52c497"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_notification_hold.png",
+    "resource": "call_phone_notification_hold.png",
+    "sha256": "eae690190ebe963264788165080302aa19442c1abe71fddcf28c000e65ce0853"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_notification_on.png",
+    "resource": "call_phone_notification_on.png",
+    "sha256": "ae0b3c56d800b0c9dbe05eae7e8c76b7e0870acab1a652f5da917c33314806cf"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_photo_emergency.png",
+    "resource": "call_phone_photo_emergency.png",
+    "sha256": "e807c8244555ec99598ba2f0ad2eb618ee67a8d7ef1f141ed58ade66ce7f76c4"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_photo_frame.png",
+    "resource": "call_phone_photo_frame.png",
+    "sha256": "6e9ba0724bae8b5620bec474b1580600c68a29e30cc5cfe0e3a447b4c5c0e1a4"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_photo_frame_mask.png",
+    "resource": "call_phone_photo_frame_mask.png",
+    "sha256": "c30faad57e3eb478482a6bf26c5e95b5640c6455c0112e441d987061176a3357"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_photo_shadow.png",
+    "resource": "call_phone_photo_shadow.png",
+    "sha256": "ea46933118ec22f315ec7e0ac7e7658c18afad418b4cb8f2d5095f460ef810d9"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_reflection_mask.png",
+    "resource": "call_phone_reflection_mask.png",
+    "sha256": "6ec431ac8f17b92e4ad80fd769724276dd42a71435eb0eb883322ae484f46228"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/phone_reflection_mask_notification.png",
+    "resource": "call_phone_reflection_mask_notification.png",
+    "sha256": "388d65eb2e63efaaa2217e357107fd26ece57cc403b930eebd7eb5e27d4c2609"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/simlock_cancel_press.9.png",
+    "resource": "call_simlock_cancel_press.png",
+    "sha256": "30e0e80bbb0d097f449124850184c7b1f663012036e9732cb3dd675222a911de"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/simlock_cancel_rest.9.png",
+    "resource": "call_simlock_cancel_rest.png",
+    "sha256": "5ecc9a026498b94783486a08cd2ae12007bfefeae982bca485d31928c3776b1a"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/simlock_cancel_selected.9.png",
+    "resource": "call_simlock_cancel_selected.png",
+    "sha256": "c8fea52a65be81f7b1ddd02a02e613fa06600690ba47991000fd249fbd1533e0"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/simlock_ok_press.9.png",
+    "resource": "call_simlock_ok_press.png",
+    "sha256": "04421808569305ad3640f0da1429b3394be59170bec6cf68f7046e721f4cc742"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/simlock_ok_rest.9.png",
+    "resource": "call_simlock_ok_rest.png",
+    "sha256": "9f8c3515c9aa5e600d742b58bfae892a26794df045c24ced0225c1443b9e8c5c"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/simlock_ok_selected.9.png",
+    "resource": "call_simlock_ok_selected.png",
+    "sha256": "f90776c08c9f41e87abc6ee55656e44530c8b977d3073bbeeeef84b977259d7c"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/skype_blue.png",
+    "resource": "call_skype_blue.png",
+    "sha256": "f7bccfe4b8c48aa8a59957ec340d290fb89f5e9e549ae3dff168a5c7af1d9f60"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/speaker_on_disable.png",
+    "resource": "call_speaker_on_disable.png",
+    "sha256": "604096c401d956d3dc4036b3b865f3935206b51f185c21db54ebbb36dd4bab1b"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/speaker_on_on.png",
+    "resource": "call_speaker_on_on.png",
+    "sha256": "5088afffe3fdfe66f55acb7659cca64c4c631bab05361f298479988d3b3b9336"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/speaker_on_rest.png",
+    "resource": "call_speaker_on_rest.png",
+    "sha256": "6b07d5561e47364e0917289e961ddc0c393b0dc3669e3064bd70cbc304399f94"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/stat_apn.png",
+    "resource": "call_stat_apn.png",
+    "sha256": "2edc64769c8ae736588ec9f9f1dc674286322edf500b1aec84707ab7ce3da8c3"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/stat_sys_cw_connected.png",
+    "resource": "call_stat_sys_cw_connected.png",
+    "sha256": "56cada1fbafe6890a0239736835113721489efdb32a9ffc1f778f46d644ef766"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/stat_sys_phone_call.png",
+    "resource": "call_stat_sys_phone_call.png",
+    "sha256": "63fcc15f4df06cec46f9e5526eeed44bde9af7e9e3428bbf851d9cd9a62c5f7a"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/stat_sys_phone_call_bluetooth.png",
+    "resource": "call_stat_sys_phone_call_bluetooth.png",
+    "sha256": "d5661c14afd3a6607b6d4e5807fc33a287f2190daea744858dde4b31f893dd5c"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/stat_sys_phone_call_bluetooth_rec.png",
+    "resource": "call_stat_sys_phone_call_bluetooth_rec.png",
+    "sha256": "351d48264e66e2be45582e8a71344d5c232e6b2e2fd4d00c51e295b682f9a361"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/stat_sys_phone_call_forward.png",
+    "resource": "call_stat_sys_phone_call_forward.png",
+    "sha256": "9c8e369541bbeec47a4099e2563d372834f5269c614de7db85a1dd5647f5c58a"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/stat_sys_phone_call_on_hold.png",
+    "resource": "call_stat_sys_phone_call_on_hold.png",
+    "sha256": "6fce5dba0376b460df298a2f41970da2f3ce72889727687c44887722f305dd91"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/stat_sys_phone_call_rec.png",
+    "resource": "call_stat_sys_phone_call_rec.png",
+    "sha256": "4360a565fb2508039ef6f06649650771006377ad93f4f59c1ee942f08811375a"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/stat_sys_phone_call_ringing.png",
+    "resource": "call_stat_sys_phone_call_ringing.png",
+    "sha256": "ba0461a090a3b0a230c59ccd9e29c78f5ecaa547ffe2759e714c07c56824c7f7"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/stat_sys_vp_phone_call.png",
+    "resource": "call_stat_sys_vp_phone_call.png",
+    "sha256": "3e904120124813d3496da0dc7b5068d17a279da958be0122d22804e13864f32b"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/stat_sys_vp_phone_call_bluetooth.png",
+    "resource": "call_stat_sys_vp_phone_call_bluetooth.png",
+    "sha256": "8790df26043e9604c875f1d9e2e28111d3a1659d60b241166d4ea1f464621772"
+  },
+  {
+    "source": "Phone.apk!/res/drawable-hdpi/stat_sys_vp_phone_call_on_hold.png",
+    "resource": "call_stat_sys_vp_phone_call_on_hold.png",
+    "sha256": "21f64acf5251f8db73257221a51b98c8d4b93e3f6d87111006e516b66e117ad5"
+  }
+]

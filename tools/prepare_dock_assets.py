@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate local Android resources from the user's ROM; keep artwork out of source."""
+"""Regenerate build-ready launcher resources from the user's ROM."""
 import argparse
 import json
 from pathlib import Path

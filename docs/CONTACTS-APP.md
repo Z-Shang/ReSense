@@ -18,7 +18,7 @@ including contacts with no phone number.
 `tools/prepare_contacts_app.py` recovers People-specific hdpi images from
 `HtcContacts.apk` in `res/3.33.401.153.zip`. Common styling comes from
 [`sense-framework`](SENSE-FRAMEWORK.md). Generated app resources stay
-under `contacts/build/generated/htcPeople/res`. Each asset's source and SHA-256 are
+under `assets/htc/contacts/res`. Each asset's source and SHA-256 are
 recorded in `raw/people_provenance.json`. Compiled nine-patch chunks are copied
 unchanged, with `.png` filenames suitable for modern resource packaging. The default portrait, search icon, frames, input fields, tabs, list dividers
 and highlighting come from the shared library; People-specific phone/message/

@@ -1,0 +1,2 @@
+# Keep extracted resources byte-exact, including compiled nine-patch chunks and JSON hashes.
+assets/htc/** -text

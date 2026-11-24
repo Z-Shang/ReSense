@@ -1,0 +1,779 @@
+{
+  "2x1": {
+    "labels": [
+      {
+        "offset": 5032,
+        "name": "textlabel.empty_page",
+        "font": "Droid Sans26A",
+        "height": 26,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "    ",
+        "size": [
+          220.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 7800,
+        "name": "textlabel.weather2x1_04",
+        "font": "Droid Sans22A",
+        "height": 22,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          220.0,
+          22.0
+        ]
+      },
+      {
+        "offset": 15152,
+        "name": "textlabel.weather2x1_01",
+        "font": "Droid Sans48A",
+        "height": 48,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "23",
+        "size": [
+          200.0,
+          48.0
+        ]
+      },
+      {
+        "offset": 18236,
+        "name": "textlabel.weather2x1_02",
+        "font": "Droid Sans18A",
+        "height": 18,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "24",
+        "size": [
+          200.0,
+          18.0
+        ]
+      },
+      {
+        "offset": 21316,
+        "name": "textlabel.weather2x1_03",
+        "font": "Droid Sans22A",
+        "height": 22,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "London",
+        "size": [
+          220.0,
+          22.0
+        ]
+      }
+    ]
+  },
+  "2x2": {
+    "labels": [
+      {
+        "offset": 37816,
+        "name": "textlabel.empty_page",
+        "font": "Droid Sans26A",
+        "height": 26,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          220.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 40572,
+        "name": "textlabel.weather2x2_03",
+        "font": "Droid Sans24A",
+        "height": 24,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          220.0,
+          24.0
+        ]
+      },
+      {
+        "offset": 46072,
+        "name": "textlabel.weather2x2_01",
+        "font": "Droid Sans54A",
+        "height": 54,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          200.0,
+          54.0
+        ]
+      },
+      {
+        "offset": 49148,
+        "name": "textlabel.weather2x2_02",
+        "font": "Droid Sans20A",
+        "height": 20,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          200.0,
+          20.0
+        ]
+      },
+      {
+        "offset": 52220,
+        "name": "textlabel.weather2x2_03",
+        "font": "Droid Sans24A",
+        "height": 24,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          220.0,
+          24.0
+        ]
+      },
+      {
+        "offset": 55296,
+        "name": "textlabel.weather2x2_04",
+        "font": "Droid Sans20A",
+        "height": 20,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          220.0,
+          20.0
+        ]
+      }
+    ]
+  },
+  "4x4": {
+    "labels": [
+      {
+        "offset": 19780,
+        "name": "warning",
+        "font": "Droid Sans26A",
+        "height": 26,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "San Francisco",
+        "size": [
+          420.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 32772,
+        "name": "PageNumber",
+        "font": "Droid Sans Mono18A",
+        "height": 18,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          150.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 42208,
+        "name": "CityTemp 2",
+        "font": "HelveticaNeueLT Pro 35 Th140A",
+        "height": 140,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "123",
+        "size": [
+          0.0,
+          260.0
+        ]
+      },
+      {
+        "offset": 47132,
+        "name": "CityTemp",
+        "font": "HelveticaNeueLT Pro 35 Th200A",
+        "height": 200,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "79",
+        "size": [
+          0.0,
+          260.0
+        ]
+      },
+      {
+        "offset": 52040,
+        "name": "CityTempHi",
+        "font": "Droid Sans32A",
+        "height": 32,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          150.0,
+          22.0
+        ]
+      },
+      {
+        "offset": 56672,
+        "name": "CityTempLow",
+        "font": "Droid Sans32A",
+        "height": 32,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "20",
+        "size": [
+          150.0,
+          22.0
+        ]
+      },
+      {
+        "offset": 61316,
+        "name": "CityName",
+        "font": "Droid Sans28A",
+        "height": 28,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "123456",
+        "size": [
+          370.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 69396,
+        "name": "Condition",
+        "font": "Droid Sans22A",
+        "height": 22,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "123123",
+        "size": [
+          370.0,
+          22.0
+        ]
+      },
+      {
+        "offset": 84944,
+        "name": "Temp",
+        "font": "Droid Sans26A",
+        "height": 26,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 87704,
+        "name": "Hi/Low",
+        "font": "Droid Sans24A",
+        "height": 24,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 98304,
+        "name": "Temp",
+        "font": "Droid Sans26A",
+        "height": 26,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 101064,
+        "name": "Hi/Low",
+        "font": "Droid Sans24A",
+        "height": 24,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 111664,
+        "name": "Temp",
+        "font": "Droid Sans26A",
+        "height": 26,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 114424,
+        "name": "Hi/Low",
+        "font": "Droid Sans24A",
+        "height": 24,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 125024,
+        "name": "Temp",
+        "font": "Droid Sans26A",
+        "height": 26,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          24.0
+        ]
+      },
+      {
+        "offset": 127788,
+        "name": "Hi/Low",
+        "font": "Droid Sans24A",
+        "height": 24,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 139492,
+        "name": "textlabel.footer_update_time",
+        "font": "Droid Sans18A",
+        "height": 18,
+        "color": [
+          0.99609375,
+          0.99609375,
+          0.99609375,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          400.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 144748,
+        "name": "warning",
+        "font": "Droid Sans26A",
+        "height": 26,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "San Francisco",
+        "size": [
+          420.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 157740,
+        "name": "PageNumber",
+        "font": "Droid Sans Mono18A",
+        "height": 18,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          150.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 167176,
+        "name": "CityTemp 2",
+        "font": "HelveticaNeueLT Pro 35 Th140A",
+        "height": 140,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "123",
+        "size": [
+          0.0,
+          260.0
+        ]
+      },
+      {
+        "offset": 172100,
+        "name": "CityTemp",
+        "font": "HelveticaNeueLT Pro 35 Th200A",
+        "height": 200,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "79",
+        "size": [
+          0.0,
+          260.0
+        ]
+      },
+      {
+        "offset": 177008,
+        "name": "CityTempHi",
+        "font": "Droid Sans32A",
+        "height": 32,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          150.0,
+          22.0
+        ]
+      },
+      {
+        "offset": 181640,
+        "name": "CityTempLow",
+        "font": "Droid Sans32A",
+        "height": 32,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "20",
+        "size": [
+          150.0,
+          22.0
+        ]
+      },
+      {
+        "offset": 186284,
+        "name": "CityName",
+        "font": "Droid Sans28A",
+        "height": 28,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "123456",
+        "size": [
+          370.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 194364,
+        "name": "Condition",
+        "font": "Droid Sans22A",
+        "height": 22,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "123123",
+        "size": [
+          370.0,
+          22.0
+        ]
+      },
+      {
+        "offset": 209912,
+        "name": "Temp",
+        "font": "Droid Sans26A",
+        "height": 26,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 212672,
+        "name": "Hi/Low",
+        "font": "Droid Sans24A",
+        "height": 24,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 223272,
+        "name": "Temp",
+        "font": "Droid Sans26A",
+        "height": 26,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 226032,
+        "name": "Hi/Low",
+        "font": "Droid Sans24A",
+        "height": 24,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 236632,
+        "name": "Temp",
+        "font": "Droid Sans26A",
+        "height": 26,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 239392,
+        "name": "Hi/Low",
+        "font": "Droid Sans24A",
+        "height": 24,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 249992,
+        "name": "Temp",
+        "font": "Droid Sans26A",
+        "height": 26,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          24.0
+        ]
+      },
+      {
+        "offset": 252756,
+        "name": "Hi/Low",
+        "font": "Droid Sans24A",
+        "height": 24,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          102.0,
+          0.0
+        ]
+      },
+      {
+        "offset": 264460,
+        "name": "textlabel.footer_update_time",
+        "font": "Droid Sans18A",
+        "height": 18,
+        "color": [
+          0.99609375,
+          0.99609375,
+          0.99609375,
+          1.0
+        ],
+        "string": "",
+        "size": [
+          400.0,
+          0.0
+        ]
+      }
+    ]
+  }
+}

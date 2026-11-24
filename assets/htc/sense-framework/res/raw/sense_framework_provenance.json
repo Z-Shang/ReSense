@@ -1,0 +1,452 @@
+[
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_app_bkg_src.png",
+    "resource": "sense_common_app_bkg_src.png",
+    "sha256": "229ccf5c7dcedfdbd55e26d46687746a2b5b6aa3f1d3d2fb1bbf771c076f6536"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_button_press.9.png",
+    "resource": "sense_common_button_press.png",
+    "sha256": "d8c01fc7b737f7bb2208655e08b306243325d757a39dc7184479f2860faa7297"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_button_rest.9.png",
+    "resource": "sense_common_button_rest.png",
+    "sha256": "65ae9504914fc0b3fb7fa3d11c104a2a64891cc48f760b17e40a4246ced80b76"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_button_selected.9.png",
+    "resource": "sense_common_button_selected.png",
+    "sha256": "b29230094b576cb5916ff800f62db8dce308241cd489b94a78d76c9fe9a5fecd"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_checkbox_off.png",
+    "resource": "sense_common_checkbox_off.png",
+    "sha256": "d0b9e287ab20970814334c37cfddc2b34a4c872d41ad0e5d8e65a1f0e203f7b6"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_checkbox_off_disable.png",
+    "resource": "sense_common_checkbox_off_disable.png",
+    "sha256": "d55bd4da822592aa79c589a1dbbb188f7931fddc5fd91bef542ac0e877c3263c"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_checkbox_off_pressed.png",
+    "resource": "sense_common_checkbox_off_pressed.png",
+    "sha256": "05ec0caf1819f5184d266a7ad42e446f499b73c9350286ae37da872c07f31788"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_checkbox_on.png",
+    "resource": "sense_common_checkbox_on.png",
+    "sha256": "7af3d42141feed11df2109169f31fb962d78afe19d0b8fa5bca975a3cb8228ed"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_checkbox_on_disable.png",
+    "resource": "sense_common_checkbox_on_disable.png",
+    "sha256": "a689dd04550388d0e7caa40e649eb211b41c626ab388035284c76ac6a9c635a5"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_checkbox_on_pressed.png",
+    "resource": "sense_common_checkbox_on_pressed.png",
+    "sha256": "a30fc7251f901fe9c2bc24a6af506e4dd90fe13a20456eb04647579a301fa06b"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_dropdown_arrow_press.png",
+    "resource": "sense_common_dropdown_arrow_press.png",
+    "sha256": "a14eaedc2cb856d50441efe747d926cdf2e679a2d3cfd051ffd416051b2a74a2"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_dropdown_arrow_rest.png",
+    "resource": "sense_common_dropdown_arrow_rest.png",
+    "sha256": "9d1d550f8cdec67545f267cdced109f5184ffc08d73a382f07e6f4964dce7a67"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_action_add_rest.png",
+    "resource": "sense_common_icon_action_add_rest.png",
+    "sha256": "9d3783719098556403ac1bf9e69c318f9a747a13b54e9c516b867d3021e1792b"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_action_delete_on.png",
+    "resource": "sense_common_icon_action_delete_on.png",
+    "sha256": "cdd49f23d3c03d3a585a504bfe601f5c61917b94cb5f25656d04fa82f8096625"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_action_delete_rest.png",
+    "resource": "sense_common_icon_action_delete_rest.png",
+    "sha256": "c291bcd3a35bdecc7cba436f77a03f01f25aa698bc1951c5c59e9178aa811acf"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_all_people_on.png",
+    "resource": "sense_common_icon_all_people_on.png",
+    "sha256": "54ac9fc97bbddceb8a201c5cc749e793f34553761fda964174ff522685b6dfa8"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_all_people_rest.png",
+    "resource": "sense_common_icon_all_people_rest.png",
+    "sha256": "5e2b96e1cce7f153fea2a2860959433e1dcb06734ddd90556fff2cac2c7d0dbb"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_call_history_on.png",
+    "resource": "sense_common_icon_call_history_on.png",
+    "sha256": "45efcb2f8123b4037dba309c87138791118b6dfbe55c33044671cd91dee521b8"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_call_history_rest.png",
+    "resource": "sense_common_icon_call_history_rest.png",
+    "sha256": "b7c54dce211fd655d40de545a84ef5441912507b24ef8bf8f79044e7e8bc81a2"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_callhistory_incoming.png",
+    "resource": "sense_common_icon_callhistory_incoming.png",
+    "sha256": "763dbf0d36d15cb02d128982fef43b05106dfc47ecb2515eee7ddae6f61e8751"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_callhistory_misscall.png",
+    "resource": "sense_common_icon_callhistory_misscall.png",
+    "sha256": "78cc1d068c86c3a283468f77f9748cff9101744fc677ddaac8d9ce1c524825c4"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_callhistory_outgoing.png",
+    "resource": "sense_common_icon_callhistory_outgoing.png",
+    "sha256": "c65e1decb6ea288a588793ae852fd4e685e4950028bafce79a2ad512795cdc7c"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_clear_input_press.png",
+    "resource": "sense_common_icon_clear_input_press.png",
+    "sha256": "214f15894adacd8597413cc02e34256f2e78afbde5bfd83028978ec86ef8e63c"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_clear_input_rest.png",
+    "resource": "sense_common_icon_clear_input_rest.png",
+    "sha256": "4a959106c89ee978fba3500d925831d759e3502d4e7ca5790a9c1cdeb65f9d52"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_default_group.png",
+    "resource": "sense_common_icon_default_group.png",
+    "sha256": "44d686f6dc59d9562b8c09cbf44967977a23d624c4431fde3c55e309d311e316"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_favorites_on.png",
+    "resource": "sense_common_icon_favorites_on.png",
+    "sha256": "0dca970d086bb89601083108eadd4a0eb3ec45a1ef579c7bd1258dada64569c2"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_favorites_rest.png",
+    "resource": "sense_common_icon_favorites_rest.png",
+    "sha256": "f7abd1ba443505180190b7334fc899b81377458a14b79889b36bb3d39d1b25b2"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_add_on.png",
+    "resource": "sense_common_icon_glance_add_on.png",
+    "sha256": "adc4f661c44894e335e9543e3a18154ecfc7685d6c76fb003e6f1c6506032184"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_add_rest.png",
+    "resource": "sense_common_icon_glance_add_rest.png",
+    "sha256": "adc4f661c44894e335e9543e3a18154ecfc7685d6c76fb003e6f1c6506032184"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_down_on.png",
+    "resource": "sense_common_icon_glance_down_on.png",
+    "sha256": "7c8749007e1a04baae9ae77af7c31cdd288dd2b6c17076177d718deca065157d"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_down_rest.png",
+    "resource": "sense_common_icon_glance_down_rest.png",
+    "sha256": "7c8749007e1a04baae9ae77af7c31cdd288dd2b6c17076177d718deca065157d"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_grid_on.png",
+    "resource": "sense_common_icon_glance_grid_on.png",
+    "sha256": "bad7d8415b6cf872667df8f99a523b48e9448331803f74aa5e020b4770ba02a7"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_grid_rest.png",
+    "resource": "sense_common_icon_glance_grid_rest.png",
+    "sha256": "bad7d8415b6cf872667df8f99a523b48e9448331803f74aa5e020b4770ba02a7"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_hide_keypad_on.png",
+    "resource": "sense_common_icon_glance_hide_keypad_on.png",
+    "sha256": "750a7b97c75f5101b33f03fdf50dd698ce58920f4a7a1975b27c655b8a0813fb"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_hide_keypad_rest.png",
+    "resource": "sense_common_icon_glance_hide_keypad_rest.png",
+    "sha256": "750a7b97c75f5101b33f03fdf50dd698ce58920f4a7a1975b27c655b8a0813fb"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_list_view_on.png",
+    "resource": "sense_common_icon_glance_list_view_on.png",
+    "sha256": "9f4af396d605ef2a63af1222e383e0bd82e566902eba6f202b2a7c2e5486326b"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_list_view_rest.png",
+    "resource": "sense_common_icon_glance_list_view_rest.png",
+    "sha256": "9f4af396d605ef2a63af1222e383e0bd82e566902eba6f202b2a7c2e5486326b"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_more_on.png",
+    "resource": "sense_common_icon_glance_more_on.png",
+    "sha256": "fa98daf37b0dd1ce0d952bf9f831b5abc6f406ff71ff891e58ffb28b91fa4072"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_more_rest.png",
+    "resource": "sense_common_icon_glance_more_rest.png",
+    "sha256": "fa98daf37b0dd1ce0d952bf9f831b5abc6f406ff71ff891e58ffb28b91fa4072"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_next_on.png",
+    "resource": "sense_common_icon_glance_next_on.png",
+    "sha256": "baf5123bcf04e5930f36f0d0ed1482f560a57bc794f486495a0624c679e7ca93"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_next_rest.png",
+    "resource": "sense_common_icon_glance_next_rest.png",
+    "sha256": "baf5123bcf04e5930f36f0d0ed1482f560a57bc794f486495a0624c679e7ca93"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_previous_on.png",
+    "resource": "sense_common_icon_glance_previous_on.png",
+    "sha256": "448a7fb450b8e52f98e1c32866d33f83f86716f1fdff4ac1107109e56af50499"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_previous_rest.png",
+    "resource": "sense_common_icon_glance_previous_rest.png",
+    "sha256": "448a7fb450b8e52f98e1c32866d33f83f86716f1fdff4ac1107109e56af50499"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_show_keypad_on.png",
+    "resource": "sense_common_icon_glance_show_keypad_on.png",
+    "sha256": "547fc194267a37bf9585a3e366c4bb48b5f56799541ec29ef3149344641e4878"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_show_keypad_rest.png",
+    "resource": "sense_common_icon_glance_show_keypad_rest.png",
+    "sha256": "547fc194267a37bf9585a3e366c4bb48b5f56799541ec29ef3149344641e4878"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_updates_on.png",
+    "resource": "sense_common_icon_glance_updates_on.png",
+    "sha256": "29090e0ed3cbc1f8151634fa8e9b1cf0d59923c0e1d392931696eb75bbb75cea"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_glance_updates_rest.png",
+    "resource": "sense_common_icon_glance_updates_rest.png",
+    "sha256": "29090e0ed3cbc1f8151634fa8e9b1cf0d59923c0e1d392931696eb75bbb75cea"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_group_on.png",
+    "resource": "sense_common_icon_group_on.png",
+    "sha256": "924352b0afcdd95429edfe4935f61b36d9126eb1a2a9f5e347ce7dde2668988a"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_group_rest.png",
+    "resource": "sense_common_icon_group_rest.png",
+    "sha256": "6a229e141e5d809328014d4893e0da780ce3ee683a702c5a97aee2dd8b8a4e50"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_my_apps_on.png",
+    "resource": "sense_common_icon_my_apps_on.png",
+    "sha256": "654855898ab63ccc0041aae863d77ff395f4dbc8e05d78cce8151f8213f2ff5e"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_my_apps_rest.png",
+    "resource": "sense_common_icon_my_apps_rest.png",
+    "sha256": "0c4d5d17d3f4facc6ca98a3e19e54408e2d4a7db9a764c3fa868c0e0d1e7378f"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_phone_on.png",
+    "resource": "sense_common_icon_phone_on.png",
+    "sha256": "b5b062b8095263a7680623c473a3a8fb7ac7a21226879ef85af456ca8895f6e7"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_phone_rest.png",
+    "resource": "sense_common_icon_phone_rest.png",
+    "sha256": "73e68ba45c28a697abe0d62792a140e9b752314f490e5f6771f1e20f51714cad"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_starred_on.png",
+    "resource": "sense_common_icon_starred_on.png",
+    "sha256": "25ecb856d780d89305a8b0a56d013f3d151140efc9c6392cb37e01b708aaadb7"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_starred_rest.png",
+    "resource": "sense_common_icon_starred_rest.png",
+    "sha256": "e48d2db7635a4af0dccd4e6f1684da261ee8b608061ab599484db8fec7fb4265"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_icon_voicemail_rest.png",
+    "resource": "sense_common_icon_voicemail_rest.png",
+    "sha256": "dfa4e2d776199496232b9134c91d4d9792ce2244fd4b7b2a175bd8afd730751c"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_inputfield_rest.9.png",
+    "resource": "sense_common_inputfield_rest.png",
+    "sha256": "76a4a6c21614ad31dc33e19c7cbc20e3800a786b507c9ac73a2e85f904b1821e"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_inputfield_selected.9.png",
+    "resource": "sense_common_inputfield_selected.png",
+    "sha256": "4798d632e43d9e5bd7f73abe8265217e71d056d8b3f21a197b93791e26e01e3b"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_list_divider.9.png",
+    "resource": "sense_common_list_divider.png",
+    "sha256": "e7d5a0318e9263d5704ae87a1c81c375fe91f6f18df4007cfc9b9b0df42d6a72"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_list_divider_vertical.9.png",
+    "resource": "sense_common_list_divider_vertical.png",
+    "sha256": "b50de8420906ddeb70db60e48b7723a3b56ceac11c4fecada5a44ad8e02f5cf3"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_panel_input_base.9.png",
+    "resource": "sense_common_panel_input_base.png",
+    "sha256": "aa64558b98accde7698bc364ef010f3ef9953fa80730cc9b0d8af6c14ef46dc7"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_photo_frame.9.png",
+    "resource": "sense_common_photo_frame.png",
+    "sha256": "a89f89c2ac213f3eab2d77c2b530753e1051e128c1e9a9d4866cb2f2eb7e7397"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_popupmenu.9.png",
+    "resource": "sense_common_popupmenu.png",
+    "sha256": "90abec1dfc5dd0a380650d936a0453ca9b235a643f8687c535d14ebf7b55f319"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_radiobutton_off.png",
+    "resource": "sense_common_radiobutton_off.png",
+    "sha256": "ed618044bdb4b5c0557102e50a81d89fdf3ca3fea4c5cb51e6a92e2408368797"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_radiobutton_off_disable.png",
+    "resource": "sense_common_radiobutton_off_disable.png",
+    "sha256": "a4bfcd7a4b400193d5948fc8b27c28696c79e8fd7714eb332aebeae11415addf"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_radiobutton_off_selected.png",
+    "resource": "sense_common_radiobutton_off_selected.png",
+    "sha256": "7a1396eb77c789b5fbbc6b578f920f7289a6a1630628345d09cc6d724efee05d"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_radiobutton_on.png",
+    "resource": "sense_common_radiobutton_on.png",
+    "sha256": "8ab110ad903a37268a0ab22d035e4f7c660f8018de46aec8da82152f0a019109"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_radiobutton_on_disable.png",
+    "resource": "sense_common_radiobutton_on_disable.png",
+    "sha256": "629832c0bb5519c82c684dab45b418bb9dfb8d380c03de664540a88aabfb616f"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_radiobutton_selected.png",
+    "resource": "sense_common_radiobutton_selected.png",
+    "sha256": "d11b6ecaf72afd356bf055a88b80d5aafb4911fb5c5878b0b49086afd5ec3f56"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_subnav_selector_tab.9.png",
+    "resource": "sense_common_subnav_selector_tab.png",
+    "sha256": "38ba6af9788bc352fada789c9bd11356babb1a2850f61d0abe5581da876db7de"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_tab_button_center_press.9.png",
+    "resource": "sense_common_tab_button_center_press.png",
+    "sha256": "7c3b53b37f1199194080d8131b48b6286771c9b1dcedf80d8e2624362b0b494c"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_tab_button_center_rest.9.png",
+    "resource": "sense_common_tab_button_center_rest.png",
+    "sha256": "8ba24589bf5f2e3e2197367e984de0430b63219518579e528c455637fbb2d7d6"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_tab_button_center_selected.9.png",
+    "resource": "sense_common_tab_button_center_selected.png",
+    "sha256": "c22bb75b958fc967fcb4b7558759ee3c516e29d77f143f4cef53347133b27ea6"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_tab_button_left_press.9.png",
+    "resource": "sense_common_tab_button_left_press.png",
+    "sha256": "6a45cc091b92912d61215e233b94b8e6910cb47be7af5c3d6c0e92fdeb87a73d"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_tab_button_left_rest.9.png",
+    "resource": "sense_common_tab_button_left_rest.png",
+    "sha256": "691c89c04b43eb42baae5c3f47a2bd5935753e8b0c8e9340b24d0025ece350b1"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_tab_button_left_selected.9.png",
+    "resource": "sense_common_tab_button_left_selected.png",
+    "sha256": "cf2ce16b2a24b8ec6476b64674f2cb3167be8107e3fb8c961b7adb7893567deb"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_tab_button_right_press.9.png",
+    "resource": "sense_common_tab_button_right_press.png",
+    "sha256": "46e7cc7964e2857493d3b5f65868365a0d941fb4c8e3eb54af8dbe21ae313c15"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_tab_button_right_rest.9.png",
+    "resource": "sense_common_tab_button_right_rest.png",
+    "sha256": "f51ad3b75be4b7467f0b3cafd1d3341bf538363abd44d2d6f890def22c79dba6"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_tab_button_right_selected.9.png",
+    "resource": "sense_common_tab_button_right_selected.png",
+    "sha256": "a03eadea508eedac139bd4e61d3ee60a084701b861c5440581cd570ef0d1ec6d"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_titlebar_btn_div.9.png",
+    "resource": "sense_common_titlebar_btn_div.png",
+    "sha256": "6f05ac1abe3ba68188a14f90176405e6268b12cd3887108d63aa6801667d47c8"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_titlebar_btn_off.9.png",
+    "resource": "sense_common_titlebar_btn_off.png",
+    "sha256": "888c8ca0972201a28216cd30fb2c611dd59e3350fb29daebe628aee7b44cb9bf"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_titlebar_btn_on.9.png",
+    "resource": "sense_common_titlebar_btn_on.png",
+    "sha256": "c96de3b9aa27bc7b90c72b4fa537381075d50120f3e84a0f8b048d9b85a9cfd5"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_titlebar_btn_press.9.png",
+    "resource": "sense_common_titlebar_btn_press.png",
+    "sha256": "b06e292a6e687968559f911d7d89b202d4810d9253957020a40e2b0d4a1442bc"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_titlebar_btn_rest.9.png",
+    "resource": "sense_common_titlebar_btn_rest.png",
+    "sha256": "f1a176b905ee53698a169a513d3426704dd57160d02a32cd804e5d7dcfa484f7"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_titlebar_btn_selected.9.png",
+    "resource": "sense_common_titlebar_btn_selected.png",
+    "sha256": "81577f4a5a603db6f3fcc7628ff28bfae37d9b182e35a893b36721e21018f5c8"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/list_selector_background_pressed.9.png",
+    "resource": "sense_list_selector_background_pressed.png",
+    "sha256": "bee971687ab1e9b73a20cca959e7d35c683375622c688a96da3437b885afde0e"
+  },
+  {
+    "source": "HtcContacts.apk!/res/drawable-hdpi/people_home_defaultphoto.png",
+    "resource": "sense_people_default_photo.png",
+    "sha256": "6b573ece0296c0fe2e07a7f0c20a248d7a77b25789d475cefca1c4b7f6fb2fe6"
+  },
+  {
+    "source": "HtcContacts.apk!/res/drawable-hdpi/search_people.png",
+    "resource": "sense_people_search.png",
+    "sha256": "baac0263c22e0787d888b6b37beed593d11ec1db2c2ff31cb7bfd4fa679ce5e2"
+  },
+  {
+    "source": "HomePersonalize.apk!/res/drawable-hdpi/home_widget_picker_arrow_left.png",
+    "resource": "sense_home_widget_picker_arrow_left.png",
+    "sha256": "7427cd7719f7c2f3e8ae3ca104002c0e87ea1450013628c9d0f1cb2ce08e9bd2"
+  },
+  {
+    "source": "HomePersonalize.apk!/res/drawable-hdpi/home_widget_picker_arrow_right.png",
+    "resource": "sense_home_widget_picker_arrow_right.png",
+    "sha256": "ed0d82f2a4da554ecaaf07412f6f2e56918185568eeaff2e2354869426511eea"
+  }
+]

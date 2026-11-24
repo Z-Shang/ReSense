@@ -1,0 +1,622 @@
+[
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/cat_address.png",
+    "resource": "msg_cat_address.png",
+    "sha256": "78c15350ebc2cc7a839df93f4de641538168159508e152b24be253c59aaf124f"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/cat_current_location.png",
+    "resource": "msg_cat_current_location.png",
+    "sha256": "c951a006a2cef1449a4d7975dc33c13532b2bd04d5d559964215782363018807"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/cat_favorites.png",
+    "resource": "msg_cat_favorites.png",
+    "sha256": "c22c531822cb43042210140248fd2fa9c28acc21693962d34d4d18a25cfaa678"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/divider.png",
+    "resource": "msg_divider.png",
+    "sha256": "f989be714be0f5f8bbb6ed83eadc3c0de78feafcf36fb1a58070dce658ff806b"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/footprint.png",
+    "resource": "msg_footprint.png",
+    "sha256": "00ff43b921d5500e160aaec19b1763bb48ff36c039152693599df906c1831949"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/ic_mms_drm_protected.png",
+    "resource": "msg_ic_mms_drm_protected.png",
+    "sha256": "4c2b7a6f1f63073cd819753bfe07c1fbf3beaa361fcdbf08489c475e19ef86c9"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/ic_mms_message_details.png",
+    "resource": "msg_ic_mms_message_details.png",
+    "sha256": "d5fba93b1e4f29222bc336baee85d987b687d6ee820c2e5a7991828a9059be6a"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/ic_mms_movie.png",
+    "resource": "msg_ic_mms_movie.png",
+    "sha256": "37c3adee553d9fa6780b2d4ddc99bce3eaf12e31f3f9e8d3940145b5da207da3"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/ic_sms_add_attachment.png",
+    "resource": "msg_ic_sms_add_attachment.png",
+    "sha256": "f483b9a613149f34c04e3a2a113fe401bade09559063ba39c744b4c7d493a196"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_albums.png",
+    "resource": "msg_icon_albums.png",
+    "sha256": "59bc960d2942714d0a8c67c68e8bdcfa4b029456aba76d1007aa24a42c22bbd0"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_all_people.png",
+    "resource": "msg_icon_all_people.png",
+    "sha256": "3dac401a037a0ecc5b5f660f316764f243b2c986256de2719a5b993a04255d91"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_all_songs.png",
+    "resource": "msg_icon_all_songs.png",
+    "sha256": "c68cd5107480c941366631f3bac568299c2d938f6be098c3a863d23863510958"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_attachment_on.png",
+    "resource": "msg_icon_attachment_on.png",
+    "sha256": "51342a6be81f7bb7fe66e84edb2382dbfaa7dcd4770c8181f6a2f284b0e44327"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_attachment_rest.png",
+    "resource": "msg_icon_attachment_rest.png",
+    "sha256": "b1d150b6ea54190d961a73560419bdff357c171606af9890798110730aa46b61"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_camcorder.png",
+    "resource": "msg_icon_camcorder.png",
+    "sha256": "5aedfeb4a6b3fa276981ebd476717baf177d9d55e05389a3aa086ae8d9c5d07c"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_camera.png",
+    "resource": "msg_icon_camera.png",
+    "sha256": "2ab1559de7d10831bd1650457a1733d0078e11740e272bafbb9c61c0f77bb52a"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_contact_picker_on.png",
+    "resource": "msg_icon_contact_picker_on.png",
+    "sha256": "d52c1b90dbca745625cc006ae63e8235a4f96959753225e589c99e9c3de7c1ea"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_contact_picker_rest.png",
+    "resource": "msg_icon_contact_picker_rest.png",
+    "sha256": "0141e29abc34be2f35a8a08c264c07108b8f3d5b62142eb5ecfc9b9bf4b7fead"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_gps.png",
+    "resource": "msg_icon_gps.png",
+    "sha256": "ee4684c10f03f75debb8f5b13d264cc63fadf328fcc49f5c703dc0999453c891"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_invitations.png",
+    "resource": "msg_icon_invitations.png",
+    "sha256": "3b51fd5f71d0a3814e7cc6735b9001468dacf5c9dd1f34c1c29df583e1e6f57c"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_photo_frame.png",
+    "resource": "msg_icon_photo_frame.png",
+    "sha256": "2bdcaf72eb91846c7db3f24394fbbf10b92ef021799159e07c5617c26d55ccce"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_picture.png",
+    "resource": "msg_icon_picture.png",
+    "sha256": "5c6683bf48e45d5d3041b0dfe177bf54d105662c52e3a26726ef829fdf568161"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_share.png",
+    "resource": "msg_icon_share.png",
+    "sha256": "f5e2ab9743d971cf274788e9b16b4d465c4a759e786ece9de247c8be11bdad38"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_unknown.png",
+    "resource": "msg_icon_unknown.png",
+    "sha256": "ba1c373d07ab959ee3a7d007c72e8b3cd3d30aeb5db9bdd5d3ebfdf34add4e97"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/icon_voice_recorder.png",
+    "resource": "msg_icon_voice_recorder.png",
+    "sha256": "d3a7274a7d559b133f8b6508bc2b69dd5e83ea1b59b5d9eeb81e3d537623e1ae"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/locations.png",
+    "resource": "msg_locations.png",
+    "sha256": "a3bf5157f36b478831ffccb0995e86b1d9757a54b48b57e4512403cec138446c"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/lockscreen_arcglass.9.png",
+    "resource": "msg_lockscreen_arcglass.png",
+    "sha256": "2be79524940bf6a7c81d5ea536b966cdd092fd9eeca3dfbfd32948806ba82edb"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/lockscreen_bigicon_messages.png",
+    "resource": "msg_lockscreen_bigicon_messages.png",
+    "sha256": "1f122f6220c6cd87d0ba4fcd900c007ff914ab89719bd7545c6813356f0fd5bd"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/lockscreen_notification_indicator_message.png",
+    "resource": "msg_lockscreen_notification_indicator_message.png",
+    "sha256": "d36291770b6b921b40a767cf03c459a18dd3d4afb91b68ff0b27d42b705132a7"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_btn_input_pressed.9.png",
+    "resource": "msg_message_btn_input_pressed.png",
+    "sha256": "511d8e7608c6003d40985e28c2c50047c1156a78b9292d32d8943aa083d7dabd"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_btn_input_rest.9.png",
+    "resource": "msg_message_btn_input_rest.png",
+    "sha256": "c06d580e779dd5a86527feeebb5fb9f65c0372c85c5453a0c28189422e895da0"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_btn_input_selected.9.png",
+    "resource": "msg_message_btn_input_selected.png",
+    "sha256": "94c957e03b96a83f7cfc75c6f1bdb3ea5beefd4da80414cb23048cf635fb14b8"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_btn_pressed.9.png",
+    "resource": "msg_message_btn_pressed.png",
+    "sha256": "de222d454d64f1d9da1994421f1e6cc566331a9fdf45ddad82c8739b8539022a"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_btn_rest.9.png",
+    "resource": "msg_message_btn_rest.png",
+    "sha256": "b207cc2a409b8235cf9fe725d187c9ef424e48ae1ab2bae49ffaa85686c4beb7"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_btn_selected.9.png",
+    "resource": "msg_message_btn_selected.png",
+    "sha256": "d2e603414ada80a02ef05efeeec9bd901b7142b1e2f747c35e1117d4b3c032ec"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_conversation_me.9.png",
+    "resource": "msg_message_conversation_me.png",
+    "sha256": "a3d879e4ccc87992b4734d58c6ae137e078f9828c4471bd37bc73ae2b565d911"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_conversation_others.9.png",
+    "resource": "msg_message_conversation_others.png",
+    "sha256": "13e3d867f5281aa8317264c181d344f60eba71c5d0515d989595fcfba88e2c00"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_icon_contact.png",
+    "resource": "msg_message_icon_contact.png",
+    "sha256": "8be716abd7e4c8d9bcca7cfe40f3247bc700fb7eddcc42a4984deb2965cf4ab2"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_icon_edit_press.png",
+    "resource": "msg_message_icon_edit_press.png",
+    "sha256": "a7992658a71e6f9b5c904457a40a53fa75636f082f61e464ed7b52758bb57d03"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_icon_edit_rest.png",
+    "resource": "msg_message_icon_edit_rest.png",
+    "sha256": "6daa44595368d7af45d35a5b3c483d1ba10dccb8d43d120951f132f9f6375f6e"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_icon_edit_selected.png",
+    "resource": "msg_message_icon_edit_selected.png",
+    "sha256": "983cdf8493698943a3cbc3b27e9aff80c6febfe21274e8cbaab458be8820dd27"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_icon_indicator_group.png",
+    "resource": "msg_message_icon_indicator_group.png",
+    "sha256": "ec2fdf9dd7eacfcc830e4749eb7a51afdd96c3de0a4eed86fac09ab997e6124d"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_icon_indicator_messages.png",
+    "resource": "msg_message_icon_indicator_messages.png",
+    "sha256": "eb4190c265bb21166e885a5dbb59ce08ac2d66e60088be1b8aa4c4c1d146dac9"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/message_icon_indicator_voice_mail.png",
+    "resource": "msg_message_icon_indicator_voice_mail.png",
+    "sha256": "c459eaf830d5f3466d249f9b2925bf0f11c388164f7729cad0056d30981a3094"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/messages.png",
+    "resource": "msg_messages.png",
+    "sha256": "fa093857e73622dee5eaa47e1f366d5144e407546d4f3e090ccc6d3146caf367"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/messages_1xrtt.png",
+    "resource": "msg_messages_1xrtt.png",
+    "sha256": "156911573a8062dd19126289fc1cf5a7d66844d417a2189b30f36178805c50df"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/messages_evdo.png",
+    "resource": "msg_messages_evdo.png",
+    "sha256": "b6f2a77857df6e30cad3a213bd94a77e2c5d28ff8d5ea2c982656e8e49e91fd5"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/messages_pending.png",
+    "resource": "msg_messages_pending.png",
+    "sha256": "8b577610af68217a50191126be4a69ae0651891771d4d68b3fd2d1acc7d55e03"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/mms_play_btn.png",
+    "resource": "msg_mms_play_btn.png",
+    "sha256": "029e5775b7fc5342ae411226f6e9257095b1378fc782a288955603f1021db9cb"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_attachment_divider.png",
+    "resource": "msg_msg_attachment_divider.png",
+    "sha256": "5c039b0cf0e17eea9ff397680900432c22d9f7765fdf211348e91c8e3c4325d9"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_button_left_press.9.png",
+    "resource": "msg_msg_button_left_press.png",
+    "sha256": "c99e1bdd1e2e4ed9954d32235aff72518dea5f961b1b2315474799ebbed8ca8f"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_button_left_rest.9.png",
+    "resource": "msg_msg_button_left_rest.png",
+    "sha256": "f81b3d3a2ec39afc1d10ff450c9b27e717a7fb1e6b120de5f2edb43472941557"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_button_left_select.9.png",
+    "resource": "msg_msg_button_left_select.png",
+    "sha256": "fd0d38b17dc706c88be79a0a1d5a6c31c941b0dff0c65dae8275d81a73b68569"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_button_middle_press.9.png",
+    "resource": "msg_msg_button_middle_press.png",
+    "sha256": "4e5984153190f41a86f0b0e691103b977fc025fc5893ea626db4abe027b9c5b8"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_button_middle_rest.9.png",
+    "resource": "msg_msg_button_middle_rest.png",
+    "sha256": "b48837666c9840cea01a1e2d3b0d5d531d2d8d340433c4b97d7a7f9d64769101"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_button_middle_select.9.png",
+    "resource": "msg_msg_button_middle_select.png",
+    "sha256": "10017a7420327e7377094dea0ca16f805a146842134e3bf9d212b201140e4d1d"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_button_photo_mask.png",
+    "resource": "msg_msg_button_photo_mask.png",
+    "sha256": "09bad70a72fa261125432fb6d542fdeb456bedbd0d455ef0ad92b1ad58aa3158"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_detail_indicator_deliveryreport.png",
+    "resource": "msg_msg_detail_indicator_deliveryreport.png",
+    "sha256": "75f41260fa7b64d64c0b04ce5cf0cefbd055223b1021c961e2f60fc453094477"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_detail_indicator_locked.png",
+    "resource": "msg_msg_detail_indicator_locked.png",
+    "sha256": "490a444b8a06e8e26413f077d15e3af9eab288c99d736de146f1ca059d9b9803"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_detail_indicator_readreport.png",
+    "resource": "msg_msg_detail_indicator_readreport.png",
+    "sha256": "3054b45141edbf99669f9c39d0bcc3ca03eecf7a72550dea894c316aabdbf353"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_detail_indicator_secure.png",
+    "resource": "msg_msg_detail_indicator_secure.png",
+    "sha256": "0c78e1c741f510a2ccd5d13424a60f9d0f6ee37f1db6fc0b7b8c1d97a2e55d73"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_detail_indicator_sending.png",
+    "resource": "msg_msg_detail_indicator_sending.png",
+    "sha256": "93f9b2b94d8949b20422b928c6204a2b96bb8ce6c2230a2c89c185482a25863a"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_detail_indicator_simcard.png",
+    "resource": "msg_msg_detail_indicator_simcard.png",
+    "sha256": "c6f37d750b22131e1755272c6f89ffaf82120015dc533f72089d4347ec77b215"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_detail_indicator_undelivered.png",
+    "resource": "msg_msg_detail_indicator_undelivered.png",
+    "sha256": "f1708c36ab66512fc7531f94d8958d464f5e3ea2cb974b0a73db3f400f714556"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_detail_insert_slideshow.png",
+    "resource": "msg_msg_detail_insert_slideshow.png",
+    "sha256": "aab0c1c900f8c8a655135a14c6adc532325cd272fba0d90118d9f43d18cd542c"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_detail_insert_video.png",
+    "resource": "msg_msg_detail_insert_video.png",
+    "sha256": "1cbee7c3dcee6acaf0be78912d43ac20266a3c170590e77e7feb38f73eca684f"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_editslideshow_defaultphoto.png",
+    "resource": "msg_msg_editslideshow_defaultphoto.png",
+    "sha256": "99fac421d6fab15aee15d39125b926ea0c5bd7eae322cd0490ac2761783a950c"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_editslideshow_indicator_audio.png",
+    "resource": "msg_msg_editslideshow_indicator_audio.png",
+    "sha256": "7f1f7d6e03ca553aaae1230ff9480c0d02aa35f843b86620e4ff86e2f354635d"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_editslideshow_next_disable.png",
+    "resource": "msg_msg_editslideshow_next_disable.png",
+    "sha256": "d07288738546f9ad5d016cbaa90a89b0aa6ffb88442d23176a6366554d54a62d"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_editslideshow_next_press.png",
+    "resource": "msg_msg_editslideshow_next_press.png",
+    "sha256": "3b5acd95a45fb9c5953e86991caffa0447896a6cf270f79dd6c548e664e22aeb"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_editslideshow_next_rest.png",
+    "resource": "msg_msg_editslideshow_next_rest.png",
+    "sha256": "6ddfd6f7534416826ee6c198f574ddd68da8d70a290c63d0340146a364936151"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_editslideshow_next_selected.png",
+    "resource": "msg_msg_editslideshow_next_selected.png",
+    "sha256": "e37097c4bc4d75d7843c13553c245bd09a280609382dd614a4c6430749a414e8"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_editslideshow_prev_disable.png",
+    "resource": "msg_msg_editslideshow_prev_disable.png",
+    "sha256": "effffc185be1e5ee27d2eed0f879ef9adc755f38d0641c9541f6b294636d1daf"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_editslideshow_prev_press.png",
+    "resource": "msg_msg_editslideshow_prev_press.png",
+    "sha256": "89fa9a4d19a666518cff36dc4932ea9287af1a323bb75011172f99266fabaaeb"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_editslideshow_prev_rest.png",
+    "resource": "msg_msg_editslideshow_prev_rest.png",
+    "sha256": "df03dc08d760ecfa613c34df69acfade203ae497a9f1ac39778205792a3d1b9f"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_editslideshow_prev_selected.png",
+    "resource": "msg_msg_editslideshow_prev_selected.png",
+    "sha256": "bfa5ae32c4d58afeed7225b8a4f14df2fa996a5f21bcdb76a8e6e84152d9f888"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_attachment_collapse_on.png",
+    "resource": "msg_msg_icon_attachment_collapse_on.png",
+    "sha256": "68ddd5bd3c3e0ec5720cae9907381bce378719bb11f7f05bd98437107e623c8f"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_attachment_collapse_rest.png",
+    "resource": "msg_msg_icon_attachment_collapse_rest.png",
+    "sha256": "734b17aaba89306d2b14c0f314bf01ff62660a5b2dd589c61adf107fbc5efb5e"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_attachment_expend_on.png",
+    "resource": "msg_msg_icon_attachment_expend_on.png",
+    "sha256": "546ab829ddc8101318206d5dee692c51840e344e66495c84678b44ec1ccd1241"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_attachment_expend_rest.png",
+    "resource": "msg_msg_icon_attachment_expend_rest.png",
+    "sha256": "21912d5c14b5ac4884260923ca6295dcc56ddbe7476d2bac5678ff1565d19657"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_emotcon_on.png",
+    "resource": "msg_msg_icon_emotcon_on.png",
+    "sha256": "af3bd7a48f7720b51cef882f5ae19ffc9f3934e5e5933e3db5f8f3a6b5bb0c04"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_emotcon_rest.png",
+    "resource": "msg_msg_icon_emotcon_rest.png",
+    "sha256": "af17b859cff6f37af8b0bece5dd8aadd57eda571b3583b850f3ffcc20f61c780"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_gps_on.png",
+    "resource": "msg_msg_icon_gps_on.png",
+    "sha256": "f827783b455c1851a7c57c6504e79b1935b40b1e25393a52950aa1a0565467f6"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_gps_rest.png",
+    "resource": "msg_msg_icon_gps_rest.png",
+    "sha256": "ecc01023c9946387eecaac48cab03855898f51a976c90e72e545f0d78abb4efb"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_music_on.png",
+    "resource": "msg_msg_icon_music_on.png",
+    "sha256": "0d395b88c239cb8cdcb9eace617ffb98b4d06c7a9b242034a1bdbcb9a09e594b"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_music_rest.png",
+    "resource": "msg_msg_icon_music_rest.png",
+    "sha256": "e0826731fde3df3e892d286636490bbf5b0b9fa176cc285053c51b62bd26029f"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_photo_on.png",
+    "resource": "msg_msg_icon_photo_on.png",
+    "sha256": "21093d8bcb0128252521b4e15586cc9aadb28f34deede94d57a84e2d7cf50592"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_photo_rest.png",
+    "resource": "msg_msg_icon_photo_rest.png",
+    "sha256": "8d8cb630130bb232201536b7bb34f459c13251c9b7c46c3c41379c24465dcefa"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_photo_video_on.png",
+    "resource": "msg_msg_icon_photo_video_on.png",
+    "sha256": "7c262d4c5ca9ac5fecf0baaff46b16063e8f376acfb2be1d1d4689de537f66cd"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_photo_video_rest.png",
+    "resource": "msg_msg_icon_photo_video_rest.png",
+    "sha256": "500f85e72b977366eaa34956df915b1e7410cd315fda7cc07999bd7d9e8ede81"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_photonvideo.png",
+    "resource": "msg_msg_icon_photonvideo.png",
+    "sha256": "9c9539a6c1da258bc0076aaeaaaf5e6fc31090e5090166d45a01b23824f43b1d"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_replace_on.png",
+    "resource": "msg_msg_icon_replace_on.png",
+    "sha256": "3be123e855f9d4bf6905281425bdf333b3401173beabcadd8275d43a95de112c"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_replace_rest.png",
+    "resource": "msg_msg_icon_replace_rest.png",
+    "sha256": "9df3241da674f1bee82eb4a3a322c7a9745b095617935873380314aa8d6bec0a"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_save_ok_on.png",
+    "resource": "msg_msg_icon_save_ok_on.png",
+    "sha256": "6e849c7f36d6b6812c6493186c304237d7e6c2e140f23b4617206fd06818d0da"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_save_ok_rest.png",
+    "resource": "msg_msg_icon_save_ok_rest.png",
+    "sha256": "ba271214da7b39b5cd1d363809bff6e93024df68a0b63073b90c840fedd64df6"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_save_on.png",
+    "resource": "msg_msg_icon_save_on.png",
+    "sha256": "d0f08684d7409357e45c13123d58838d1e4868f07445783a570bf59ea79dbb4c"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_save_rest.png",
+    "resource": "msg_msg_icon_save_rest.png",
+    "sha256": "14ab77053d13a244de1fce1356e640e6118378b5a29a448c99644f2d2a0aa4dc"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_send_on.png",
+    "resource": "msg_msg_icon_send_on.png",
+    "sha256": "2c0d20de355a5d49caa1a49089624972d36b5afa7303f1766ae418ef48fed5cc"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_send_rest.png",
+    "resource": "msg_msg_icon_send_rest.png",
+    "sha256": "72272f82c664c1b286d8554600921d05d41c09cd01282a5757dd067afd69f6d8"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_slideshow_on.png",
+    "resource": "msg_msg_icon_slideshow_on.png",
+    "sha256": "5ce2c247553b14fa5a687a3c908a02926608ee9d5efa9ec266780d00ad4d0431"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_slideshow_rest.png",
+    "resource": "msg_msg_icon_slideshow_rest.png",
+    "sha256": "652297fccfbc2c85f11d2258c70c784a1aee735aa3166c654e58086e5fd54399"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_vcalendar_on.png",
+    "resource": "msg_msg_icon_vcalendar_on.png",
+    "sha256": "0be98878cdd8e96805035fa754a6431683e29edb7854c9aa82fcda4f0170e6f6"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_vcalendar_rest.png",
+    "resource": "msg_msg_icon_vcalendar_rest.png",
+    "sha256": "f42e78550f874a569df4e19260ba228e852bd01b45f434387f12e1a016131228"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_vcard_on.png",
+    "resource": "msg_msg_icon_vcard_on.png",
+    "sha256": "98fb4c4b03d2d390b333085763cea6d375cc0d9d0ae7789f88d415c5be535bfb"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_vcard_rest.png",
+    "resource": "msg_msg_icon_vcard_rest.png",
+    "sha256": "6105f3868fed156aec328f0cdf4198f308eec0bac38d4d07c0f5fd9ca102cd1a"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_video_on.png",
+    "resource": "msg_msg_icon_video_on.png",
+    "sha256": "1e828b07aefb1478a2b4132c22a803b79bafe6f93694214b8197511638ca1d26"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_icon_video_rest.png",
+    "resource": "msg_msg_icon_video_rest.png",
+    "sha256": "bf0dba99c3b43a9cf7b6a322c3275d4ac17c2c41c5a36a2e18fc138faa12d940"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_insertslideshow_bg.9.png",
+    "resource": "msg_msg_insertslideshow_bg.png",
+    "sha256": "60c348afbddea0bbd72186e0f0cdf16026aee08ab637ed579a1cbbe2292bc572"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_insertslideshow_bg_press.png",
+    "resource": "msg_msg_insertslideshow_bg_press.png",
+    "sha256": "622b9b2d9ee3512f97550a368f1d00ef830cefcef736eaed298d5458c7c0ec8c"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_insertslideshow_bg_selected.png",
+    "resource": "msg_msg_insertslideshow_bg_selected.png",
+    "sha256": "165c0572330a7815d730385bd616587a25e88672a2da8286ac0c5f077877025b"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_mask_thumbnail.png",
+    "resource": "msg_msg_mask_thumbnail.png",
+    "sha256": "392220cc2715cd6e04591a170889d9906199440240b9d47726a6bf892e90403f"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/msg_photo_holder.9.png",
+    "resource": "msg_msg_photo_holder.png",
+    "sha256": "4f1163ec813e9e2c27e18fc8404f153422a069f8483b297969cb0afd3b310c1d"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/music_listview_nocover.png",
+    "resource": "msg_music_listview_nocover.png",
+    "sha256": "48d9d15413444909ccd4610cfdd18f2dd5031b54a6f106042609356ad7b95eb7"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/notifications_icon_message.png",
+    "resource": "msg_notifications_icon_message.png",
+    "sha256": "98fa5596a3492b81c62468803ed2aac37d7dd95bbd768fcccd29a164c649ff1b"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/preview_indicator_attachment.png",
+    "resource": "msg_preview_indicator_attachment.png",
+    "sha256": "a06faade11c96259f2638e27d0d6e0af252c74f328f6c1a5be80d7c9ee8c2a14"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/stacked_message.png",
+    "resource": "msg_stacked_message.png",
+    "sha256": "0d2b5544bbff4657ee5b687c1383d8e5ff50948fa128b1ab52de72c53756c21d"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/stat_notify_sms.png",
+    "resource": "msg_stat_notify_sms.png",
+    "sha256": "373211d00b91fdf5164ee141fb34154caf753820ec4aff693c231902b4c8e517"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/stat_notify_sms_failed.png",
+    "resource": "msg_stat_notify_sms_failed.png",
+    "sha256": "999f9c65c76362cc02208d755a4b38cb2dddb6269055d39ed8af2ca8556ead6c"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/stat_notify_sms_forward.png",
+    "resource": "msg_stat_notify_sms_forward.png",
+    "sha256": "494061b4193281573e1837473982c2296ef766a6058d2950d09b28eb4d590b29"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/stat_notify_wappush.png",
+    "resource": "msg_stat_notify_wappush.png",
+    "sha256": "9c8ae84a032c1f1c9415038f4ef5b95ba2ba1d667d8a368b45ff2277d779f9c5"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/stat_sys_no_sim.png",
+    "resource": "msg_stat_sys_no_sim.png",
+    "sha256": "bac3a3ad4ba3c1d4e655da91c3b985431234b1103f1a8563d4d684bae4f39a7b"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/voice_mail.png",
+    "resource": "msg_voice_mail.png",
+    "sha256": "bb5a94b6f4ba0c83089b173508a9728f578268575e448a05ad7c8ebeeb1ea250"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/voicemail_icon_private.png",
+    "resource": "msg_voicemail_icon_private.png",
+    "sha256": "522b8d1d1e2ed1225c6364734379cf00bc9c5f7480789875cc7341ce69e895b3"
+  },
+  {
+    "source": "system/app/Mms.apk!/res/drawable-hdpi/voicemail_icon_urgent.png",
+    "resource": "msg_voicemail_icon_urgent.png",
+    "sha256": "3186fd200b0867fbba41593f2804c15e656af0ae896aa25069cd004f7f476952"
+  }
+]

@@ -9,13 +9,13 @@ Native Android launcher foundation for reconstructing the HTC Sense 3.6 home exp
 - Four-column app drawer with installed launchable apps and app launch handling.
 - System bar and display cutout insets; system Back returns to home.
 - Configurable navigation-bar hiding in Sense settings → Desktop. Hidden navigation lets the dock sit flush with the bottom; an edge swipe temporarily reveals controls while the status bar stays visible.
-- No third-party runtime dependencies. The local build extracts dock artwork from your ROM.
+- No third-party runtime dependencies. The build reads the extracted HTC resources in `assets/htc/`.
 - Compact 64dp dock with curved tops, straight lower edges, reversed shading, and unwarped labels/icons.
 - Borderless page track above the arc, with a centered single-page thumb and supersampled curved edges.
 
 ## Build and run
 
-The local toolchain is installed in ignored `.toolchain/`: **JDK 17**, Android SDK **35**, Build Tools **35.0.0**, and Gradle **8.11.1**. The project pins Android Gradle Plugin **8.9.1** and includes a checksum-pinned Gradle wrapper. The build requires `res/3.33.401.153.zip` and Python 3 to prepare the two dock resources under ignored `launcher/build/`. From the project root:
+The local toolchain is installed in ignored `.toolchain/`: **JDK 17**, Android SDK **35**, Build Tools **35.0.0**, and Gradle **8.11.1**. The project pins Android Gradle Plugin **8.9.1** and includes a checksum-pinned Gradle wrapper. The build uses the checked-in HTC resources in `assets/htc/` and Python 3 to verify their hashes. The stock ROM is needed only to regenerate the assets, not to compile the apps. From the project root:
 
 ```sh
 source tools/android-env.sh
@@ -27,8 +27,8 @@ adb shell am start -n dev.sense.launcher/.MainActivity
 See [Android setup](docs/ANDROID-SETUP.md) for installed versions and setup on another machine. The APK has also been installed and smoke-tested on the project-local Android 15 emulator. See [Emulator setup and commands](docs/EMULATOR.md).
 
 GitHub Actions can build downloadable shared/standalone debug APK sets and the
-framework AAR. Set the `SENSE_ROM_URL` Actions secret, then use the **Build Android
-artifacts** workflow. See [CI setup and artifact downloads](docs/CI-ARTIFACTS.md).
+framework AAR directly from the extracted assets. Use the **Build Android
+artifacts** workflow; no ROM download secret is required. See [CI setup and artifact downloads](docs/CI-ARTIFACTS.md).
 
 Tap “Set as home app” or choose Sense Launcher in Android Settings → Default apps → Home app. To switch back, select your previous launcher there.
 
@@ -57,7 +57,7 @@ dismissal. See [implementation and fidelity limits](docs/FULLSCREEN-WEATHER-RESE
 
 ## ROM input
 
-`res/3.33.401.153.zip` contains the Pyramid Android 4.0.3 system files, including Rosie and HTC clock/weather resources. See [the ROM audit](docs/ROM-AUDIT.md) for findings and the reproducible extraction command. Its literal Sense property is `3.5`; the visible release still needs verification.
+`res/3.33.401.153.zip` is the optional source for asset regeneration and research; normal builds use `assets/htc/`. It contains the Pyramid Android 4.0.3 system files, including Rosie and HTC clock/weather resources. See [the ROM audit](docs/ROM-AUDIT.md) for findings and the reproducible extraction command. Its literal Sense property is `3.5`; the visible release still needs verification.
 
 `res/pyramid-ics-crc-3.0.16-31a4fc7.zip` is a separate kernel source release. See [the implementation roadmap](docs/PORTING.md).
 
@@ -75,7 +75,7 @@ Project XML and project structure were checked locally. Mode10 inspection and 22
 
 `BentDockLayout` bends the cleaned background and rounded button surfaces toward the recovered arc, with their lower edges held straight. Shading runs from light at the top to dark at the bottom. `DockButton` draws foreground labels and compound icons afterward without deformation. The dock body is 64dp tall, spans the screen width, and continues beneath system navigation.
 
-Gradle’s `generateDockAssets` task runs `tools/prepare_dock_assets.py` automatically. See [rendering and validation](docs/DOCK-RENDERING.md).
+Gradle reads the prepared resources directly from `assets/htc/launcher/res`. Regenerate the bundle explicitly with `./gradlew extractHtcAssets`; see [asset layout and verification](assets/README.md). See [rendering and validation](docs/DOCK-RENDERING.md).
 
 The native Sense Phone companion can be built with `./gradlew :phone:assembleDebug`.
 It reconstructs the ROM keypad, provides contact search and HTC-style system call

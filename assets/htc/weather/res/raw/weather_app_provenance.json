@@ -1,0 +1,647 @@
+[
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/common_icon_titlebar_add_rest.png",
+    "resource": "drawable-hdpi/wx_common_icon_titlebar_add_rest.png",
+    "sha256": "2eb8e6d293f276df2be339aa406f39c8ac2f8927e358d1e9c0ea68a916ee8faa"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/common_icon_titlebar_down_rest.png",
+    "resource": "drawable-hdpi/wx_common_icon_titlebar_down_rest.png",
+    "sha256": "7c8749007e1a04baae9ae77af7c31cdd288dd2b6c17076177d718deca065157d"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/common_icon_titlebar_fit_screen_rest.png",
+    "resource": "drawable-hdpi/wx_common_icon_titlebar_fit_screen_rest.png",
+    "sha256": "5b699d6d5c7ada05d80b40edd57136ee2e851038f866298312f5669f1ce8bc0b"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/common_icon_titlebar_full_screen_rest.png",
+    "resource": "drawable-hdpi/wx_common_icon_titlebar_full_screen_rest.png",
+    "sha256": "d5af874e44982b5f5bc0b8c2dacf2fbc404b2fbb6d1cd9e1e595a3de69be89ba"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/common_icon_titlebar_my_location_rest.png",
+    "resource": "drawable-hdpi/wx_common_icon_titlebar_my_location_rest.png",
+    "sha256": "cd1b422dc343712ec6edffff1c133e3f4270d7cd6563e433ee1fd4a3f1f85189"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/common_icon_titlebar_next_rest.png",
+    "resource": "drawable-hdpi/wx_common_icon_titlebar_next_rest.png",
+    "sha256": "f675f9d38d28ded3a536687fc70ddeb865950548c0de793e6eac226f56e44d25"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/common_icon_titlebar_previous_rest.png",
+    "resource": "drawable-hdpi/wx_common_icon_titlebar_previous_rest.png",
+    "sha256": "9bc2753963fa13c8a789e86a57eb9d72906edbd09b6fbb297cbc4de134e72dec"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/common_icon_titlebar_up_rest.png",
+    "resource": "drawable-hdpi/wx_common_icon_titlebar_up_rest.png",
+    "sha256": "9cf4b0eb1c8b546666a78985cd736eef88156e0adb68a98748840c842596eb42"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/common_icon_titlebar_updates_rest.png",
+    "resource": "drawable-hdpi/wx_common_icon_titlebar_updates_rest.png",
+    "sha256": "dc04197c14d8f68ea9d61c4f890ccd8a14b7f88b070d22de6e779dd93b2fee7c"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/divider_vertical.9.png",
+    "resource": "drawable-hdpi/wx_divider_vertical.png",
+    "sha256": "b50de8420906ddeb70db60e48b7723a3b56ceac11c4fecada5a44ad8e02f5cf3"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/divider_vertical_transparent.9.png",
+    "resource": "drawable-hdpi/wx_divider_vertical_transparent.png",
+    "sha256": "56a0067ebfc5b0596d19b1bee56e9e50fafe56a994ead02208398332ba9f4c37"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/icon.png",
+    "resource": "drawable-hdpi/wx_icon.png",
+    "sha256": "47adb048d42618328c22129c17c6d8ac5b98d8a76650ad14ff196a5a0134231e"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/icon_add_city.png",
+    "resource": "drawable-hdpi/wx_icon_add_city.png",
+    "sha256": "47adb048d42618328c22129c17c6d8ac5b98d8a76650ad14ff196a5a0134231e"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/icon_humidity.png",
+    "resource": "drawable-hdpi/wx_icon_humidity.png",
+    "sha256": "3e86ad6b41c9311415bec7fd5114ec0927109e3417307e8dfbcbf6dc416acdf3"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/icon_my_location_dark.png",
+    "resource": "drawable-hdpi/wx_icon_my_location_dark.png",
+    "sha256": "c2841848c333ec53b13c846294c4160d062229aeae13a6c2180e390b907825bb"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/icon_my_location_white.png",
+    "resource": "drawable-hdpi/wx_icon_my_location_white.png",
+    "sha256": "f0ee5040a5f9c9976a935660c2689f84b1c27f56645b4df7005292ea72630762"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/icon_real_feel.png",
+    "resource": "drawable-hdpi/wx_icon_real_feel.png",
+    "sha256": "8dbe7eb0eb358942df833a8d4fc975694cdee570e216aa7ccfe6b2d3c23c700b"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/icon_update.png",
+    "resource": "drawable-hdpi/wx_icon_update.png",
+    "sha256": "9c850e8dfec03ec23873b5277df734098965b14c38e6553de8e494c108a382b0"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/weather_arrow.png",
+    "resource": "drawable-hdpi/wx_weather_arrow.png",
+    "sha256": "e0a39348703cecef080831a8787a271380ad453c394fb6ca2c3c57905c3f4c2c"
+  },
+  {
+    "source": "Weather.apk!/res/drawable-hdpi/weather_icon_updates_dark.png",
+    "resource": "drawable-hdpi/wx_weather_icon_updates_dark.png",
+    "sha256": "487ff53407d73ca42ea05bb3bca6de93a916ce02d624ea53859642abedf8105c"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_detail_tab_right_press.9.png",
+    "resource": "drawable-mdpi/wx_common_detail_tab_right_press.png",
+    "sha256": "dffb3b6e4d298cd31b498496c3872253183eabafc639d0f4bea9571b2151e78a"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_detail_tab_right_rest.9.png",
+    "resource": "drawable-mdpi/wx_common_detail_tab_right_rest.png",
+    "sha256": "d57450475553d56e006db2d4033b22c703c2ea6749b0e9bcc256eb2485f30d1b"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_detail_tab_right_selected.9.png",
+    "resource": "drawable-mdpi/wx_common_detail_tab_right_selected.png",
+    "sha256": "3f2b11594ad03014323c09e3598573666bac3d5f136e2ff5ec6c8572d04cf9c4"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_icon_titlebar_add_rest.png",
+    "resource": "drawable-mdpi/wx_common_icon_titlebar_add_rest.png",
+    "sha256": "2eb8e6d293f276df2be339aa406f39c8ac2f8927e358d1e9c0ea68a916ee8faa"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_icon_titlebar_down_rest.png",
+    "resource": "drawable-mdpi/wx_common_icon_titlebar_down_rest.png",
+    "sha256": "7c8749007e1a04baae9ae77af7c31cdd288dd2b6c17076177d718deca065157d"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_icon_titlebar_fit_screen_rest.png",
+    "resource": "drawable-mdpi/wx_common_icon_titlebar_fit_screen_rest.png",
+    "sha256": "5b699d6d5c7ada05d80b40edd57136ee2e851038f866298312f5669f1ce8bc0b"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_icon_titlebar_full_screen_rest.png",
+    "resource": "drawable-mdpi/wx_common_icon_titlebar_full_screen_rest.png",
+    "sha256": "d5af874e44982b5f5bc0b8c2dacf2fbc404b2fbb6d1cd9e1e595a3de69be89ba"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_icon_titlebar_next_on.png",
+    "resource": "drawable-mdpi/wx_common_icon_titlebar_next_on.png",
+    "sha256": "f675f9d38d28ded3a536687fc70ddeb865950548c0de793e6eac226f56e44d25"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_icon_titlebar_next_rest.png",
+    "resource": "drawable-mdpi/wx_common_icon_titlebar_next_rest.png",
+    "sha256": "f675f9d38d28ded3a536687fc70ddeb865950548c0de793e6eac226f56e44d25"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_icon_titlebar_previous_on.png",
+    "resource": "drawable-mdpi/wx_common_icon_titlebar_previous_on.png",
+    "sha256": "9bc2753963fa13c8a789e86a57eb9d72906edbd09b6fbb297cbc4de134e72dec"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_icon_titlebar_previous_rest.png",
+    "resource": "drawable-mdpi/wx_common_icon_titlebar_previous_rest.png",
+    "sha256": "9bc2753963fa13c8a789e86a57eb9d72906edbd09b6fbb297cbc4de134e72dec"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_icon_titlebar_up_rest.png",
+    "resource": "drawable-mdpi/wx_common_icon_titlebar_up_rest.png",
+    "sha256": "9cf4b0eb1c8b546666a78985cd736eef88156e0adb68a98748840c842596eb42"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_icon_titlebar_updates_rest.png",
+    "resource": "drawable-mdpi/wx_common_icon_titlebar_updates_rest.png",
+    "sha256": "dc04197c14d8f68ea9d61c4f890ccd8a14b7f88b070d22de6e779dd93b2fee7c"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_list_divider_vertical.9.png",
+    "resource": "drawable-mdpi/wx_common_list_divider_vertical.png",
+    "sha256": "b50de8420906ddeb70db60e48b7723a3b56ceac11c4fecada5a44ad8e02f5cf3"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_sub_panel_header_center_right_press.9.png",
+    "resource": "drawable-mdpi/wx_common_sub_panel_header_center_right_press.png",
+    "sha256": "92aa4c8cc977a28dbc7d76db9efb3a8d771de55587a5f47e29c6fdbf488373a0"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_sub_panel_header_center_right_selected.9.png",
+    "resource": "drawable-mdpi/wx_common_sub_panel_header_center_right_selected.png",
+    "sha256": "cc1356537c0f81e6f25a1a2fdc75cd4c80819807deacc3fd6c7951fae5fd3783"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_sub_panel_header_right_rest.9.png",
+    "resource": "drawable-mdpi/wx_common_sub_panel_header_right_rest.png",
+    "sha256": "b8a9c84c9fe99a9359f351f823196532dacbf45c5ede466cb8d6526f8980ab79"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_titlebar_center_press.9.png",
+    "resource": "drawable-mdpi/wx_common_titlebar_center_press.png",
+    "sha256": "38d7db81f825e6818622a378ca86216bd49a6d67f46ac34c21a883f951081548"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_titlebar_center_rest.9.png",
+    "resource": "drawable-mdpi/wx_common_titlebar_center_rest.png",
+    "sha256": "440a17de7738c21bc8f82a9b67dab7bf3e496466ec8071b65bbf992e234295fe"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_titlebar_center_right_press.9.png",
+    "resource": "drawable-mdpi/wx_common_titlebar_center_right_press.png",
+    "sha256": "8feb97e7882c89b53cf9db302c72fcb1dd53712489e107081466828fbbf277f8"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_titlebar_center_right_selected.9.png",
+    "resource": "drawable-mdpi/wx_common_titlebar_center_right_selected.png",
+    "sha256": "f20a27d99cc00e6c85de4336f4b4ee58172134cfb95bd46d832a75b3eefe3522"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_titlebar_center_selected.9.png",
+    "resource": "drawable-mdpi/wx_common_titlebar_center_selected.png",
+    "sha256": "1ffa7dac30dffc75d029ecec38cb1d7738c0f8e7f7e86134adf74cfc5888f611"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_titlebar_left_rest.9.png",
+    "resource": "drawable-mdpi/wx_common_titlebar_left_rest.png",
+    "sha256": "6c109b1b77225ed440d2f070fc30245446c5481ba53f99f78f43206bef081e05"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_titlebar_right_rest.9.png",
+    "resource": "drawable-mdpi/wx_common_titlebar_right_rest.png",
+    "sha256": "5933ff7cbe0df88c0f97b984374ca054ee69918612cd934f6097ac7a610eefa7"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/common_weather_divider.9.png",
+    "resource": "drawable-mdpi/wx_common_weather_divider.png",
+    "sha256": "87c81c0fb7fa796227c5860188419341c479c8fa23e623e253e9e6371dc1805d"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/icon.png",
+    "resource": "drawable-mdpi/wx_icon.png",
+    "sha256": "2e4fb0399071cadcb4efcf3c4946554bd1b1c6cfad39c12c3fc61ff4c320f224"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/initial_glance_bkg.png",
+    "resource": "drawable-mdpi/wx_initial_glance_bkg.png",
+    "sha256": "0464f45b495a5aac8d0e6edd4cc000fef4d3f90187ba1a7b7faf39cf4087085f"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/weather_arrow.png",
+    "resource": "drawable-mdpi/wx_weather_arrow.png",
+    "sha256": "11cefd9d5d21c4e62b17b36769894ede558429e464b47e17052febf6d8431cff"
+  },
+  {
+    "source": "Weather.apk!/res/drawable/weather_icon_updates_dark.png",
+    "resource": "drawable-mdpi/wx_weather_icon_updates_dark.png",
+    "sha256": "23371cac9afcc9ceaea547a5ecde680957bc90e8feafeef07f91f58de087788e"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_01.png",
+    "resource": "drawable-hdpi/wx_condition_01.png",
+    "sha256": "7564062183e59449f55d7b75b7e07003f6d8657f13a91fe75bc7ca7f8e7cc827"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_02.png",
+    "resource": "drawable-hdpi/wx_condition_02.png",
+    "sha256": "1f25ea7f8e64336047ce5cea24262a34f53dee6eae9a55f10cfa6d258eeaebf4"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_03.png",
+    "resource": "drawable-hdpi/wx_condition_03.png",
+    "sha256": "34d33fba2619daf6fbbea46d905174e054fcab65492500a68a7141bf852e4803"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_04.png",
+    "resource": "drawable-hdpi/wx_condition_04.png",
+    "sha256": "304b10828de2bfa0ecc0932bbd1027071504ebe6508425c527815dd2d8296d77"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_05.png",
+    "resource": "drawable-hdpi/wx_condition_05.png",
+    "sha256": "b6992f1a4c9d8e121f9f46a5e297d58e45d665e79bbe9ff81267817b3912e830"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_06.png",
+    "resource": "drawable-hdpi/wx_condition_06.png",
+    "sha256": "443d923b94731c18a5841c50c6697d9397a47b0737858e832448332b5dbd624b"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_07.png",
+    "resource": "drawable-hdpi/wx_condition_07.png",
+    "sha256": "64ddfb1941c3f047465615b1283b7306213ac641a2c190fd55c5c0272cca728d"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_08.png",
+    "resource": "drawable-hdpi/wx_condition_08.png",
+    "sha256": "ab2d5781c546983e9591ba9cf23de73bc1c8214cff756ffa3a1b69737747815d"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_11.png",
+    "resource": "drawable-hdpi/wx_condition_11.png",
+    "sha256": "8835a59d23e6f8325728620dc6944338bc6308e12d78f7403aa6f5b973e868b6"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_12.png",
+    "resource": "drawable-hdpi/wx_condition_12.png",
+    "sha256": "b41e2ad83ee0ea1f7d46912eb436ee72f80f97c9e6a223dba987309102bfca15"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_13.png",
+    "resource": "drawable-hdpi/wx_condition_13.png",
+    "sha256": "a89ff7654a891eaa9cddc0a8af9b1d41c678cd24b58488c6f52dff582cf0aa1b"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_14.png",
+    "resource": "drawable-hdpi/wx_condition_14.png",
+    "sha256": "541d6e9ffb997c1133b0ca514254405c46cfae540a67ba0e6f438858ec20f859"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_15.png",
+    "resource": "drawable-hdpi/wx_condition_15.png",
+    "sha256": "009f8482acf4426616382b617e34c774c19609677adc8c21732142283bf64b21"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_16.png",
+    "resource": "drawable-hdpi/wx_condition_16.png",
+    "sha256": "95f3b76a0c56e867730c8a56742d69033910e1a0bda8c2304336f13a66d317e2"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_17.png",
+    "resource": "drawable-hdpi/wx_condition_17.png",
+    "sha256": "7ceded5e77799fbeaa655dee7e587ad2a048ed14922cea5df47b3a3aef9e4528"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_18.png",
+    "resource": "drawable-hdpi/wx_condition_18.png",
+    "sha256": "959755ca03afd8dba805ab55e06cbe5c18c1683300946b57062b715d6a5b9b07"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_19.png",
+    "resource": "drawable-hdpi/wx_condition_19.png",
+    "sha256": "8a791306f1075b030e58b89995db1c76e39165f826e7715b93a0020d114c54e5"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_20.png",
+    "resource": "drawable-hdpi/wx_condition_20.png",
+    "sha256": "e73287976ec11f4b1e9f9f8c5edb93dd07944f2458eba174a32a1d44c265311e"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_21.png",
+    "resource": "drawable-hdpi/wx_condition_21.png",
+    "sha256": "2bac8bbf88c4465a2339b3db37fea00249ea2d72423d0bc5f5407b447e7b42eb"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_22.png",
+    "resource": "drawable-hdpi/wx_condition_22.png",
+    "sha256": "41ed4340629f376e0ec49307f3bff82dc4213075d2e0c03c9aaafa28a5a72fea"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_23.png",
+    "resource": "drawable-hdpi/wx_condition_23.png",
+    "sha256": "4689a79a40e1aec4df1da489defe5591b7add443e72a9f05d9bffa85a0c514a0"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_24.png",
+    "resource": "drawable-hdpi/wx_condition_24.png",
+    "sha256": "e3607ebf0836620e2211506bb81440043bd2ecc1c5342a94de9acade518cde76"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_25.png",
+    "resource": "drawable-hdpi/wx_condition_25.png",
+    "sha256": "7e2999b1cc5a2d3ffa715394a78e5bcb870507624ffed0ff597ac7177beee8aa"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_26.png",
+    "resource": "drawable-hdpi/wx_condition_26.png",
+    "sha256": "744965a6a9c12692892f16b54a7fa6327f006a5df16abc06f30852bfd96cc277"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_29.png",
+    "resource": "drawable-hdpi/wx_condition_29.png",
+    "sha256": "bc74a0511ec5fbc9f92b928e2b1e2581b631a2cbd4a3e5b9770f8550cf324202"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_30.png",
+    "resource": "drawable-hdpi/wx_condition_30.png",
+    "sha256": "8f1db11f7a725218fd5ba4b3fc0206376efee95f365d5ad039cc086d8e1c426c"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_31.png",
+    "resource": "drawable-hdpi/wx_condition_31.png",
+    "sha256": "c79b7fac88a7e4b82af87d952b33581d06d318b7940f5ce15db1dba95bb63b84"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_32.png",
+    "resource": "drawable-hdpi/wx_condition_32.png",
+    "sha256": "55e23e0b8e75d2fa8d7d2bc3c0833a72737122fc25af1a0a01b0470374c8358e"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_33.png",
+    "resource": "drawable-hdpi/wx_condition_33.png",
+    "sha256": "7d38c25dc0acc4d441b14f50c267f8de7245a7dbf94a8771ba06608e7d8f50c6"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_34.png",
+    "resource": "drawable-hdpi/wx_condition_34.png",
+    "sha256": "576dd6ffa0f0c8af1b67d83c45e1ee102fce1551a794863d8777994ae33cdbb4"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_35.png",
+    "resource": "drawable-hdpi/wx_condition_35.png",
+    "sha256": "281e40e2d9a8ceb8552f16913cc43c856c75df9c2a3160e384d21292f5930bb9"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_36.png",
+    "resource": "drawable-hdpi/wx_condition_36.png",
+    "sha256": "022da4c796aea7acdb364e96ef9c5c65da9946c8a12d434544f5fdb922c2b59b"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_37.png",
+    "resource": "drawable-hdpi/wx_condition_37.png",
+    "sha256": "66f8f766b703ac1870eeb8b6e28da8855fba384c50ea63f568bb6c3c2971723b"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_38.png",
+    "resource": "drawable-hdpi/wx_condition_38.png",
+    "sha256": "a6e323f85e0e80f4ea0d087a7ab1c3b0bc4dde3ce126fabe33bfcef161c5ccc2"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_39.png",
+    "resource": "drawable-hdpi/wx_condition_39.png",
+    "sha256": "d9d29ef10b619d4f2271a9bdbe0c9ebdb0d4af3432c6106542615413c10e0d17"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_40.png",
+    "resource": "drawable-hdpi/wx_condition_40.png",
+    "sha256": "ce59edc66b45ccf6041e4e0575479b400b4de4e11e9eb8a57e3a907f4c8318b8"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_41.png",
+    "resource": "drawable-hdpi/wx_condition_41.png",
+    "sha256": "f5f2c8cb744dced39e12c97e55f57bc859bd0a4171d6cd9e697e0f1f0fd6943d"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_42.png",
+    "resource": "drawable-hdpi/wx_condition_42.png",
+    "sha256": "1baf7ae837452eee335a67ed0a8f7fbb8e71a4fdabcddc9e957686f9825fed06"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_43.png",
+    "resource": "drawable-hdpi/wx_condition_43.png",
+    "sha256": "da6d4b39e56caea1e60f5588b6d319b56cdef7ed5bb9dd835a6077c7ef7eb8cd"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_44.png",
+    "resource": "drawable-hdpi/wx_condition_44.png",
+    "sha256": "8087c629372ea39423e773fcc07ca615c6184769f28bdf26bfb88f26e4f70e89"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_51.png",
+    "resource": "drawable-hdpi/wx_condition_51.png",
+    "sha256": "0dcbb79a9597de24b20f5406da1be8215e6f0dcb0ae169e9380e11968fbfd1ff"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_52.png",
+    "resource": "drawable-hdpi/wx_condition_52.png",
+    "sha256": "f7209f9dc3cf5e341c791ac89d89740a68f1791723de74e0bb3b66d192ecc7a8"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_53.png",
+    "resource": "drawable-hdpi/wx_condition_53.png",
+    "sha256": "80d50933ff7f2addbc0b6ff17a91e1f09792b53de4ab9233e9eaf36fe462d034"
+  },
+  {
+    "source": "com.htc.resources.apk!/res/drawable-hdpi/common_m_weather_54.png",
+    "resource": "drawable-hdpi/wx_condition_54.png",
+    "sha256": "9042d7cd4a2bb55407fc56a67c71ace7916cd5ac7dd8c3d4142a10e942998fd9"
+  },
+  {
+    "source": "system/media/weather/weather_clear.mp4",
+    "resource": "raw/wx_video_clear.mp4",
+    "sha256": "77a928a14e9414817ca87ab587eed4c3b9637afae805226f75889dc2a5521ed4"
+  },
+  {
+    "source": "system/media/weather/weather_cloudy_day.mp4",
+    "resource": "raw/wx_video_cloudy_day.mp4",
+    "sha256": "9376f4743742f8cdec31507d19008fe323acb7b99a648ce79c9fc2e140a9e17d"
+  },
+  {
+    "source": "system/media/weather/weather_cloudy_night.mp4",
+    "resource": "raw/wx_video_cloudy_night.mp4",
+    "sha256": "017af7484d0fd8fa9308e1b8a62dfa87ed658583db095cd50d517ff893c0c65c"
+  },
+  {
+    "source": "system/media/weather/weather_fog_day.mp4",
+    "resource": "raw/wx_video_fog_day.mp4",
+    "sha256": "c61a38331a7ce9b2501b72d2f282518e28cec6e1851590653a33b078fc35b61c"
+  },
+  {
+    "source": "system/media/weather/weather_fog_night.mp4",
+    "resource": "raw/wx_video_fog_night.mp4",
+    "sha256": "66b6fddc0706255ff985aa01c14d70e85fa477777b3e425b5581eed147c6f5bd"
+  },
+  {
+    "source": "system/media/weather/weather_hot.mp4",
+    "resource": "raw/wx_video_hot.mp4",
+    "sha256": "a81ee2151a7dad3ffd314cb56cd3a8509543c898828b9b479d8b85a968fe939c"
+  },
+  {
+    "source": "system/media/weather/weather_partly_cloud.mp4",
+    "resource": "raw/wx_video_partly_cloud.mp4",
+    "sha256": "970048d17581fc7867c6756c2473d978616e3a3968cf7797f58738895b779ebf"
+  },
+  {
+    "source": "system/media/weather/weather_partly_cloud_night.mp4",
+    "resource": "raw/wx_video_partly_cloud_night.mp4",
+    "sha256": "6248f176c26737485949a452e49927875499844313ab6655a3a06029b99d5f37"
+  },
+  {
+    "source": "system/media/weather/weather_partly_sunny.mp4",
+    "resource": "raw/wx_video_partly_sunny.mp4",
+    "sha256": "db999e476d369d03c857080ac100aec26bb0189a5cab635ad2a6e7335fde3e38"
+  },
+  {
+    "source": "system/media/weather/weather_rain.mp4",
+    "resource": "raw/wx_video_rain.mp4",
+    "sha256": "21f295e6e6477fe0a81b0875515d3110a115fd7fc2296ae1c250dba6ea9f7f67"
+  },
+  {
+    "source": "system/media/weather/weather_rain_night.mp4",
+    "resource": "raw/wx_video_rain_night.mp4",
+    "sha256": "204b0daccc8f93ce095f6d51cd9c3d0cd711180b902fb39b6908841c3cc14360"
+  },
+  {
+    "source": "system/media/weather/weather_snow_day.mp4",
+    "resource": "raw/wx_video_snow_day.mp4",
+    "sha256": "dbb3f581bbaaa626feb15b344449c9584026a08f0c849f7f70007bd38597329c"
+  },
+  {
+    "source": "system/media/weather/weather_snow_night.mp4",
+    "resource": "raw/wx_video_snow_night.mp4",
+    "sha256": "aa72ce38d03b45015166c21af2a15ea770d8d33b45802b6467a1778602050075"
+  },
+  {
+    "source": "system/media/weather/weather_sunny.mp4",
+    "resource": "raw/wx_video_sunny.mp4",
+    "sha256": "4012a94b930d014da08ded2b715a9127702d15f71555e1a621d1298d29f6e32c"
+  },
+  {
+    "source": "system/media/weather/weather_thunderstorm_day.mp4",
+    "resource": "raw/wx_video_thunderstorm_day.mp4",
+    "sha256": "0f8071994ad1ff7423a8c17a4734c70b03fa3a708c8e9f1c65345ced66aee5e1"
+  },
+  {
+    "source": "system/media/weather/weather_thunderstorm_night.mp4",
+    "resource": "raw/wx_video_thunderstorm_night.mp4",
+    "sha256": "b8b53bc1ca4257e1bb4c4b811338d31eecf7fadfa91cab34ee4f5dd28c5f25a9"
+  },
+  {
+    "source": "system/media/weather/weather_windy_day.mp4",
+    "resource": "raw/wx_video_windy_day.mp4",
+    "sha256": "533fa863a9a5029ecc11dc51e3d42aba3da511eeac2489afebe45672a79fb1fc"
+  },
+  {
+    "source": "system/media/weather/weather_windy_night.mp4",
+    "resource": "raw/wx_video_windy_night.mp4",
+    "sha256": "80a2356879813a46a96bf040f253f9a30170d659c7e4ecd83b72b77ce9fc2a18"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_clear.jpg",
+    "resource": "drawable-nodpi/wx_video_clear.jpg",
+    "sha256": "41c2c801ab1d546ca90259c70f3e5b27a93470b29732c0c438a1994a267b971f"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_cloudy_day.jpg",
+    "resource": "drawable-nodpi/wx_video_cloudy_day.jpg",
+    "sha256": "1743c2b7016f57034b415ebb0f50b0dbb325338eab9d38e75f91643f0aa26890"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_cloudy_night.jpg",
+    "resource": "drawable-nodpi/wx_video_cloudy_night.jpg",
+    "sha256": "ec16fc6291cb7c0d1134efee8dc1d14f8f4c50607ab829bd3d433a7941bfd080"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_fog_day.jpg",
+    "resource": "drawable-nodpi/wx_video_fog_day.jpg",
+    "sha256": "f3622b96e6edb7c216e91f5fcb2215b9939d842bb3272667bf6c6d7f0ed5d3cf"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_fog_night.jpg",
+    "resource": "drawable-nodpi/wx_video_fog_night.jpg",
+    "sha256": "37d830c9b9c074125a46272298d15dcd3747252d1bb7c88354b5779e4e17c039"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_hot.jpg",
+    "resource": "drawable-nodpi/wx_video_hot.jpg",
+    "sha256": "d4e68c505d466dd96c14d7f6c2924938d4705c20e42f07fc5cfeed41d1d2a575"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_partly_cloud.jpg",
+    "resource": "drawable-nodpi/wx_video_partly_cloud.jpg",
+    "sha256": "6701c0f01f2998645147a35b273c7f30c1474c3d5614e7b9955224d177d6514d"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_partly_cloud_night.jpg",
+    "resource": "drawable-nodpi/wx_video_partly_cloud_night.jpg",
+    "sha256": "20b0dc5144520cc1729beb302f3a37eccb08d6077c5b97c8601e9313684a81f2"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_partly_sunny.jpg",
+    "resource": "drawable-nodpi/wx_video_partly_sunny.jpg",
+    "sha256": "6117c3482648ea440be4fe87c7e14df24e6b7fb7b99621a2b611ec6c498f4a15"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_rain_day.jpg",
+    "resource": "drawable-nodpi/wx_video_rain_day.jpg",
+    "sha256": "ff96162e4b893a54570e2e7380b84367f71d2d0d03e9ce741f40d6bba7546627"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_rain_night.jpg",
+    "resource": "drawable-nodpi/wx_video_rain_night.jpg",
+    "sha256": "d56a010ccc5360942be767668d0c87156253989ed6065877fb68d1d96b3ad645"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_snow_day.jpg",
+    "resource": "drawable-nodpi/wx_video_snow_day.jpg",
+    "sha256": "abe2bb1a44092cd4e0d0a012c4cc144f8322bc0279ec3fc7700a98a08bcb2701"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_snow_night.jpg",
+    "resource": "drawable-nodpi/wx_video_snow_night.jpg",
+    "sha256": "8813fd1a01df3ef05fd9d0f7da02fda7034f4796e16aef7404014d53a5e9f689"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_sunny.jpg",
+    "resource": "drawable-nodpi/wx_video_sunny.jpg",
+    "sha256": "43b56ba02dd33949959bef50632c8021645030a3e0a67d271cc0348f4efae9cf"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_thunderstorm_day.jpg",
+    "resource": "drawable-nodpi/wx_video_thunderstorm_day.jpg",
+    "sha256": "3ae7755c07f68f03059b8353d675ceb74c5b6eff6ff9bc78b0007c88ab07d589"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_thunderstorm_night.jpg",
+    "resource": "drawable-nodpi/wx_video_thunderstorm_night.jpg",
+    "sha256": "595962a1db5a899d22d9c7a6cb8aab05a0ad4c9b837e9dd85a298832512354eb"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_windy_day.jpg",
+    "resource": "drawable-nodpi/wx_video_windy_day.jpg",
+    "sha256": "edbd54074829e9ecdd9891af0bc897e3d0962ad471eb4724453aaf09e3213d59"
+  },
+  {
+    "source": "WeatherVideo.apk!/res/drawable/weather_windy_night.jpg",
+    "resource": "drawable-nodpi/wx_video_windy_night.jpg",
+    "sha256": "8eb7e86fee5a2166331ad7ea93831515b066eba9a0db3c04da63da3421e7da92"
+  }
+]
