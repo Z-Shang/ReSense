@@ -89,7 +89,7 @@ final class FullscreenWeatherInstrumentation {
                 String key=weatherPrefs.getString("latitude","-33.8688")+","+weatherPrefs.getString("longitude","151.2093");
                 String data="{\"current\":{\"temperature_2m\":18,\"weather_code\":61,\"is_day\":1},\"daily\":{\"temperature_2m_max\":[21],\"temperature_2m_min\":[14]},\"fetched\":"+System.currentTimeMillis()+"}";
                 weatherPrefs.edit().putString("data",data).putString("cacheKey",key).putString("status","Updated").apply();
-                prefs.edit().putBoolean("home",true).apply();activity[0].fullscreenWeather().resume(true);
+                prefs.edit().putBoolean("home",true).apply();activity[0].fullscreenWeather().enterHome();
             });
             await(()->activity[0].fullscreenWeather().overlay()!=null,"Automatic live-condition home effect");
             main(()->activity[0].fullscreenWeather().stop());SystemClock.sleep(2100);

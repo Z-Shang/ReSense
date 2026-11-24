@@ -24,7 +24,7 @@ final class FullscreenWeather {
     private final int[] mapping;
     private Overlay current;
     private int generation,pendingPreview;
-    private boolean resumed,destroyed,pendingAutomatic,screenWasOff;
+    private boolean resumed,destroyed,pendingAutomatic,screenWasOff,hasResumed,pendingHomeEntry;
     private long lastPlayed=-10000,pendingUnlock=-10000;
     private final Runnable attempt=this::attemptAutomatic;
     private final android.content.SharedPreferences.OnSharedPreferenceChangeListener weatherChanged=(prefs,key)->{
@@ -39,8 +39,9 @@ final class FullscreenWeather {
             }
         }
     };
-    FullscreenWeather(MainActivity activity,FrameLayout stage,BooleanSupplier homeVisible){
+    FullscreenWeather(MainActivity activity,FrameLayout stage,BooleanSupplier homeVisible,boolean restored){
         this.activity=activity;this.stage=stage;this.homeVisible=homeVisible;weather=WeatherRepository.get(activity);
+        hasResumed=restored;
         screenWasOff=!activity.getSystemService(PowerManager.class).isInteractive()||activity.getSystemService(KeyguardManager.class).isKeyguardLocked();
         mapping=readMapping(activity);
         IntentFilter filter=new IntentFilter(Intent.ACTION_USER_PRESENT);filter.addAction(Intent.ACTION_SCREEN_OFF);
@@ -56,12 +57,15 @@ final class FullscreenWeather {
     }
     void resume(boolean automatic){
         resumed=true;
+        boolean homeEntry=!hasResumed||pendingHomeEntry;hasResumed=true;pendingHomeEntry=false;
         boolean unlocked=screenWasOff||SystemClock.elapsedRealtime()-pendingUnlock<10000;screenWasOff=false;pendingUnlock=-10000;
         // Queue now and wait for focus/unlock in ready(), rather than losing
         // a resume that arrives before keyguard dismissal has completed.
-        if(automatic)requestAutomatic(unlocked?"unlock":"home");
+        // A widget's PendingIntent can pause us while its editor is open. Its
+        // return is not a new home entry; only initial entry, HOME or unlock is.
+        if(automatic&&(unlocked||homeEntry))requestAutomatic(unlocked?"unlock":"home");
     }
-    void enterHome(){if(resumed)requestAutomatic("home");}
+    void enterHome(){if(resumed)requestAutomatic("home");else pendingHomeEntry=true;}
     void focus(){if(pendingPreview>0)tryPreview();else if(pendingAutomatic)schedule();}
     private void requestAutomatic(String reason){
         if(destroyed || !resumed || !homeVisible.getAsBoolean() || !activity.getSharedPreferences(PREFERENCES,0).getBoolean(reason,true) || !ValueAnimator.areAnimatorsEnabled())return;
@@ -102,7 +106,7 @@ final class FullscreenWeather {
         lastPlayed=SystemClock.elapsedRealtime();
     }
     private void finished(Overlay overlay){if(current==overlay){current=null;overlay.stop();stage.removeView(overlay);}}
-    void pause(){resumed=false;stop();}
+    void pause(){resumed=false;pendingHomeEntry=false;stop();}
     void stop(){
         generation++;pendingPreview=0;pendingAutomatic=false;main.removeCallbacks(attempt);
         if(current!=null){Overlay old=current;current=null;old.stop();stage.removeView(old);}
