@@ -38,6 +38,7 @@ SHA256SUMS verifies the files in this download.
 
 def collect(root, output):
     groups = {
+        'bundle-debug': ([root/'build/outputs/bundle-debug/sense-suite-debug.apk'], 'Sense Installer: open the APK, allow installation from this source, and approve each package in dependency order. Apps keep separate identities. Existing installs must have matching signatures.\n'),
         'shared-debug': ([root/'build/outputs/shared-debug'/f'{module}-debug.apk'
                           for module in ('sense-framework', 'sense-services', *MODULES)]
                          + [root/'build/outputs/shared-debug/distribution.json'], SHARED_NOTES),

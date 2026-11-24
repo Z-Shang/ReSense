@@ -24,6 +24,7 @@ After a successful run, open its **Artifacts** section:
 
 | Artifact prefix | Contents |
 | --- | --- |
+| `sense-bundle-debug` | Single Sense Installer APK containing all eight shared APKs. |
 | `sense-shared-debug` | Eight APKs: framework, services and six apps; distribution metadata and installation notes. |
 | `sense-standalone-debug` | Six self-contained app APKs and weather-sharing services. |
 | `sense-framework-debug-aar` | Reusable framework AAR. |
@@ -54,7 +55,7 @@ Ubuntu runner, then uses the repository's checksum-pinned Gradle wrapper:
 
 ```sh
 ./gradlew --no-daemon --stacktrace --console=plain --max-workers=2 \
-  assembleSharedDebug :sense-framework:assembleDebug
+  assembleBundleDebug :sense-framework:assembleDebug
 python3 tools/collect_ci_artifacts.py
 ```
 
@@ -73,3 +74,32 @@ Action usage follows the official [checkout](https://github.com/actions/checkout
 [Java setup](https://github.com/actions/setup-java),
 [Android SDK setup](https://github.com/android-actions/setup-android) and
 [artifact upload](https://github.com/actions/upload-artifact) documentation.
+
+## Single-file installer
+
+Build from the repository root with `./gradlew assembleBundleDebug`.
+The output is `build/outputs/bundle-debug/sense-suite-debug.apk`.
+The same task works on main and feature branches and embeds that branch's APKs.
+
+Install and open Sense Installer, allow installation from this source when Android
+asks, then tap Continue to stage and approve each package. Framework and services
+come first. The installer streams and verifies each embedded APK off the UI thread.
+Android requires approval for each package; this is not an atomic transaction.
+Cancellation leaves previously installed packages in place. Continue retries the
+current package; Stop/reset starts the sequence again without removing apps.
+If Android kills the installer, reopen it and retry the current package.
+
+The bootstrap APK has no dependency on the installed Sense framework. It contains
+no signing keys and does not grant permissions or choose default apps. Updates
+require matching signatures, just like individual APK installation. Do not mix
+standalone and shared installations. The suite is a debug build.
+
+The status callback uses an explicit mutable PendingIntent, as required for
+[PackageInstaller commits targeting Android 15](https://developer.android.com/reference/android/content/pm/PackageInstaller.Session#commit(android.content.IntentSender)).
+
+Android static framework libraries are immutable at a given library version.
+When Android reports the version already installed, the installer reuses it;
+Android checks the required version and signing certificate for each dependent
+app. Framework code/resource changes require increasing `VERSION` in
+`tools/build_shared_framework.py`; the bundle cannot overwrite an existing
+static framework version. A mismatched signature stops client installation.

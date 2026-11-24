@@ -66,15 +66,25 @@ jobs:
         run: |
           mkdir -p build/ci-logs
           ./gradlew --no-daemon --stacktrace --console=plain --max-workers=2 \
-            assembleSharedDebug :sense-framework:assembleDebug \
+            assembleBundleDebug :sense-framework:assembleDebug \
             2>&1 | tee build/ci-logs/build.log
 
       - name: Verify and collect artifacts
         run: |
           python3 -m unittest discover -s tools -p test_ci_artifacts.py -v
           python3 -m unittest discover -s tools -p test_htc_assets.py -v
+          python3 tools/test_suite_payload.py
           python3 tools/test_shared_framework.py
           python3 tools/collect_ci_artifacts.py
+
+      - name: Upload suite installer APK
+        uses: actions/upload-artifact@v7
+        with:
+          name: sense-bundle-debug-${{ github.sha }}
+          path: build/ci-artifacts/bundle-debug/
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 0
 
       - name: Upload shared-framework APK set
         uses: actions/upload-artifact@v7
@@ -117,6 +127,7 @@ jobs:
           cat >> "$GITHUB_STEP_SUMMARY" <<'SUMMARY'
           Built debug artifacts are available in this run's **Artifacts** section:
 
+          - **sense-bundle-debug**: one installer APK containing all eight shared packages.
           - **sense-shared-debug**: install-once framework, services and six dependent apps.
           - **sense-standalone-debug**: six self-contained apps and the weather-sharing services APK.
           - **sense-framework-debug-aar**: reusable Android library.
