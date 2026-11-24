@@ -16,7 +16,7 @@ followed by alpha (red channel). PNG outputs preserve the source dimensions
 and transparency. Material resolution and alpha coverage are checked by
 `tools/test_weather_assets.py` when the local ROM is available.
 
-The generated files live under `launcher/build/generated/senseDock/res/drawable-nodpi`,
+The generated files live under `assets/htc/launcher/res/drawable-nodpi`,
 with `weather-provenance.json` in the parent directory recording scene hash,
 material IDs, dimensions, and source record offsets. Proprietary artwork is
 not checked into source control.

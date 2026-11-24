@@ -28,20 +28,8 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Download and verify stock ROM
-        env:
-          SENSE_ROM_URL: ${{ secrets.SENSE_ROM_URL }}
-        run: |
-          if [[ -z "$SENSE_ROM_URL" ]]; then
-            echo '::error::Set the SENSE_ROM_URL repository secret to a direct HTTPS URL for the stock 3.33.401.153 ROM ZIP. See docs/CI-ARTIFACTS.md.'
-            exit 1
-          fi
-          mkdir -p res
-          curl --fail --location --silent --show-error --retry 3 \
-            --connect-timeout 30 --max-time 900 \
-            --proto '=https' --proto-redir '=https' \
-            --output res/3.33.401.153.zip "$SENSE_ROM_URL"
-          sha256sum --check .github/rom.sha256
+      - name: Verify extracted HTC assets
+        run: python3 tools/verify_htc_assets.py
 
       - name: Set up JDK 17
         uses: actions/setup-java@v6
@@ -84,6 +72,7 @@ jobs:
       - name: Verify and collect artifacts
         run: |
           python3 -m unittest discover -s tools -p test_ci_artifacts.py -v
+          python3 -m unittest discover -s tools -p test_htc_assets.py -v
           python3 tools/test_shared_framework.py
           python3 tools/collect_ci_artifacts.py
 

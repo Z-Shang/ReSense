@@ -14,6 +14,7 @@ import shutil
 import subprocess
 import xml.etree.ElementTree as ET
 import zipfile
+from htc_assets import verify as verify_htc_assets
 
 ROOT = Path(__file__).resolve().parents[1]
 ANDROID = "{http://schemas.android.com/apk/res/android}"
@@ -42,6 +43,7 @@ def d8_command():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.parse_args()
+    verify_htc_assets(ROOT / "assets/htc")
     sdk = Path(os.environ["ANDROID_HOME"])
     java = Path(os.environ["JAVA_HOME"]) / "bin"
     build = sdk / "build-tools/35.0.0"
@@ -66,7 +68,7 @@ def main():
                "buildType": "debug", "applications": []}
     shared_symbols = set()
     framework_resources = [ROOT / "sense-framework/src/main/res",
-                           ROOT / "sense-framework/build/generated/htcSense/res"]
+                           ROOT / "assets/htc/sense-framework/res"]
     for directory in framework_resources:
         for path in directory.glob("*/*"):
             kind = path.parent.name.split("-")[0]
@@ -175,8 +177,7 @@ def main():
         </manifest>''')
     package("sense-framework", manifest, framework_resources, shared=True)
     for module in ("sense-services", *MODULES):
-        generated = ROOT / module / "build/generated"
-        resource_dirs = [ROOT / module / "src/main/res"] + sorted(generated.glob("*/res"))
+        resource_dirs = [ROOT / module / "src/main/res", ROOT / "assets/htc" / module / "res"]
         package(module, ROOT / module / "build/intermediates/merged_manifests/debug/processDebugManifest/AndroidManifest.xml", resource_dirs)
         if module=="sense-services":summary["services"]=[module]
         else:summary["applications"].append(module)

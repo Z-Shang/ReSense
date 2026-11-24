@@ -6,20 +6,17 @@ artifacts → Run workflow**. Manual dispatch is available after the workflow is
 on the repository's default branch, as required for
 [manual dispatch](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow).
 
-## Required ROM input
+## Extracted asset input
 
-The ROM is local and ignored by Git, so a hosted runner needs a download source.
-Add the repository Actions secret **SENSE_ROM_URL**, containing a direct HTTPS
-URL for the same `res/3.33.401.153.zip` used locally. A signed storage-object URL
-works; renew the secret when that URL expires. An HTML download page does not
-work. No ROM URL is committed to this repository.
+The workflow uses the committed resources in `assets/htc/<module>/res/`.
+It verifies every file against `assets/htc/manifest.json` before building.
+The ROM and extraction tools are not invoked by normal builds, and the
+`SENSE_ROM_URL` secret is no longer needed.
 
-CI verifies the archive against `.github/rom.sha256` before any extraction.
-The pinned SHA-256 is
-`5bc5a4424ce09730a83232835f910c90a7a288976455ce3eaff69f1acf8cf141`.
-The workflow does not upload the original ROM, toolchains or signing key as
-artifacts; it uploads the built applications and library containing the
-resources prepared by the existing build.
+To regenerate resources after changing an extractor, use the local ROM and
+`./gradlew extractHtcAssets`, then commit the resource changes and manifest
+together. See [asset preparation](../assets/README.md). CI uploads the built
+applications/library, not the stock ROM, toolchains or signing key.
 
 ## Downloads
 
@@ -62,11 +59,11 @@ python3 tools/collect_ci_artifacts.py
 ```
 
 It uses the runner's SDK/JDK environment instead of `tools/android-env.sh`,
-which intentionally points at the local ignored toolchain. Python extraction
-uses only the standard library. The Android user directory and Gradle home are
+which intentionally points at the local ignored toolchain. Asset verification
+uses only the Python standard library. The Android user directory and Gradle home are
 set explicitly under the runner's temporary directory, as required by the
 shared APK packager. CI verifies the shared APKs' resource/code ownership and
-runs artifact-collector tests. No emulator tests or release publishing run in
+runs asset-integrity and artifact-collector tests. No emulator tests or release publishing run in
 this workflow.
 
 The collector requires an empty output directory. To stage local outputs more

@@ -7,16 +7,7 @@ val generateSharedWeather by tasks.registering(Sync::class) {
     }
     into(weatherSources)
 }
-val dockResources = layout.buildDirectory.dir("generated/senseDock/res")
-val generateDockAssets by tasks.registering(Exec::class) {
-    val rom = rootProject.layout.projectDirectory.file("res/3.33.401.153.zip")
-    inputs.file(rom)
-    inputs.file(rootProject.file("tools/prepare_weather_widgets.py"))
-    inputs.files(rootProject.files("tools/prepare_dock_assets.py", "tools/extract_fullscreen_weather.py", "tools/extract_clock_flip.py", "tools/extract_clock_digits.py", "tools/extract_dock_icons.py", "tools/extract_dock_motion.py", "tools/extract_leap.py", "tools/extract_music.py", "tools/extract_search.py", "tools/extract_weather_assets.py", "tools/extract_weather_catalog.py", "tools/inspect_weather_playback.py", "tools/decode_navbar.py", "tools/mode10.py"))
-    outputs.dir(dockResources)
-    commandLine("python3", rootProject.file("tools/prepare_dock_assets.py").absolutePath,
-        "--rom", rom.asFile.absolutePath, "--output", dockResources.get().asFile.absolutePath)
-}
+val dockResources = rootProject.file("assets/htc/launcher/res")
 android {
     buildFeatures { aidl = true }
     namespace = "dev.sense.launcher"
@@ -37,6 +28,6 @@ android {
     }
 }
 
-tasks.named("preBuild") { dependsOn(generateDockAssets,generateSharedWeather) }
+tasks.named("preBuild") { dependsOn(generateSharedWeather) }
 
 dependencies { implementation(project(":sense-framework")) }

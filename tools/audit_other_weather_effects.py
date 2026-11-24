@@ -10,7 +10,7 @@ from audit_weather_framing_typography import evaluate, projected
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--renders',type=Path,default=Path('.toolchain/weather-coverage-audit/files/weather-coverage-audit.json'))
-    parser.add_argument('--scenes',type=Path,default=Path('launcher/build/generated/senseDock/res/raw'))
+    parser.add_argument('--scenes',type=Path,default=Path('assets/htc/launcher/res/raw'))
     parser.add_argument('--output',type=Path,default=Path('references/3.33.401.153/other-weather-coverage-audit.json'))
     args=parser.parse_args()
     renders=json.loads(args.renders.read_text())

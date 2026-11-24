@@ -129,7 +129,7 @@ def audit(rom,generated):
 
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--rom',type=Path,default=Path('res/3.33.401.153.zip'));parser.add_argument('--generated',type=Path,default=Path('launcher/build/generated/senseDock/res'));parser.add_argument('--output',type=Path,default=Path('references/3.33.401.153/weather-framing-typography-audit.json'));args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--rom',type=Path,default=Path('res/3.33.401.153.zip'));parser.add_argument('--generated',type=Path,default=Path('assets/htc/launcher/res'));parser.add_argument('--output',type=Path,default=Path('references/3.33.401.153/weather-framing-typography-audit.json'));args=parser.parse_args()
     report=audit(args.rom,args.generated);args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_text(json.dumps(report,indent=2)+'\n')
     for row in report['framing']:
         case=next(c for c in row['cases']if c['frame']==75)

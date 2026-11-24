@@ -15,8 +15,8 @@ python3 tools/prepare_messages_app.py \
   --contact-sheet .toolchain/messages-stock-assets.png
 ```
 
-The `:messages` Gradle asset task generates these resources under
-`messages/build/generated/htcMessages/res`; it does not modify source resources. The extractor uses the Python standard library; only the optional
+Explicit asset regeneration prepares these resources under
+`assets/htc/messages/res`; normal Gradle builds read the checked-in files. The extractor uses the Python standard library; only the optional
 contact sheet requires Pillow. All 124 immediate `res/drawable-hdpi/*.png`
 entries are copied, including artwork unrelated to the SMS UI. Copying artwork
 does not imply implementing those features.

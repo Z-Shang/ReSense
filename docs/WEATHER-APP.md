@@ -10,9 +10,10 @@ source XML counterpart; this is an adaptation, not the original executable.
 
 `tools/prepare_weather_app.py` reads the local ROM directly. It preserves the
 Weather.apk PNG/nine-patch artwork and framework forecast icons, plus all 40
-condition textures/tracks already decoded for the launcher. No ROM assets need
-to be committed. Hashes/source paths are generated in
-`weather/build/generated/htcWeather/res/raw/weather_app_provenance.json`.
+condition textures/tracks already decoded for the launcher. These build-ready
+resources are checked in; the ROM is only needed for explicit regeneration.
+Hashes/source paths are retained in
+`assets/htc/weather/res/raw/weather_app_provenance.json`.
 The original AccuWeather logos are excluded because the data comes from Open-Meteo.
 
 The Now view follows `res/weather_now.png`: original full-scene video with

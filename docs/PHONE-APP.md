@@ -13,7 +13,7 @@ adb shell am start -n dev.sense.phone/.PhoneActivity
 from `HtcDialer.apk` and `Phone.apk` inside `res/3.33.401.153.zip`. Common tabs,
 inputs, frames, call-direction icons and People portrait/search artwork now come
 from [`sense-framework`](SENSE-FRAMEWORK.md). App-specific generated resources
-remain under `phone/build/generated/htcPhone/res`. `raw/phone_provenance.json`
+remain under `assets/htc/phone/res`. `raw/phone_provenance.json`
 records each source APK, resource path and SHA-256 digest. Compiled nine-patch chunks are
 preserved. The shared library recovers the People default portrait and search
 icon from `HtcContacts.apk`. Digit and alphabet labels are native scalable text, as in the

@@ -1,0 +1,27 @@
+{
+  "source": "HtcClock3DWidget.apk!/assets/Port/clock_weather.m10",
+  "sha256": "f34c37897a6464adc49b6aff1cfb49aba8c895acd5a37b40d9d9f684620badbf",
+  "widgetDimensions": [
+    530,
+    344
+  ],
+  "weatherDimensions": [
+    480,
+    480
+  ],
+  "weatherPosition": [
+    265.0,
+    284.6144714355469,
+    -0.0
+  ],
+  "weatherScale": [
+    0.5600000023841858,
+    0.5600000023841858,
+    0.5600000023841858
+  ],
+  "weatherPivot": [
+    -240.0,
+    -240.0,
+    0.0
+  ]
+}

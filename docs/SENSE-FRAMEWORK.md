@@ -31,8 +31,8 @@ SHA-256 signing certificate digest. Android manages class loading and resource
 package-ID remapping. Each client excludes the framework classes and assets.
 The digest is derived from the local debug keystore, not hard-coded.
 
-`assembleSharedDebug` first runs the normal AGP debug builds to generate assets,
-AIDL, weather source copies and merged manifests. The packaging tool then uses
+`assembleSharedDebug` first runs the normal AGP debug builds using checked-in assets,
+generating AIDL, weather source copies and merged manifests. The packaging tool then uses
 AAPT2 `--shared-lib`, exports the resource API, qualifies client XML references,
 compiles against the shared framework JAR, dexes, aligns and signs the APK set.
 Resource compilation disables PNG re-crunching so the ROM's compiled `npTc`
@@ -94,12 +94,12 @@ The library owns the common native controls and visual resources:
 buttons, tabs, titlebar controls, checkboxes/radios, inputs, list dividers,
 popup/portrait frames, shared icons, the People default portrait and search icon.
 Resources have a `sense_` prefix; generated files live under
-`sense-framework/build/generated/htcSense/res`. The provenance manifest is
+`assets/htc/sense-framework/res`. The provenance manifest is
 `raw/sense_framework_provenance.json`, with original APK paths and SHA-256 hashes.
 Compiled nine-patch PNGs are copied unchanged and retain their `npTc` chunks.
 
-Per-app generators no longer extract these common resources and remove their
-previous generated copies on the next build. Original weather scenes/condition
+Per-app extractors exclude these common resources. The checked-in bundle keeps
+shared artwork in the framework directory. Original weather scenes/condition
 icons, dial-pad/call artwork and People-specific action icons remain app owned.
 The framework contains no app imports, contact/call-log access, weather fetching,
 application state or Android components/permissions in its manifest.

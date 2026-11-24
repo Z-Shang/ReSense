@@ -1,0 +1,209 @@
+{
+  "source": "fusion.apk!/assets/Default/drawable/shared.m10",
+  "widgetWidth": 530,
+  "glyphWidth": 99,
+  "advance": 84,
+  "note": "Upper/lower refer to the upright glyph; source bitmaps require vertical reflection in Canvas.",
+  "digits": [
+    {
+      "width": 99,
+      "height": 79,
+      "format": 14,
+      "pixel_sha256": "45f6e30c9ff354c90314150f2f4127a7d41ba998f560ea5d459ead37e9e8699e",
+      "digit": 0,
+      "half": "top",
+      "resource": "sense_clock_digit_0_top",
+      "material": 1459749318
+    },
+    {
+      "width": 99,
+      "height": 83,
+      "format": 14,
+      "pixel_sha256": "e6be0b7e9921f6975316d2532aa10a4e40f35711f429e1e68145c5178e153f17",
+      "digit": 0,
+      "half": "bottom",
+      "resource": "sense_clock_digit_0_bottom",
+      "material": 516154905
+    },
+    {
+      "width": 99,
+      "height": 79,
+      "format": 14,
+      "pixel_sha256": "148e6670c236f1c0dc7b27d3039009762b1c1aa57a05780b990b43def63a2c9c",
+      "digit": 1,
+      "half": "top",
+      "resource": "sense_clock_digit_1_top",
+      "material": 1460935239
+    },
+    {
+      "width": 99,
+      "height": 83,
+      "format": 14,
+      "pixel_sha256": "bd26974cc33754c5561460b7db81bb48dd726f15dede8d27d348cd270d8b32a5",
+      "digit": 1,
+      "half": "bottom",
+      "resource": "sense_clock_digit_1_bottom",
+      "material": 517340826
+    },
+    {
+      "width": 99,
+      "height": 79,
+      "format": 14,
+      "pixel_sha256": "de0289a6dc0afc8cd11424174b7a8b69565ffd8e8ca21f64e28609701f396390",
+      "digit": 2,
+      "half": "top",
+      "resource": "sense_clock_digit_2_top",
+      "material": 1462121160
+    },
+    {
+      "width": 99,
+      "height": 83,
+      "format": 14,
+      "pixel_sha256": "e89313721f50c648ba505e52b2436daf28b970bd00c23f62bd3199b6cadb3fc4",
+      "digit": 2,
+      "half": "bottom",
+      "resource": "sense_clock_digit_2_bottom",
+      "material": 518526747
+    },
+    {
+      "width": 99,
+      "height": 79,
+      "format": 14,
+      "pixel_sha256": "2acf4e127c3d78af8d7e2dd34ce8caf75a959e4deb257d8a3b512b568c74fb00",
+      "digit": 3,
+      "half": "top",
+      "resource": "sense_clock_digit_3_top",
+      "material": 1463307081
+    },
+    {
+      "width": 99,
+      "height": 83,
+      "format": 14,
+      "pixel_sha256": "6d973b81eada53fd80fd38c56e414ccc5ed7201d9f363719c645e741e6139516",
+      "digit": 3,
+      "half": "bottom",
+      "resource": "sense_clock_digit_3_bottom",
+      "material": 519712668
+    },
+    {
+      "width": 99,
+      "height": 79,
+      "format": 14,
+      "pixel_sha256": "c0df3edce8ffdd8a11739338e4074da57642d2401db47de90277eb959bebb099",
+      "digit": 4,
+      "half": "top",
+      "resource": "sense_clock_digit_4_top",
+      "material": 1464493002
+    },
+    {
+      "width": 99,
+      "height": 83,
+      "format": 14,
+      "pixel_sha256": "6b7ccdd849204709d2d68bb8871d375016fd71ebc3e92f26471f7c03c109e969",
+      "digit": 4,
+      "half": "bottom",
+      "resource": "sense_clock_digit_4_bottom",
+      "material": 520898589
+    },
+    {
+      "width": 99,
+      "height": 79,
+      "format": 14,
+      "pixel_sha256": "a1f4ffda76f102efb4e8dcf407af616615029e5759312d80a8acf8e775d1f062",
+      "digit": 5,
+      "half": "top",
+      "resource": "sense_clock_digit_5_top",
+      "material": 1465678923
+    },
+    {
+      "width": 99,
+      "height": 83,
+      "format": 14,
+      "pixel_sha256": "59f97713cc2a2f66a2a2eff241a875cd3c15c29e1cd4150ae8a4bb9566eb9077",
+      "digit": 5,
+      "half": "bottom",
+      "resource": "sense_clock_digit_5_bottom",
+      "material": 522084510
+    },
+    {
+      "width": 99,
+      "height": 79,
+      "format": 14,
+      "pixel_sha256": "c6f8603a47966067eb730a986c058c952351be27be0c2b0bb520bbbdfb178109",
+      "digit": 6,
+      "half": "top",
+      "resource": "sense_clock_digit_6_top",
+      "material": 1466864844
+    },
+    {
+      "width": 99,
+      "height": 83,
+      "format": 14,
+      "pixel_sha256": "5f921807b64bb565fe769090876d202eed333e23b42ab1ccfac50614bf52d534",
+      "digit": 6,
+      "half": "bottom",
+      "resource": "sense_clock_digit_6_bottom",
+      "material": 523270431
+    },
+    {
+      "width": 99,
+      "height": 79,
+      "format": 14,
+      "pixel_sha256": "c31ef4eb74895e22252935a43a1b0a8e767e64b55ca3c7afe102ec8462719a7e",
+      "digit": 7,
+      "half": "top",
+      "resource": "sense_clock_digit_7_top",
+      "material": 1468050765
+    },
+    {
+      "width": 99,
+      "height": 83,
+      "format": 14,
+      "pixel_sha256": "46667d54bd87d867fc90b084084235fbb30fe429b7f25a5ba054b189f2512087",
+      "digit": 7,
+      "half": "bottom",
+      "resource": "sense_clock_digit_7_bottom",
+      "material": 524456352
+    },
+    {
+      "width": 99,
+      "height": 79,
+      "format": 14,
+      "pixel_sha256": "35ea5713401a3675bac6ae8ffadc9864dea3e03da7d0d7dfd86041486f4eb1dd",
+      "digit": 8,
+      "half": "top",
+      "resource": "sense_clock_digit_8_top",
+      "material": 1469236686
+    },
+    {
+      "width": 99,
+      "height": 83,
+      "format": 14,
+      "pixel_sha256": "3149f8eeecb1b1141d0a6edc39a9a756d7cafe874ce38cf58c656652a2d122fc",
+      "digit": 8,
+      "half": "bottom",
+      "resource": "sense_clock_digit_8_bottom",
+      "material": 525642273
+    },
+    {
+      "width": 99,
+      "height": 79,
+      "format": 14,
+      "pixel_sha256": "123b3b17b0006dde62c16104bcc69df6007f403eb40cb24f5db825867c2aba1f",
+      "digit": 9,
+      "half": "top",
+      "resource": "sense_clock_digit_9_top",
+      "material": 1470422607
+    },
+    {
+      "width": 99,
+      "height": 83,
+      "format": 14,
+      "pixel_sha256": "f30b7f0c14c7c40d2efbe6d24c1143314326cc14bfee223c57d51d50ffa09f10",
+      "digit": 9,
+      "half": "bottom",
+      "resource": "sense_clock_digit_9_bottom",
+      "material": 526828194
+    }
+  ]
+}

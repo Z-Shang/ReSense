@@ -21,7 +21,7 @@ def main():
     with zipfile.ZipFile(apks / "sense-framework-debug.apk") as lib:
         shared_assets = {name for name in lib.namelist() if name.startswith("res/")}
         checked=0
-        for original in (ROOT / "sense-framework/build/generated/htcSense/res").glob("drawable-*/*.png"):
+        for original in (ROOT / "assets/htc/sense-framework/res").glob("drawable-*/*.png"):
             if b"npTc" not in original.read_bytes():
                 continue
             packaged=next(name for name in shared_assets if name.endswith("/"+original.name))

@@ -1,0 +1,417 @@
+[
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/01.m10",
+    "resource": "sense_weather_widget_condition_01",
+    "sha256": "3b2f2b19b8fedfc9bd400ff61ca3f2c133f2b2bad16ddb33aeed2b6328b74d96"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/02.m10",
+    "resource": "sense_weather_widget_condition_02",
+    "sha256": "743ca5dbc329b60ce58082463f0c7c4b19a6023b29b9d10accdf4820b8a698ed"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/03.m10",
+    "resource": "sense_weather_widget_condition_03",
+    "sha256": "add5e42c2bb32706dfbbaf1fb6f0d7584d6e5e57358bc060b9733d5b59563ca2"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/04.m10",
+    "resource": "sense_weather_widget_condition_04",
+    "sha256": "20c0e307c31681a05382cdafbda69734af223f51b661491076a401f228fd34a7"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/05.m10",
+    "resource": "sense_weather_widget_condition_05",
+    "sha256": "8f3eeeaa5a3e94296a7dfa7d0338112b45b16df4d33f80592d836806ab200cb6"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/06.m10",
+    "resource": "sense_weather_widget_condition_06",
+    "sha256": "1e2a1b8a6fd8ae341eccf86787f9bc70dbd2e61728b78803373c735953b238e6"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/07.m10",
+    "resource": "sense_weather_widget_condition_07",
+    "sha256": "424627fafb392bb2504e39b88b9710a4af9052e4d94cee0ed81c0aa065dc344f"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/08.m10",
+    "resource": "sense_weather_widget_condition_08",
+    "sha256": "cc6e45bd3b1c97ded215b27d1259a3e5e7dee19dc3f415bf518dd65ceacb2c0a"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/11.m10",
+    "resource": "sense_weather_widget_condition_11",
+    "sha256": "55d6dc599859bd380a6884e18486e5e016aed5559c679ac9627ffdd2a7a09dbb"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/12.m10",
+    "resource": "sense_weather_widget_condition_12",
+    "sha256": "672bf89e58b34a735863d73d546add1c2c4924f985881ba3fb9b752282c9c95f"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/13.m10",
+    "resource": "sense_weather_widget_condition_13",
+    "sha256": "e3ba632cf86ae49bf72035839b8167500a6a87fc8f5b74e716fa1cdf2eaee5b7"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/14.m10",
+    "resource": "sense_weather_widget_condition_14",
+    "sha256": "874de1f465360039f51049244d60c888859de19b3ed8bcd73beabbb2c07adb86"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/15.m10",
+    "resource": "sense_weather_widget_condition_15",
+    "sha256": "eb145f2ed6e6817a211324e9687d4d442c24cf57152ea480fd4f64d8dc932f27"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/16.m10",
+    "resource": "sense_weather_widget_condition_16",
+    "sha256": "a36cdca584642371474010d9a767bc2bfc437f473f8013dfc2680251d6115afe"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/17.m10",
+    "resource": "sense_weather_widget_condition_17",
+    "sha256": "4ff0072f88e167ce058f2bed2b666a5a17848d38ea1e0945e88d8940b4926c30"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/18.m10",
+    "resource": "sense_weather_widget_condition_18",
+    "sha256": "2f0a6d4daf30b69c4e592340aa88bb4a2b53585f040350ee70d2cb1439fc2555"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/19.m10",
+    "resource": "sense_weather_widget_condition_19",
+    "sha256": "8e799664cc1b4f39a7a34beec7ed5b062690d95a252958cb4a5bf254de908c2a"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/20.m10",
+    "resource": "sense_weather_widget_condition_20",
+    "sha256": "d2480c77b8338cf0f525c07bf6e1f6a4dc43801b35a8c23c721344ffc7979ca9"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/21.m10",
+    "resource": "sense_weather_widget_condition_21",
+    "sha256": "e9e504e2fe7bd598bd8e810684b5210527e07027a2e2fdaf3ce349357a9e966a"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/22.m10",
+    "resource": "sense_weather_widget_condition_22",
+    "sha256": "cf5465c8d25799e151e316e7ffb10062f1bdb05ca54a9c3c237845ccf602a829"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/23.m10",
+    "resource": "sense_weather_widget_condition_23",
+    "sha256": "a2751320b7d7270872f4aa31307477a2c17f218d3eff86747b62933175221e77"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/24.m10",
+    "resource": "sense_weather_widget_condition_24",
+    "sha256": "a075c7ccfaf473ae015fca49c72d37c43596c009ecf8342e9fb67647e79cdd8e"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/25.m10",
+    "resource": "sense_weather_widget_condition_25",
+    "sha256": "e91990684d8bd22897a8746db9ca771c70da17e3ddb189dac07579059a1b2d94"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/26.m10",
+    "resource": "sense_weather_widget_condition_26",
+    "sha256": "575d4820928ffdb7cfaf18c569eeb0db549cca6a6f0a64d845699f950d20ce54"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/29.m10",
+    "resource": "sense_weather_widget_condition_29",
+    "sha256": "effe5b702a096e697a3e54af00fe8a7674367add39cdb5564e4967778406c9b9"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/30.m10",
+    "resource": "sense_weather_widget_condition_30",
+    "sha256": "ba1ad4b7d9d3f2eabbc0b13deb112b4eeb8d7b5ac601aa877f25a00f3824c690"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/31.m10",
+    "resource": "sense_weather_widget_condition_31",
+    "sha256": "88542a1a86c0251ea3a0a560b21901e0a27b12a70bbbaa230d401764faa12933"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/32.m10",
+    "resource": "sense_weather_widget_condition_32",
+    "sha256": "d03859397941fcae3653d1b00725e8deef71ddc6172e681e5e9ef3886b724428"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/33.m10",
+    "resource": "sense_weather_widget_condition_33",
+    "sha256": "6e931954331247d4b66256ee40a6829b0ff59fa9131f4ac11db434efb7eb05df"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/34.m10",
+    "resource": "sense_weather_widget_condition_34",
+    "sha256": "8f10da9a458476ce9802beb4dde03d58eb1cd8ccfaa0018d9dcd919a0af3759e"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/35.m10",
+    "resource": "sense_weather_widget_condition_35",
+    "sha256": "513803bf4e55377fe5c6d679c33ab1d268b3a9ec56852b351a0282050c8e927a"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/36.m10",
+    "resource": "sense_weather_widget_condition_36",
+    "sha256": "ff38566ab0f1feba41507243f344c541244afeedf649d609145aea02bed6cf33"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/37.m10",
+    "resource": "sense_weather_widget_condition_37",
+    "sha256": "e18470c9f72ab9d4e4bc378911a47eb4ef8e5446c6981de884ecfad1257e067d"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/38.m10",
+    "resource": "sense_weather_widget_condition_38",
+    "sha256": "4b8438488852ab4ae6f1116f31799a25c71f7f1577e22f8806a64486fb55436e"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/39.m10",
+    "resource": "sense_weather_widget_condition_39",
+    "sha256": "1bb8e936162d38e7ade355cbff6b6e9e621fd4cd702dcd012e6ebc2434e07b9a"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/40.m10",
+    "resource": "sense_weather_widget_condition_40",
+    "sha256": "4ed4cf71112dd468451e0054d9f60891f4fb99692243cec75d5c0e0d2f1a94e8"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/41.m10",
+    "resource": "sense_weather_widget_condition_41",
+    "sha256": "4269b46eebece3f126bc7ed46df7f5a84314dc239f4bfbb9779cc2462c2811d4"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/42.m10",
+    "resource": "sense_weather_widget_condition_42",
+    "sha256": "182c524b89f8cd15f7f14415518b186a25429ec7cb8b2b689fe5d7f7b54d19de"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/43.m10",
+    "resource": "sense_weather_widget_condition_43",
+    "sha256": "8af0d905878458d1684f8d74d2c06a2b5260361f15722dbc2ec66f225d8c2a72"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/44.m10",
+    "resource": "sense_weather_widget_condition_44",
+    "sha256": "fd0c65c74cae96df884c371c115fc4e6d063d0459a02871e896224d09267f41c"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/Weather_2x1.m10",
+    "resource": "sense_weather_widget_layout_2x1",
+    "sha256": "c7644837d4990017b570e50bf75296c7bc0a9e567c8847de7e42e8d13494ab79"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/Weather_2x2.m10",
+    "resource": "sense_weather_widget_layout_2x2",
+    "sha256": "ab1adf1f50daf1158a75ff93a52f08580fe5723aca9c40cef0eef5febb202adb"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/Weather_4x4.m10",
+    "resource": "sense_weather_widget_layout_4x4",
+    "sha256": "683ab6b731ab4855b80ebb56fd63307ff9e51e390a9b5eab8e9ead5089e414c5"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_01.m10",
+    "resource": "sense_weather_widget_condition_s_01",
+    "sha256": "d8c05b7caf330e485793e4e316a4140a01ec4c49ef95e6c6963a41056d93e9ad"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_02.m10",
+    "resource": "sense_weather_widget_condition_s_02",
+    "sha256": "499f26feba775c2fffaa3fd7221c0e83b45b6a27fef574c96f68bb417f574e5a"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_03.m10",
+    "resource": "sense_weather_widget_condition_s_03",
+    "sha256": "08fcb3f4341fd64f56fad6d457e3f33485bf640d142aa64c34cd6e7a0327447a"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_04.m10",
+    "resource": "sense_weather_widget_condition_s_04",
+    "sha256": "ffd12fdef1718b81dcc882d09166efe175b6da81f015a9aa6d2435e631d79594"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_05.m10",
+    "resource": "sense_weather_widget_condition_s_05",
+    "sha256": "951ddc52d5c6326b4dac807fa74a7520c87e85a90c617c7d912096f473e5dc42"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_06.m10",
+    "resource": "sense_weather_widget_condition_s_06",
+    "sha256": "76eef226607164642a59626409e451422dc9deb0f5c2a4f51fa4d5fc2d582600"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_07.m10",
+    "resource": "sense_weather_widget_condition_s_07",
+    "sha256": "d44b05d88aa1bc3b07e37684a5d7f5882ae60cbedf142b715c2615d2adf8d02b"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_08.m10",
+    "resource": "sense_weather_widget_condition_s_08",
+    "sha256": "7d59728302c82b01948a8ab5b2342c556869ce0e36287c42745ddd62364164b8"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_11.m10",
+    "resource": "sense_weather_widget_condition_s_11",
+    "sha256": "e60c46d09f544559d51b149acbe771fcb1943b54834527c63dfc2b4c82539064"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_12.m10",
+    "resource": "sense_weather_widget_condition_s_12",
+    "sha256": "5d62377440dee8673277438cea6ee67dc64b7a37b5ddc6d8c4af112ad3ce6e34"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_13.m10",
+    "resource": "sense_weather_widget_condition_s_13",
+    "sha256": "010d111e9a8d9c5ce0c21fc2ff2b87621d48b52db2addec68be4834a8b02d72c"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_14.m10",
+    "resource": "sense_weather_widget_condition_s_14",
+    "sha256": "18f56930a386a5f4838e174e33c26ffad247ca4082d0ac50b78c299aaef2da55"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_15.m10",
+    "resource": "sense_weather_widget_condition_s_15",
+    "sha256": "8c5d34f3d0ca7f4662de2f652301650800edb16c5af90839dc8b3f838cecd2a6"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_16.m10",
+    "resource": "sense_weather_widget_condition_s_16",
+    "sha256": "b354ebca2e1272e9e0cf3aba9d6117794c9990ad0437a6b6cf5804bee0f9cd8a"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_17.m10",
+    "resource": "sense_weather_widget_condition_s_17",
+    "sha256": "77ede0381c7470b3cd676838a71c1d218c8dd18783c007b893fd2d0bcf20e0e8"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_18.m10",
+    "resource": "sense_weather_widget_condition_s_18",
+    "sha256": "fd85321890a1a22930bde72275c382cc35209b30b26299af6e8494b88312b52d"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_19.m10",
+    "resource": "sense_weather_widget_condition_s_19",
+    "sha256": "3985c5547870be22047b4471844f830b382c0aa4616db66b92c950919549c849"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_20.m10",
+    "resource": "sense_weather_widget_condition_s_20",
+    "sha256": "e148fea65bf2d6d4b9260e1c7f90677ae7b63b03d688882672a5f5955c8ce9cb"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_21.m10",
+    "resource": "sense_weather_widget_condition_s_21",
+    "sha256": "1a2fcd46c1fce0d312ac26c901b2509b4c44e49f73024d58ad1b2ea788f366ba"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_22.m10",
+    "resource": "sense_weather_widget_condition_s_22",
+    "sha256": "7d0338923cef292cb851251bc5e7304f26e6375fc5e386043792ff0531ce1af2"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_23.m10",
+    "resource": "sense_weather_widget_condition_s_23",
+    "sha256": "fb6280c9818ec2146fdedaa87facca28ed96f31785f90e3705abfde25b8852df"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_24.m10",
+    "resource": "sense_weather_widget_condition_s_24",
+    "sha256": "30e8b1e9778a7ce10e599acc9500b9e7b47f2d585057c118adb83afc4bec8dd9"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_25.m10",
+    "resource": "sense_weather_widget_condition_s_25",
+    "sha256": "e6dbcd76c72916df682b35ad1139963365d6d61a34b8b9236cc6421a5032f6c8"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_26.m10",
+    "resource": "sense_weather_widget_condition_s_26",
+    "sha256": "c43a9938135a6173c03d15406b153a298dbc5dec16310dc0f575c94f81012c1f"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_29.m10",
+    "resource": "sense_weather_widget_condition_s_29",
+    "sha256": "5d0de71a0b1e3e11351ff6dca3e48422e1225e21b83d6d6bd7a2958df0861173"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_30.m10",
+    "resource": "sense_weather_widget_condition_s_30",
+    "sha256": "72b085efe0f112cc07c2991807c9f8540403662e1285d5095002ab8b79d94c24"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_31.m10",
+    "resource": "sense_weather_widget_condition_s_31",
+    "sha256": "d3de3f669d3e206add1cc5bd27e2e94fd48c53a219756e9d00389fbfbc1ce0d1"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_32.m10",
+    "resource": "sense_weather_widget_condition_s_32",
+    "sha256": "bcf4fc29a6f8d1dc530ef655a5c1ef101429049ac5ef5b9a6880bc59d2dc72d6"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_33.m10",
+    "resource": "sense_weather_widget_condition_s_33",
+    "sha256": "5051fee276853dc0f62ae5d2337c41ef2cc0e1114683e22c3b9aa9c040127bf2"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_34.m10",
+    "resource": "sense_weather_widget_condition_s_34",
+    "sha256": "71e5658d51ba18ffed1e956af44ff7d6f4a018854b318787e27229483c2d7cc8"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_35.m10",
+    "resource": "sense_weather_widget_condition_s_35",
+    "sha256": "88296744979de4e866d2a6fa60e9fd25ec8de36d4892c800b84f7d40e6e45d4a"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_36.m10",
+    "resource": "sense_weather_widget_condition_s_36",
+    "sha256": "f6bcdcd97c7820adeaa4c337030cb45fa2042ae3c709be3e4b5c0ef543637881"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_37.m10",
+    "resource": "sense_weather_widget_condition_s_37",
+    "sha256": "17c261b10c121c00b9189f41dfd14d9c190b43e5d916cd61b51e28c36a8aaf90"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_38.m10",
+    "resource": "sense_weather_widget_condition_s_38",
+    "sha256": "a107670f9375328a90ccf0ebf128c8f3337f17b98ef69752edcc6f47ee018199"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_39.m10",
+    "resource": "sense_weather_widget_condition_s_39",
+    "sha256": "8279b1ccdd3b10b97a1a7fbb26e79eb338f9d50b30e6b9962a5b3c96f6a6c053"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_40.m10",
+    "resource": "sense_weather_widget_condition_s_40",
+    "sha256": "ed852464a9d1a725686b1d4473dd4fd72b758f6b9fbfc5d409bcf9b7968d68d7"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_41.m10",
+    "resource": "sense_weather_widget_condition_s_41",
+    "sha256": "97991d2206a57f67982fd525ec1ef5c4ef9b3826abde43b5ac00cb031b8c043c"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_42.m10",
+    "resource": "sense_weather_widget_condition_s_42",
+    "sha256": "5dbec87860c7974cff8e9c1477083b0f735f35161c408d9305a55626ed6afeb1"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_43.m10",
+    "resource": "sense_weather_widget_condition_s_43",
+    "sha256": "7c672e5591d2ec17a0498893cb2aeb10871ee4535ab80ede91919f36490bc313"
+  },
+  {
+    "source": "HtcWeather3DWidget.apk!/assets/Port/s_44.m10",
+    "resource": "sense_weather_widget_condition_s_44",
+    "sha256": "cc90bfd256aa4b7166956a604616cb8dad7c0f1fb53bfe176438297326dc77ff"
+  }
+]
