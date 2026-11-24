@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Approve a bundle installation on a disposable emulator, preserving installed app data."""
+import argparse
 import re
 import subprocess
 import time
@@ -21,6 +22,11 @@ def tap(node):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--cancel-first', action='store_true')
+    args = parser.parse_args()
+    cancelled = False
+    cancellation_verified = False
     adb('shell','am','start','-n','dev.sense.installer/.InstallerActivity')
     deadline=time.monotonic()+180
     last_status = None
@@ -33,7 +39,11 @@ def main():
         if 'Completed 8 / 8' in texts:
             print('PASS: all eight packages installed through Android approval');return
         if 'Installation stopped:' in texts or 'Could not install:' in texts:
-            raise RuntimeError(texts)
+            if args.cancel_first and cancelled and not cancellation_verified and 'Completed 0 / 8' in texts:
+                cancellation_verified = True
+                print('PASS: cancelled approval did not advance installation', flush=True)
+            elif not cancellation_verified:
+                raise RuntimeError(texts)
         acted=False
         for n in nodes:
             text=n.get('text','').lower()
@@ -43,7 +53,9 @@ def main():
                 tap(n);adb('shell','input','keyevent','4');acted=True;break
             if text=='continue' and package=='dev.sense.installer':
                 tap(n);acted=True;break
-            if text in ('install','update') and package in ('com.google.android.packageinstaller','com.android.packageinstaller','com.google.android.permissioncontroller','com.android.permissioncontroller'):
+            if args.cancel_first and not cancelled and text == 'cancel' and package in ('com.google.android.packageinstaller','com.android.packageinstaller'):
+                tap(n); cancelled = True; acted = True; break
+            if text in ('install','update') and not (args.cancel_first and not cancelled) and package in ('com.google.android.packageinstaller','com.android.packageinstaller','com.google.android.permissioncontroller','com.android.permissioncontroller'):
                 tap(n);acted=True;break
         if not acted:
             print(texts,flush=True)
