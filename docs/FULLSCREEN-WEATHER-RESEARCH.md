@@ -130,7 +130,8 @@ reuses matrices, track arrays and decoded textures.
 The shared `HtcWeatherScene` renderer accepts logical dimensions; existing clock
 scenes continue to use their original 480 × 480 projection. Full-screen effects
 use 540 × 960, uniformly scaled by `min(viewWidth/540, viewHeight/960)` and
-centered in the available window. This preserves original framing and avoids
+centered in the available window for effects other than the adaptive rain/wiper.
+This preserves original framing and avoids
 stretching/cropping to a different aspect ratio. Extra space on taller/wider
 displays remains transparent, not black letterboxing. Weather sprites may extend
 outside the logical rectangle, clipped only by the actual overlay view.
@@ -170,12 +171,76 @@ remains visible inside taller modern windows. The texture contains opaque
 streaks right to that edge. This is a material boundary, not an extra clip
 rectangle in the overlay View.
 
-Full-screen playback now fades the last 15% of that texture's height using a
+The earlier full-screen playback implementation faded the last 15% of that texture's height using a
 texture-space alpha gradient and an isolated Canvas layer with DST_IN. The mask
 uses the same quad projection as the texture, including rotation/depth, and
 keeps decoded ROM assets and transform/timing tracks intact. Other weather
 materials and the widget renderer retain their previous behavior. The wiper
-itself still swings outside the screen, as its source tracks specify.
+itself still swung outside the screen, as its source tracks specify. This
+workaround is superseded by the component extension below.
+
+## Adaptive rain and wiper coverage
+
+`RainCoverage` expands only the full-screen rain composition. The source
+meshes and all position, rotation, opacity, duration and child-timeline tracks
+remain unchanged in generated resources. The exporter identifies falling rain,
+wet-glass droplets, the streak material and the blade through their original
+node/ancestor names. It also preserves Pivot and TwoDimension flags.
+
+Clearing in the recovered scene is authored per droplet: opacity tracks and
+lifetimes remove the original drops around the sweep, while the streak material
+has a separate fade. The parser finds no records with the Mask/Masks/MaskList/
+RuntimeMask tags; the extension does not add a speculative accumulated wipe
+mask. This describes the recovered scene, not a claim about every Fusion effect.
+
+The adaptation works in source coordinates, with pixel density still set by
+the uniform source-frame fit. It derives the hinge from the live blade matrix
+and pivot, and the wet-glass lower bound from the live streak quad. There are
+no fixed display sizes or assumed aspect ratios in the runtime adapter.
+
+* Droplet anchors move radially around the hinge, using each ray's source and
+  target screen intersections. Wet droplets use the source wet-plane extent;
+  falling rain uses the full source frame. Drop textures and local transforms
+  keep their proportions. The ray angle is preserved, keeping the authored
+  disappearance times aligned with the original rotation sweep.
+* The blade length increases along its own local axis about its pivot. Its
+  width and original quaternion track are retained. The length reaches the
+  furthest bottom corner, including on landscape screens.
+* The broad streak/water-film material expands once to cover the viewport,
+  retaining its overscan and opacity track. This material is stretched; separate
+  droplets are not. Repeating the material produced conspicuous mirrored
+  ripples in a rendered prototype and is not used in the final renderer.
+
+The old lower-edge alpha gradient and its offscreen Canvas layer are removed.
+The viewport clips the expanded material at the screen edge. The renderer
+reuses arrays/matrices and does not allocate a new mask or bitmap per frame.
+Playback still uses elapsed time and Choreographer callbacks, with the same
+five-second source duration. Widget weather and the other six overlay effects
+retain their existing framing.
+
+This is a deliberate modern-screen adaptation, not recovered HTC full-screen
+behavior. The direct original mapping and its limited mesh extents are documented
+in `WEATHER-SCREEN-MAPPING.md`.
+
+Validation commands:
+
+```sh
+python3 tools/test_rain_coverage.py
+python3 -m unittest discover -s tools -p test_fullscreen_weather.py -v
+```
+
+The Java geometry test exercises 48 hinge/angle, wet-plane, film and blade-reach
+checks across source, tall and landscape sizes. The extraction tests compare
+blade/streak transform and opacity tracks to the original Mode10 records.
+The `rain_coverage` emulator suite renders nine held poses at 270×480,
+270×600 and 600×270, verifies lower-screen coverage and offset viewport
+clipping, and exports `files/rain-coverage-extension.png` for visual review.
+The shared APK build and launcher/weather lint pass. The existing full-screen
+suite also passes all seven effects over 35 poses, fractional samples, touch
+dismissal, drawer cancellation and automatic home/unlock playback. Its first
+run timed out at the emulator's unlock step; an unchanged retry passed that
+step as well. Logs are `.toolchain/rain-coverage-emulator-tests.log` and
+`.toolchain/rain-coverage-fullscreen-retry.log`.
 
 The instrumentation suite exports a 12-pose tall-screen rain contact sheet to
 `files/fullscreen-rain-framing.png`, in addition to the seven-effect sheet.

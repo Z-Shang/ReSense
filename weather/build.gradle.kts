@@ -1,7 +1,7 @@
 plugins { id("com.android.application") }
 val generatedResources = layout.buildDirectory.dir("generated/htcWeather/res")
 val sharedSources = layout.buildDirectory.dir("generated/sharedWeather/java")
-val sharedNames = listOf("WeatherCodes.java", "HtcWeatherScene.java", "WeatherProjection.java", "WeatherTransform.java")
+val sharedNames = listOf("WeatherCodes.java", "HtcWeatherScene.java", "WeatherProjection.java", "WeatherTransform.java", "RainCoverage.java")
 val generateSharedWeather by tasks.registering(Sync::class) {
     from(rootProject.file("launcher/src/main/java/dev/sense/launcher")) { include(sharedNames); filter { line -> line.replace("package dev.sense.launcher;", "package dev.sense.weather;") } }
     from(rootProject.file("sense-framework/src/shared/java")) { include("**/WeatherRepository.java");filter { line -> line.replace("package dev.sense.framework.weather;", "package dev.sense.weather;") } }

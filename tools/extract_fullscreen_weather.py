@@ -50,6 +50,8 @@ def extract(rom_path,output):
                   'inFrame':struct.unpack('<f',full[name_hash('InFrame')].payload)[0],
                   'duration':struct.unpack('<f',full[name_hash('Duration')].payload)[0],
                   'visible':bytes(full[name_hash('Visible')].payload)!=b'\0',
+                  'pivotEnabled':bytes(full[name_hash('Pivot')].payload)!=b'\0',
+                  'twoDimension':bytes(full[name_hash('TwoDimension')].payload)!=b'\0',
                   'childStart':struct.unpack('<f',full[name_hash('TimelineInFrame')].payload)[0]if name_hash('TimelineInFrame')in full else 0,
                   'Layer':integer(full[name_hash('Layer')]),'LayerParent':integer(full[name_hash('LayerParent')])}
             if'DiffuseMap'in props:
@@ -64,6 +66,17 @@ def extract(rom_path,output):
                 item['texture']=resource;item['vertices']=props['Vertices']['value']
                 if len(item['vertices'])!=4:raise ValueError('Expected overlay quad')
             nodes.append(item)
+        if effect==3:
+            for i,item in enumerate(nodes):
+                if 'texture' not in item:continue
+                if item['name']=='b_rain_wiper.png':item['coverageRole']='wiper'
+                elif item['name']=='b_raindrop_streaks.png':item['coverageRole']='streaks'
+                else:
+                    parent=item['parent']
+                    while parent>=0:
+                        if nodes[parent]['name']=='Raindrop':item['coverageRole']='wet';break
+                        if nodes[parent]['name']=='Rain_shower':item['coverageRole']='falling';break
+                        parent=nodes[parent]['parent']
         for i,node in enumerate(nodes):
             if node['LayerParent']!=0xffffffff:
                 matches=[j for j,n in enumerate(nodes)if n['parent']==node['parent']and n['Layer']==node['LayerParent']]

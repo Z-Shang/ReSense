@@ -1,6 +1,9 @@
 from pathlib import Path
-import json,math,tempfile,unittest
+import io,json,math,tempfile,unittest,zipfile
 from extract_fullscreen_weather import extract
+from decode_navbar import geometry
+from extract_weather_catalog import track as encode_track
+from mode10 import parse
 
 @unittest.skipUnless(Path('res/3.33.401.153.zip').exists(),'Local ROM required')
 class FullscreenWeatherTest(unittest.TestCase):
@@ -31,3 +34,16 @@ class FullscreenWeatherTest(unittest.TestCase):
             if entry['effect']==3:
                 self.assertTrue(any(n['name']=='b_rain_wiper.png'for n in nodes))
                 self.assertTrue(any(n['name']=='Rain_shower'and n['childStart']==100 for n in nodes))
+                self.assertEqual({n.get('coverageRole')for n in nodes if 'texture'in n}, {'wiper','streaks','wet','falling'})
+                self.assertEqual(sum(n.get('coverageRole')=='wiper' for n in nodes),1)
+                self.assertEqual(sum(n.get('coverageRole')=='streaks' for n in nodes),1)
+                self.assertFalse(nodes[0]['pivotEnabled'])
+                with zipfile.ZipFile('res/3.33.401.153.zip') as rom:
+                    with zipfile.ZipFile(io.BytesIO(rom.read('system/app/HtcWeatherWallpaper.apk'))) as apk:
+                        original=geometry(parse(apk.read('assets/Port/weather_overlay.m10')))
+                for role,name in [('wiper','b_rain_wiper.png'),('streaks','b_raindrop_streaks.png')]:
+                    actual=next(n for n in nodes if n.get('coverageRole')==role)
+                    source=next(n for n in original if n['name']==name)['properties']
+                    for field in ['Position','Rotation','Scale','PivotPosition','Opacity']:
+                        self.assertEqual(actual['tracks'][field],encode_track(source[field]))
+            else:self.assertFalse(any('coverageRole' in n for n in nodes))
