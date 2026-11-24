@@ -102,9 +102,9 @@ public final class MainActivity extends Activity {
         });
         dockMotion=new HtcDockMotion(this);
         appCatalog=AppCatalog.get(this);appCatalog.addListener(catalogChanged);
-        showHome();
+        showHome(true,state==null);
         applyNavigationBarVisibility();
-        fullscreenWeather=new FullscreenWeather(this,stage,()->!drawer && !overviewVisible && root==homeSurface && workspace!=null && workspace.page>0);
+        fullscreenWeather=new FullscreenWeather(this,stage,()->!drawer && !overviewVisible && root==homeSurface && workspace!=null && workspace.page>0,state!=null);
         warmDrawer();
     }
 
@@ -114,8 +114,9 @@ public final class MainActivity extends Activity {
         super.onNewIntent(intent);
         setIntent(intent);
         readSettingsAction(intent);
-        showHome();
-        if(fullscreenWeather!=null && pendingSettingsAction==null)fullscreenWeather.enterHome();
+        boolean homeEntry=Intent.ACTION_MAIN.equals(intent.getAction())
+                &&(intent.hasCategory(Intent.CATEGORY_HOME)||intent.hasCategory(Intent.CATEGORY_LAUNCHER));
+        showHome(homeEntry,homeEntry);
     }
 
     private int dp(int value) {
@@ -307,6 +308,9 @@ public final class MainActivity extends Activity {
     private void showHome() { showHome(true); }
 
     private void showHome(boolean animate) {
+        showHome(animate,true);
+    }
+    private void showHome(boolean animate,boolean automaticWeather) {
         drawerAppMenu.dismiss();
         if(animate && drawer && homeSurface!=null){closeDrawer();return;}
         restoreDockParent();
@@ -360,7 +364,7 @@ public final class MainActivity extends Activity {
         dockSlot.addView(homeRemoveTarget,new FrameLayout.LayoutParams(-1,-1));
         root.addView(dockSlot, new LinearLayout.LayoutParams(-1, -2));
         dockTransitions=new DockTransitions(dock,homeRemoveTarget,removeVisual,dockMotion);
-        LinearLayout home=root;boolean automatic=pendingSettingsAction==null;
+        LinearLayout home=root;boolean automatic=automaticWeather&&pendingSettingsAction==null;
         home.post(()->{if(automatic && root==home && !drawer && fullscreenWeather!=null)fullscreenWeather.enterHome();});
     }
 
@@ -613,8 +617,8 @@ public final class MainActivity extends Activity {
             }
         }
     }
-    void addSearchWidget(){cancelWidget();if(workspace==null || drawer)showHome();workspace.addSearch();}
-    void addMusicWidget(int styleRows){cancelWidget();if(workspace==null || drawer)showHome();workspace.addMusic(styleRows);}
+    void addSearchWidget(){cancelWidget();if(workspace==null || drawer)showHome(false,false);workspace.addSearch();}
+    void addMusicWidget(int styleRows){cancelWidget();if(workspace==null || drawer)showHome(false,false);workspace.addMusic(styleRows);}
 
     private void cancelWidget() { if(pendingWidget != -1) widgetHost.deleteAppWidgetId(pendingWidget); pendingWidget=-1; }
     private void configureWidget() {
@@ -626,7 +630,7 @@ public final class MainActivity extends Activity {
             catch(Exception e) { cancelWidget(); }
         } else finishWidget();
     }
-    private void finishWidget() { int id=pendingWidget; pendingWidget=-1; if(workspace==null||drawer)showHome();workspace.addWidget(id); }
+    private void finishWidget() { int id=pendingWidget; pendingWidget=-1; if(workspace==null||drawer)showHome(false,false);workspace.addWidget(id); }
     @Override protected void onActivityResult(int request,int result,Intent data) {
         super.onActivityResult(request,result,data);
         if(request!=PICK_WIDGET && request!=BIND_WIDGET && request!=CONFIG_WIDGET)return;
@@ -634,7 +638,7 @@ public final class MainActivity extends Activity {
         if(request==PICK_WIDGET){
             if(data==null)return;String kind=data.getStringExtra("widget_kind");
             if("search".equals(kind)){addSearchWidget();return;}
-            if("weather".equals(kind)){String style=data.getStringExtra("weatherStyle");if(style!=null&&style.equals(SenseWeatherView.validStyle(style))){cancelWidget();if(workspace==null||drawer)showHome();workspace.addWeather(style);}return;}
+            if("weather".equals(kind)){String style=data.getStringExtra("weatherStyle");if(style!=null&&style.equals(SenseWeatherView.validStyle(style))){cancelWidget();if(workspace==null||drawer)showHome(false,false);workspace.addWeather(style);}return;}
             if("music".equals(kind)){int rows=data.getIntExtra("musicRows",2);if(rows==1||rows==2||rows==4)addMusicWidget(rows);return;}
             if("provider".equals(kind)){
                 android.content.ComponentName component=data.getParcelableExtra("provider",android.content.ComponentName.class);
