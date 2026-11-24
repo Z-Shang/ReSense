@@ -26,6 +26,10 @@ adb shell am start -n dev.sense.launcher/.MainActivity
 
 See [Android setup](docs/ANDROID-SETUP.md) for installed versions and setup on another machine. The APK has also been installed and smoke-tested on the project-local Android 15 emulator. See [Emulator setup and commands](docs/EMULATOR.md).
 
+GitHub Actions can build downloadable shared/standalone debug APK sets and the
+framework AAR. Set the `SENSE_ROM_URL` Actions secret, then use the **Build Android
+artifacts** workflow. See [CI setup and artifact downloads](docs/CI-ARTIFACTS.md).
+
 Tap “Set as home app” or choose Sense Launcher in Android Settings → Default apps → Home app. To switch back, select your previous launcher there.
 
 ## Sense Weather companion
