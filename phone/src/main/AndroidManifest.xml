@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <queries><intent><action android:name="android.intent.action.DIAL"/><data android:scheme="tel"/></intent></queries>
+    <application android:label="Sense Phone" android:theme="@style/PhoneTheme" android:icon="@drawable/dial_dialer" android:allowBackup="false" android:enableOnBackInvokedCallback="true">
+        <activity android:name=".PhoneActivity" android:exported="true" android:windowSoftInputMode="stateAlwaysHidden" android:launchMode="singleTop">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+            <intent-filter><action android:name="android.intent.action.DIAL"/><category android:name="android.intent.category.DEFAULT"/></intent-filter>
+            <intent-filter><action android:name="android.intent.action.DIAL"/><category android:name="android.intent.category.DEFAULT"/><data android:scheme="tel"/></intent-filter>
+        </activity>
+        <activity android:name=".InCallActivity" android:exported="false" android:launchMode="singleTask" android:excludeFromRecents="true" android:showWhenLocked="true" android:turnScreenOn="true"/>
+        <!-- phoneCall is authorized by ROLE_DIALER, an alternative to MANAGE_OWN_CALLS. -->
+        <service tools:ignore="ForegroundServicePermission" android:name=".SenseInCallService" android:foregroundServiceType="phoneCall" android:permission="android.permission.BIND_INCALL_SERVICE" android:exported="true">
+            <intent-filter><action android:name="android.telecom.InCallService"/></intent-filter>
+            <meta-data android:name="android.telecom.IN_CALL_SERVICE_UI" android:value="true"/>
+        </service>
+        <receiver android:name=".CallActionReceiver" android:exported="false"/>
+    </application>
+</manifest>

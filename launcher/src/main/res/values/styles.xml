@@ -1,0 +1,20 @@
+<resources>
+    <style name="AppTheme" parent="SenseFramework.Dark">
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:colorAccent">#8AB648</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <style name="SenseSettingsTheme" parent="SenseFramework.Light">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">#202020</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:colorAccent">#80AD28</item>
+        <item name="android:alertDialogTheme">@style/SenseFramework.DialogDark</item>
+    </style>
+    <style name="WidgetPickerTheme" parent="SenseFramework.Dark"><item name="android:windowLightStatusBar">false</item><item name="android:windowLightNavigationBar">false</item></style>
+</resources>

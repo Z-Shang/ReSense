@@ -1,0 +1,16 @@
+/.gradle/
+**/build/
+/local.properties
+*.iml
+/.idea/
+
+# Local ROM archives and extracted proprietary references
+/res/
+/references/
+
+# Project-local Android/JDK/Gradle installations
+/.toolchain/
+/.zcache/
+
+# Python tooling caches
+__pycache__/

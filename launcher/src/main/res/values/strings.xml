@@ -1,0 +1,3 @@
+<resources>
+    <string name="desktop_gesture_description">Allows your configured desktop swipe to open the notification panel. Sense does not read screen contents or notification text.</string>
+</resources>

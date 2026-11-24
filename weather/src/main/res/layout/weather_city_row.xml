@@ -1,0 +1,14 @@
+<dev.sense.weather.CityRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:minHeight="56dp" android:gravity="center_vertical" android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants" android:background="@android:color/transparent">
+    <CheckedTextView android:id="@+id/city_label" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+        android:minHeight="56dp" android:gravity="center_vertical" android:duplicateParentState="true"
+        android:paddingStart="16dp" android:paddingEnd="8dp" android:paddingTop="10dp" android:paddingBottom="10dp"
+        android:textSize="18sp" android:maxLines="2" android:ellipsize="end"
+        android:textColor="@color/city_text" android:checkMark="@drawable/city_check"/>
+    <ImageButton android:id="@+id/remove_city" android:layout_width="48dp" android:layout_height="56dp"
+        android:padding="12dp" android:scaleType="centerInside" android:focusable="false"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/weather_remove_city_icon" android:contentDescription="Remove city"/>
+</dev.sense.weather.CityRow>

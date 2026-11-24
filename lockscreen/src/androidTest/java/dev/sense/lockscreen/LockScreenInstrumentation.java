@@ -1,0 +1,61 @@
+package dev.sense.lockscreen;
+
+import android.app.*;
+import android.content.*;
+import android.graphics.*;
+import android.os.*;
+import android.view.*;
+import java.io.*;
+
+/** No credentials are set, dismissed or changed; no shortcut app is started. */
+public final class LockScreenInstrumentation extends Instrumentation {
+    private Bundle arguments;private boolean afterUnlockSuite;private LockScreenSettingsActivity activity;private LockSurface surface;private int selected=-99,calls;
+    private void check(boolean value,String reason){if(!value)throw new AssertionError(reason);}
+    @Override public void onCreate(Bundle args){super.onCreate(args);arguments=args;afterUnlockSuite=args!=null&&"after_unlock".equals(args.getString("suite"));start();}
+    private void touch(View view,int action,float x,float y){long now=SystemClock.uptimeMillis();MotionEvent event=MotionEvent.obtain(now,now,action,x,y,0);view.dispatchTouchEvent(event);event.recycle();}
+    private View find(View node,String text){if(node instanceof android.widget.TextView label&&text.contentEquals(label.getText()))return node;if(node instanceof android.view.ViewGroup group)for(int i=0;i<group.getChildCount();i++){View found=find(group.getChildAt(i),text);if(found!=null)return found;}return null;}
+    @Override public void onStart(){if(arguments!=null&&"restore_after_unlock".equals(arguments.getString("suite"))){var prefs=getTargetContext().getSharedPreferences("lockscreen",0).edit();if("true".equals(arguments.getString("had")))prefs.putBoolean(AfterUnlockService.ENABLED,"true".equals(arguments.getString("enabled")));else prefs.remove(AfterUnlockService.ENABLED);prefs.commit();getTargetContext().stopService(new Intent(getTargetContext(),AfterUnlockService.class));finish(Activity.RESULT_OK,new Bundle());return;}if(afterUnlockSuite){new AfterUnlockInstrumentation(this).run();return;}Bundle report=new Bundle();var prefs=getTargetContext().getSharedPreferences("lockscreen",0);boolean wallpaper=prefs.getBoolean("htcWallpaper",false),hadWallpaper=prefs.contains("htcWallpaper"),hadCapture=prefs.contains(LockScreenActivity.ALLOW_SCREEN_CAPTURE),allowCapture=prefs.getBoolean(LockScreenActivity.ALLOW_SCREEN_CAPTURE,false);try{
+        final boolean[] locked={true};final UnlockGate.Callback[] callback={null};final int[] launches={0},cancellations={0};UnlockGate gate=new UnlockGate(new UnlockGate.Keyguard(){public boolean locked(){return locked[0];}public void dismiss(UnlockGate.Callback listener){callback[0]=listener;}},slot->launches[0]++,()->cancellations[0]++);
+        gate.request(2);check(launches[0]==0,"Shortcut launched before authentication");callback[0].success();check(launches[0]==0&&cancellations[0]==1,"Still-locked keyguard was bypassed");UnlockGate.Callback stale=callback[0];gate.request(1);stale.success();check(launches[0]==0&&cancellations[0]==1,"Stale authentication callback affected another request");callback[0].cancelled();check(launches[0]==0,"Cancelled authentication launched shortcut");gate.request(0);locked[0]=false;callback[0].success();callback[0].success();check(launches[0]==1,"Authentication callback was not idempotent");
+        // A legacy bundled-wallpaper preference must not obscure the system wallpaper.
+        prefs.edit().putBoolean("htcWallpaper",true).remove(LockScreenActivity.ALLOW_SCREEN_CAPTURE).commit();activity=(LockScreenSettingsActivity)startActivitySync(new Intent(getTargetContext(),LockScreenSettingsActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));waitForIdleSync();
+        ActivityMonitor launched=addMonitor(LockScreenActivity.class.getName(),null,false);LockScreenActivity actual=null;
+        try{
+            runOnMainSync(()->{View open=find(activity.getWindow().getDecorView(),"Open HTC lock screen");check(open!=null,"Open lock screen button missing");open.performClick();});
+            Activity opened=waitForMonitorWithTimeout(launched,5000);check(opened instanceof LockScreenActivity,"Settings button failed to open lock screen");actual=(LockScreenActivity)opened;waitForIdleSync();final LockScreenActivity lock=actual;
+            runOnMainSync(()->{check(!lock.isFinishing(),"Lock screen closed during startup");check((lock.getWindow().getAttributes().flags&WindowManager.LayoutParams.FLAG_SECURE)!=0,"Capture protection not enabled by default");View content=lock.findViewById(android.R.id.content);check(content instanceof android.view.ViewGroup group&&group.getChildCount()==1&&group.getChildAt(0) instanceof LockSurface,"Real lock activity did not create its surface");check(content.isShown()&&content.isAttachedToWindow(),"Real lock activity is not visible");check(lock.getWindow().getInsetsController()!=null,"Insets controller unavailable after view creation");check((lock.getWindow().getAttributes().flags&WindowManager.LayoutParams.FLAG_SHOW_WALLPAPER)!=0,"System wallpaper is not enabled");check((lock.getWindow().getAttributes().flags&WindowManager.LayoutParams.FLAG_DIM_BEHIND)==0,"Window dims the system wallpaper");});
+            boolean[] hidden={false};long hideDeadline=SystemClock.uptimeMillis()+4000;while(!hidden[0]&&SystemClock.uptimeMillis()<hideDeadline){runOnMainSync(()->{WindowInsets insets=lock.getWindow().getDecorView().getRootWindowInsets();hidden[0]=insets!=null&&!insets.isVisible(WindowInsets.Type.navigationBars());});SystemClock.sleep(40);}check(hidden[0],"Navigation bar remains visible on HTC lock screen");
+            runOnMainSync(()->check(lock.getWindow().getDecorView().getRootWindowInsets().isVisible(WindowInsets.Type.statusBars()),"Hiding navigation also hid the status bar"));
+        }finally{removeMonitor(launched);if(actual!=null){final LockScreenActivity lock=actual;runOnMainSync(lock::finishAndRemoveTask);}}
+        waitForIdleSync();checkCaptureToggle(true);checkCaptureToggle(false);
+        runOnMainSync(()->{surface=new LockSurface(activity,slot->{selected=slot;calls++;});activity.setContentView(surface);});waitForIdleSync();SystemClock.sleep(300);
+        runOnMainSync(()->{View shortcut=surface.shortcuts[0];touch(shortcut,MotionEvent.ACTION_DOWN,shortcut.getWidth()/2f,shortcut.getHeight()/2f);});SystemClock.sleep(450);waitForIdleSync();runOnMainSync(()->{check(surface.ring.getTranslationY()<0,"Ring did not rise when picking up a shortcut");View shortcut=surface.shortcuts[0];touch(shortcut,MotionEvent.ACTION_CANCEL,0,0);surface.reset(false);});
+        runOnMainSync(()->{
+            View idleHint=find(surface,"Pull the ring to unlock");check(idleHint!=null&&idleHint.getVisibility()==View.INVISIBLE,"Idle reference should not show the pull hint");for(int i=0;i<4;i++){View label=find(surface,LockShortcuts.name(activity,i));check(label!=null&&label.getVisibility()==View.VISIBLE,"Shortcut label missing");}
+            View navbar=surface.findViewWithTag("lockscreen_navbar");check(navbar!=null&&navbar.getWidth()==surface.getWidth(),"Navbar does not span the screen");check(navbar.getBottom()==surface.getHeight(),"Navbar leaves a bottom gap");check(surface.indexOfChild(navbar)<surface.indexOfChild(surface.ring),"Navbar covers the ring");check(!navbar.isClickable(),"Navbar intercepts ring gestures");
+            check(surface.ring.getWidth()>100&&surface.ring.getHeight()>100,"Ring has no dimensions");float s=surface.ring.getWidth()/271f,cx=surface.ring.getWidth()/2f,cy=surface.ring.getHeight()/2f;
+            int bottomInset=surface.getRootWindowInsets().getInsets(WindowInsets.Type.systemBars()|WindowInsets.Type.displayCutout()).bottom;float bottomEdge=surface.getHeight()-bottomInset;float idleCenter=surface.ring.getTop()+cy;check(Math.abs(idleCenter-(bottomEdge+48*s))<=3*s,"Idle ring is not anchored at the bottom edge");check(surface.ring.getBottom()>bottomEdge,"Idle ring should be partly below the bottom edge");
+            touch(surface.ring,MotionEvent.ACTION_DOWN,cx,cy);touch(surface.ring,MotionEvent.ACTION_MOVE,cx,cy-40*s);touch(surface.ring,MotionEvent.ACTION_UP,cx,cy-40*s);check(calls==0,"Short drag unlocked");surface.reset(false);
+            touch(surface.ring,MotionEvent.ACTION_DOWN,cx,cy);touch(surface.ring,MotionEvent.ACTION_MOVE,cx,cy-180*s);touch(surface.ring,MotionEvent.ACTION_CANCEL,cx,cy-180*s);touch(surface.ring,MotionEvent.ACTION_UP,cx,cy-180*s);check(calls==0,"Cancelled drag unlocked");surface.reset(false);
+            touch(surface.ring,MotionEvent.ACTION_DOWN,cx,cy);touch(surface.ring,MotionEvent.ACTION_MOVE,cx,cy-180*s);touch(surface.ring,MotionEvent.ACTION_UP,cx,cy-180*s);check(calls==1&&selected==-1,"Ring pull did not unlock");surface.reset(false);
+            View shortcut=surface.shortcuts[0];float x=shortcut.getWidth()/2f,y=shortcut.getHeight()/2f,dx=surface.ring.getLeft()+cx-(shortcut.getLeft()+x),dy=surface.ring.getTop()+cy-(shortcut.getTop()+y);touch(shortcut,MotionEvent.ACTION_DOWN,x,y);check(shortcut.getZ()>surface.ring.getZ(),"Dragged shortcut is hidden behind the ring");touch(shortcut,MotionEvent.ACTION_MOVE,x+dx,y+dy);touch(shortcut,MotionEvent.ACTION_UP,x+dx,y+dy);check(calls==2&&selected==0,"Shortcut drop did not select its target");surface.reset(false);check(shortcut.getTranslationZ()==0,"Shortcut elevation was not restored");
+            surface.setAuthenticating(true);surface.ring.performClick();check(calls==2,"Ring accepted another action during authentication");surface.setAuthenticating(false);surface.ring.performClick();check(calls==3,"Accessible unlock click failed");surface.reset(false);
+            try{Bitmap preview=Bitmap.createBitmap(surface.getWidth(),surface.getHeight(),Bitmap.Config.ARGB_8888);surface.draw(new Canvas(preview));check(Color.alpha(preview.getPixel(preview.getWidth()/2,preview.getHeight()/2))==0,"Background obscures system wallpaper");try(OutputStream output=getTargetContext().openFileOutput("htc-lock-screen.png",0)){preview.compress(Bitmap.CompressFormat.PNG,100,output);}preview.recycle();}catch(IOException e){throw new IllegalStateException(e);}
+        });
+        report.putString("result","PASS: actual settings-button activity startup, hidden navigation bar with visible status bar, transparent system-wallpaper background, stock ring layout, pull threshold, cancel handling, shortcut drag, accessible action, authentication ordering/cancel/idempotence; no credentials changed or apps launched");finish(Activity.RESULT_OK,report);
+    }catch(Throwable failure){report.putString("error",android.util.Log.getStackTraceString(failure));finish(Activity.RESULT_CANCELED,report);}finally{if(activity!=null)runOnMainSync(activity::finish);var edit=prefs.edit();if(hadCapture)edit.putBoolean(LockScreenActivity.ALLOW_SCREEN_CAPTURE,allowCapture);else edit.remove(LockScreenActivity.ALLOW_SCREEN_CAPTURE);if(hadWallpaper)edit.putBoolean("htcWallpaper",wallpaper);else edit.remove("htcWallpaper");edit.commit();}}
+    private void checkCaptureToggle(boolean allowed){
+        runOnMainSync(()->{
+            View view=find(activity.getWindow().getDecorView(),"Allow screenshots and screen recording");check(view instanceof android.widget.Switch,"Capture toggle missing");
+            var toggle=(android.widget.Switch)view;check(toggle.isChecked()!=allowed,"Unexpected capture toggle state");toggle.performClick();
+            check(getTargetContext().getSharedPreferences("lockscreen",0).getBoolean(LockScreenActivity.ALLOW_SCREEN_CAPTURE,false)==allowed,"Capture toggle was not persisted");
+        });
+        ActivityMonitor monitor=addMonitor(LockScreenActivity.class.getName(),null,false);LockScreenActivity opened=null;
+        try{
+            runOnMainSync(()->find(activity.getWindow().getDecorView(),"Open HTC lock screen").performClick());
+            Activity result=waitForMonitorWithTimeout(monitor,5000);check(result instanceof LockScreenActivity,"Capture test did not open lock screen");opened=(LockScreenActivity)result;waitForIdleSync();
+            final LockScreenActivity lock=opened;
+            runOnMainSync(()->check(((lock.getWindow().getAttributes().flags&WindowManager.LayoutParams.FLAG_SECURE)==0)==allowed,"Window capture flag disagrees with setting"));
+        }finally{removeMonitor(monitor);if(opened!=null){final LockScreenActivity lock=opened;runOnMainSync(lock::finishAndRemoveTask);waitForIdleSync();}}
+    }
+}

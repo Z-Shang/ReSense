@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <permission android:name="dev.sense.framework.permission.WEATHER" android:protectionLevel="signature"/>
+    <application android:label="Sense Framework Services" android:allowBackup="false" android:usesCleartextTraffic="false">
+        <provider android:name=".WeatherShareProvider" android:authorities="dev.sense.framework.weather" android:permission="dev.sense.framework.permission.WEATHER" android:exported="true" android:grantUriPermissions="false"/>
+    </application>
+</manifest>

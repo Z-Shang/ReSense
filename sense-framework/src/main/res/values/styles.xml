@@ -1,0 +1,27 @@
+<resources>
+    <style name="SenseFramework.Dark" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#8AB648</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <style name="SenseFramework.Light" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#438D26</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="SenseFramework.DialogDark" parent="android:style/Theme.Material.Dialog.Alert">
+        <item name="android:colorAccent">#80AD28</item>
+        <item name="android:windowBackground">@drawable/sense_common_popupmenu</item>
+        <item name="android:buttonBarButtonStyle">@style/SenseFramework.DialogButton</item>
+    </style>
+    <style name="SenseFramework.DialogButton" parent="android:style/Widget.Material.Light.Button">
+        <item name="android:background">@drawable/sense_button_background</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+</resources>

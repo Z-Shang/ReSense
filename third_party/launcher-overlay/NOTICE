@@ -1,0 +1,9 @@
+The ILauncherOverlay and ILauncherOverlayCallback AIDL declarations are sourced
+from LawnchairLauncher/lawnchair, commit c4fe52d588fa39fb3306c8872a6c6aabc919a2d3:
+  lawnchair/aidl/com/google/android/libraries/launcherclient/
+https://github.com/LawnchairLauncher/lawnchair/tree/c4fe52d588fa39fb3306c8872a6c6aabc919a2d3/lawnchair/aidl/com/google/android/libraries/launcherclient
+
+Lawnchair is distributed under Apache License 2.0 (included alongside this notice).
+Local change: explicitly import android.os.Bundle for standalone AIDL compilation.
+The Sense DiscoverOverlay lifecycle client and gesture integration are implemented
+locally; no Lawnchair launcher UI or Google app code is included.

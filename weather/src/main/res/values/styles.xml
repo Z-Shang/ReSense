@@ -1,0 +1,10 @@
+<resources>
+    <style name="WeatherTheme" parent="SenseFramework.Dark">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#A9CD70</item>
+        <item name="android:windowBackground">#12191F</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="WeatherText"><item name="android:textColor">#FFFFFF</item><item name="android:textSize">16sp</item></style>
+</resources>
