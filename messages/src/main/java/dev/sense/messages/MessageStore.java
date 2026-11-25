@@ -65,10 +65,10 @@ final class MessageStore {
         if(!isDefault(c))return null;
         ContentValues values=new ContentValues();values.put("address",address);values.put("body",body);values.put("date",System.currentTimeMillis());values.put("date_sent",sent);values.put("read",0);values.put("seen",0);values.put("type",1);values.put("sub_id",subscription);
         values.put("thread_id",Telephony.Threads.getOrCreateThreadId(c,address));
-        return c.getContentResolver().insert(Telephony.Sms.Inbox.CONTENT_URI,values);
+        Uri saved=c.getContentResolver().insert(Telephony.Sms.Inbox.CONTENT_URI,values);MessagesWidgetProvider.refresh(c);return saved;
     }
     static void update(Context c,long id,int type,int status){
         if(!isDefault(c))return;ContentValues v=new ContentValues();v.put("type",type);v.put("status",status);
-        c.getContentResolver().update(ContentUris.withAppendedId(Telephony.Sms.CONTENT_URI,id),v,null,null);
+        c.getContentResolver().update(ContentUris.withAppendedId(Telephony.Sms.CONTENT_URI,id),v,null,null);MessagesWidgetProvider.refresh(c);
     }
 }

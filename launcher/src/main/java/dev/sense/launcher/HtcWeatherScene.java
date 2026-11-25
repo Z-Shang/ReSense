@@ -20,16 +20,22 @@ final class HtcWeatherScene {
     private final float[] p=new float[3],q=new float[4],scale=new float[3],pivot=new float[3],alpha=new float[1];
     private final Matrix projection=new Matrix();
     private final float[] source=new float[8],destination=new float[8];
-    private final RectF layerBounds=new RectF();
+    private final RainCoverage rainCoverage=new RainCoverage();
+    private final int wiperIndex,streakIndex;
+    private final float[] anchor=new float[3];
+    private float sourceHingeX,sourceHingeY;
     private final Paint paint=new Paint(Paint.ANTI_ALIAS_FLAG|Paint.FILTER_BITMAP_FLAG);
     private float frame;
     private final float logicalWidth,logicalHeight;
+    private final boolean fullscreenIce,fullscreenThunder;
 
     HtcWeatherScene(Context context,int code) {
         this(context,String.format(java.util.Locale.ROOT,"htc_weather_scene_%02d",code),code);
     }
     HtcWeatherScene(Context context,String resourceName,int code) {
         this.code=code;
+        fullscreenIce="htc_overlay_scene_04".equals(resourceName);
+        fullscreenThunder="htc_overlay_scene_06".equals(resourceName);
         try {
             int resource=context.getResources().getIdentifier(resourceName,"raw",context.getPackageName());
             if(resource==0)throw new JSONException("No scene for HTC code "+code);
@@ -53,6 +59,12 @@ final class HtcWeatherScene {
             duration=Math.max(1,Math.round((end-start)*1000/(data.getDouble("fps")*data.getDouble("speed"))));
             JSONArray list=data.getJSONArray("nodes");nodes=new Node[list.length()];
             for(int i=0;i<nodes.length;i++)nodes[i]=new Node(context,list.getJSONObject(i),resourceName.startsWith("htc_overlay_scene_"));
+            int wiper=-1,streak=-1;
+            for(int i=0;i<nodes.length;i++){
+                if("wiper".equals(nodes[i].coverageRole))wiper=i;
+                if("streaks".equals(nodes[i].coverageRole))streak=i;
+            }
+            wiperIndex=wiper;streakIndex=streak;
             JSONArray order=data.getJSONArray("drawOrder");drawOrder=new int[order.length()];
             for(int i=0;i<drawOrder.length;i++)drawOrder[i]=order.getInt(i);
             chainState=new byte[nodes.length];worldState=new byte[nodes.length];timeState=new byte[nodes.length];
@@ -65,46 +77,97 @@ final class HtcWeatherScene {
         for(int i=0;i<nodes.length;i++)time(i);
         for(int i=0;i<nodes.length;i++)world(i);
         float fit=Math.min(bounds.width()/logicalWidth,bounds.height()/logicalHeight);
+        if(fit<=0||clip.isEmpty())return;
+        boolean extendRain=wiperIndex>=0&&streakIndex>=0;
+        if(extendRain) {
+            Node wiper=nodes[wiperIndex],streak=nodes[streakIndex];
+            nodeAnchor(wiper,anchor);sourceHingeX=anchor[0];sourceHingeY=anchor[1];
+            float wetBottom=0,bladeLength=0;
+            for(int v=0;v<4;v++) {
+                float x=streak.vertices[v*5],y=streak.vertices[v*5+1],z=streak.vertices[v*5+2];
+                wetBottom=Math.max(wetBottom,streak.world[1]*x+streak.world[5]*y+streak.world[9]*z+streak.world[13]);
+            }
+            wiper.pivot.sample(wiper.localFrame,pivot,false);
+            for(int v=0;v<4;v++)bladeLength=Math.max(bladeLength,wiper.vertices[v*5+1]+pivot[1]);
+            bladeLength*=(float)Math.hypot(wiper.world[4],wiper.world[5]);
+            rainCoverage.configure(logicalWidth,logicalHeight,wetBottom,sourceHingeX,sourceHingeY,
+                    clip.width()/fit,clip.height()/fit,bladeLength);
+        }
         int saved=canvas.save();canvas.clipRect(clip);
         for(int index:drawOrder) {
             Node n=nodes[index];
             if(n.texture==null||n.worldOpacity<=.001f)continue;
+            if(fullscreenThunder&&n.screenFlash){
+                // The stock white solid is a screen flash, not a portrait-sized object.
+                // Keep its opacity track and draw order, but illuminate the entire viewport.
+                paint.setColor(Color.WHITE);
+                paint.setAlpha(Math.round(Math.max(0,Math.min(1,n.worldOpacity))*255));
+                canvas.drawRect(clip,paint);
+                continue;
+            }
+            boolean particle=extendRain&&("wet".equals(n.coverageRole)||"falling".equals(n.coverageRole));
+            float shiftX=0,shiftY=0;
+            if(particle){
+                nodeAnchor(n,anchor);
+                rainCoverage.mapAnchor(anchor[0],anchor[1],"wet".equals(n.coverageRole));
+                shiftX=rainCoverage.mappedX-anchor[0];shiftY=rainCoverage.mappedY-anchor[1];
+            }
+            if(fullscreenIce){
+                if(n.frostCorner>=0){
+                    // Keep the stock corner artwork at its original scale, attached to the glass.
+                    shiftX=(n.frostCorner==0||n.frostCorner==3)?clip.left-bounds.left:clip.right-bounds.right;
+                    shiftY=n.frostCorner<2?clip.top-bounds.top:clip.bottom-bounds.bottom;
+                }else{
+                    // Reposition particle anchors; do not distort their individual quads.
+                    nodeAnchor(n,anchor,1000);
+                    shiftX=clip.left+anchor[0]/logicalWidth*clip.width()-(bounds.centerX()+(anchor[0]-logicalWidth/2)*fit);
+                    shiftY=clip.top+anchor[1]/logicalHeight*clip.height()-(bounds.centerY()+(anchor[1]-logicalHeight/2)*fit);
+                }
+            }
+            if(extendRain&&"wiper".equals(n.coverageRole))n.pivot.sample(n.localFrame,pivot,false);
             for(int v=0;v<4;v++) {
                 float x=n.vertices[v*5],y=n.vertices[v*5+1],z=n.vertices[v*5+2];
+                if(extendRain&&"wiper".equals(n.coverageRole))y=(y+pivot[1])*rainCoverage.bladeScale-pivot[1];
                 float[] m=n.world;
                 float wx=m[0]*x+m[4]*y+m[8]*z+m[12];
                 float wy=m[1]*x+m[5]*y+m[9]*z+m[13];
                 float wz=m[2]*x+m[6]*y+m[10]*z+m[14];
-                // The effective Fusion camera is still under investigation; retain a shared adapted camera.
-                float perspective=1000f/Math.max(100f,1000f-wz);
-                destination[v*2]=bounds.centerX()+(wx-logicalWidth/2)*fit*perspective;
-                destination[v*2+1]=bounds.centerY()+(wy-logicalHeight/2)*fit*perspective;
+                float distance=extendRain?50*logicalWidth/36:1000;
+                float perspective=distance/Math.max(100,distance-wz);
+                if(extendRain){
+                    wx=logicalWidth/2+(wx-logicalWidth/2)*perspective;
+                    wy=logicalHeight/2+(wy-logicalHeight/2)*perspective;
+                    if("streaks".equals(n.coverageRole)){
+                        rainCoverage.mapFilm(wx,wy);wx=rainCoverage.mappedX;wy=rainCoverage.mappedY;
+                    }else if(particle){wx+=shiftX;wy+=shiftY;}
+                    else{wx+=rainCoverage.hingeX-sourceHingeX;wy+=rainCoverage.hingeY-sourceHingeY;}
+                    destination[v*2]=clip.left+wx*fit;destination[v*2+1]=clip.top+wy*fit;
+                }else{
+                    destination[v*2]=bounds.centerX()+(wx-logicalWidth/2)*fit*perspective;
+                    destination[v*2+1]=bounds.centerY()+(wy-logicalHeight/2)*fit*perspective;
+                    if(fullscreenIce){destination[v*2]+=shiftX;destination[v*2+1]+=shiftY;}
+                }
                 source[v*2]=n.vertices[v*5+3]*n.texture.getWidth();
                 source[v*2+1]=n.vertices[v*5+4]*n.texture.getHeight();
             }
             paint.setAlpha(Math.round(Math.max(0,Math.min(1,n.worldOpacity))*255));
             if(projection.setPolyToPoly(source,0,destination,0,4)) {
-                if(n.edgeFade==null)canvas.drawBitmap(n.texture,projection,paint);
-                else {
-                    // This source texture ends in opaque streaks. Its lower edge
-                    // is exposed on modern tall displays, so blend it out in
-                    // texture space without changing the wiper or its tracks.
-                    layerBounds.set(destination[0],destination[1],destination[0],destination[1]);
-                    for(int v=1;v<4;v++){
-                        layerBounds.left=Math.min(layerBounds.left,destination[v*2]);layerBounds.right=Math.max(layerBounds.right,destination[v*2]);
-                        layerBounds.top=Math.min(layerBounds.top,destination[v*2+1]);layerBounds.bottom=Math.max(layerBounds.bottom,destination[v*2+1]);
-                    }
-                    if(layerBounds.intersect(clip)){
-                        int layer=canvas.saveLayer(layerBounds,null);
-                        canvas.drawBitmap(n.texture,projection,paint);
-                        canvas.concat(projection);
-                        canvas.drawRect(0,0,n.texture.getWidth(),n.texture.getHeight(),n.edgeFade);
-                        canvas.restoreToCount(layer);
-                    }
-                }
+                canvas.drawBitmap(n.texture,projection,paint);
             }
         }
         canvas.restoreToCount(saved);
+    }
+    private void nodeAnchor(Node node,float[] result){nodeAnchor(node,result,50*logicalWidth/36);}
+    private void nodeAnchor(Node node,float[] result,float distance){
+        node.pivot.sample(node.localFrame,pivot,false);
+        if(!node.pivotEnabled)Arrays.fill(pivot,0);
+        float[] m=node.world;
+        float x=m[12]-m[0]*pivot[0]-m[4]*pivot[1]-m[8]*pivot[2];
+        float y=m[13]-m[1]*pivot[0]-m[5]*pivot[1]-m[9]*pivot[2];
+        float z=m[14]-m[2]*pivot[0]-m[6]*pivot[1]-m[10]*pivot[2];
+        float perspective=distance/Math.max(100,distance-z);
+        result[0]=logicalWidth/2+(x-logicalWidth/2)*perspective;
+        result[1]=logicalHeight/2+(y-logicalHeight/2)*perspective;result[2]=z;
     }
     private void time(int index) {
         if(timeState[index]==2)return;
@@ -121,6 +184,7 @@ final class HtcWeatherScene {
         if(chainState[index]==1)throw new IllegalStateException("Cyclic weather layer parents");
         chainState[index]=1;Node n=nodes[index];
         n.position.sample(n.localFrame,p,false);n.rotation.sample(n.localFrame,q,true);n.scale.sample(n.localFrame,scale,false);n.pivot.sample(n.localFrame,pivot,false);
+        if(!n.pivotEnabled)Arrays.fill(pivot,0);
         WeatherTransform.compose(p,q,scale,pivot,n.local);
         if(n.transformParent>=0) {
             chain(n.transformParent);WeatherTransform.multiply(nodes[n.transformParent].chain,n.local,n.chain);
@@ -139,20 +203,27 @@ final class HtcWeatherScene {
         worldState[index]=2;
     }
     private static final class Node {
-        final int parent,transformParent;
+        final int parent,transformParent,frostCorner;
         final Track position,rotation,scale,pivot,opacity;
-        final boolean visible;
+        final boolean visible,pivotEnabled,screenFlash;
+        final String coverageRole;
         final float inFrame,duration,childStart;
         float localFrame;boolean active;
         final float[] local=new float[16],chain=new float[16],world=new float[16];
         final Bitmap texture;
-        final Paint edgeFade;
         final float[] vertices;
         float worldOpacity;
         Node(Context context,JSONObject data,boolean fullscreen)throws JSONException {
+            screenFlash="White Solid 1".equals(data.getString("name"));
+            // Exact four frost layers recovered from the stock ice/snow scene.
+            frostCorner=switch(data.getString("name")){
+                case "Layer 172" -> 0; case "Layer 171" -> 1;
+                case "Layer 173" -> 2; case "Layer 174" -> 3; default -> -1;
+            };
             childStart=(float)data.optDouble("childStart",0);
             inFrame=(float)data.getDouble("inFrame");duration=(float)data.getDouble("duration");
             parent=data.getInt("parent");transformParent=data.getInt("transformParent");visible=data.getBoolean("visible");
+            pivotEnabled=data.optBoolean("pivotEnabled",true);coverageRole=fullscreen?data.optString("coverageRole",""):"";
             JSONObject tracks=data.getJSONObject("tracks");
             position=new Track(tracks.optJSONObject("Position"),new float[]{0,0,0});
             rotation=new Track(tracks.optJSONObject("Rotation"),new float[]{0,0,0,1});
@@ -169,15 +240,9 @@ final class HtcWeatherScene {
                     TEXTURES.put(name,image);
                 }
                 texture=image;
-                if(fullscreen && "b_raindrop_streaks.png".equals(data.optString("name"))) {
-                    edgeFade=new Paint(Paint.ANTI_ALIAS_FLAG);
-                    edgeFade.setShader(new LinearGradient(0,image.getHeight()*.85f,0,image.getHeight(),
-                            Color.WHITE,Color.TRANSPARENT,Shader.TileMode.CLAMP));
-                    edgeFade.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
-                }else edgeFade=null;
                 vertices=new float[20];JSONArray points=data.getJSONArray("vertices");
                 for(int i=0;i<4;i++)for(int c=0;c<5;c++)vertices[i*5+c]=(float)points.getJSONArray(i).getDouble(c);
-            } else {texture=null;vertices=null;edgeFade=null;}
+            } else {texture=null;vertices=null;}
         }
     }
     private static final class Track {

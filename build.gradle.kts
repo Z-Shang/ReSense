@@ -3,6 +3,27 @@ plugins {
     id("com.android.library") version "8.9.1" apply false
 }
 
+// Resolve once so every APK and the shared packager use the same source snapshot.
+val senseBuildVersion = java.util.Properties().apply {
+    load(providers.exec {
+        workingDir(rootDir)
+        commandLine("python3", rootProject.file("tools/resolve_version.py"))
+    }.standardOutput.asText.get().reader())
+}
+extra["senseVersionCode"] = senseBuildVersion.getProperty("senseVersionCode").toInt()
+extra["senseVersionName"] = senseBuildVersion.getProperty("senseVersionName")
+val writeBuildVersion by tasks.registering {
+    inputs.properties(senseBuildVersion.entries.associate { it.key.toString() to it.value.toString() })
+    val destination = layout.buildDirectory.file("version.properties")
+    outputs.file(destination)
+    doLast {
+        destination.get().asFile.apply {
+            parentFile.mkdirs()
+            writeText(senseBuildVersion.entries.sortedBy { it.key.toString() }.joinToString("\n", postfix = "\n") { "${it.key}=${it.value}" })
+        }
+    }
+}
+
 val verifyHtcAssets by tasks.registering(Exec::class) {
     group = "verification"
     description = "Verify the build-ready HTC resource bundle without extracting the ROM"
@@ -12,7 +33,7 @@ val verifyHtcAssets by tasks.registering(Exec::class) {
 
 subprojects {
     tasks.matching { it.name == "preBuild" }.configureEach {
-        dependsOn(rootProject.tasks.named("verifyHtcAssets"))
+        dependsOn(rootProject.tasks.named("verifyHtcAssets"), rootProject.tasks.named("writeBuildVersion"))
     }
 }
 

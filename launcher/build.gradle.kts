@@ -16,8 +16,8 @@ android {
         applicationId = "dev.sense.launcher"
         minSdk = 35
         targetSdk = 35
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = rootProject.extra["senseVersionCode"] as Int
+        versionName = rootProject.extra["senseVersionName"] as String
         testInstrumentationRunner = "dev.sense.launcher.WeatherSceneInstrumentation"
     }
     sourceSets.getByName("main").res.srcDir(dockResources)

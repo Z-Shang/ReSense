@@ -1,0 +1,2467 @@
+{
+  "styles": [
+    {
+      "name": "card",
+      "span": [
+        4,
+        4
+      ]
+    },
+    {
+      "name": "list",
+      "span": [
+        4,
+        4
+      ]
+    },
+    {
+      "name": "summary",
+      "span": [
+        4,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "source": "system/app/com.htc.htcmsgwidgets3d.apk!/assets/Port/Messages_Card_ListItem.m10",
+      "resource": "msg_widget_messages_card_listitem.m10",
+      "sha256": "add40743dd0964a90fdf192b2f2b14a891cb191f6729cf72335c23760b5e9ff3",
+      "nodes": [
+        {
+          "name": "TBListItem_Scene",
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "TBListItem_Message_4x4",
+          "Position": [
+            265.0,
+            374.0,
+            0.0
+          ]
+        },
+        {
+          "name": "button.listitem",
+          "Position": null
+        },
+        {
+          "name": "button.listitem.hitbox",
+          "Position": [
+            0.0,
+            0.5,
+            -0.0
+          ]
+        },
+        {
+          "name": "ListItemAnimations_Message_4x4",
+          "Position": [
+            247.0,
+            246.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "ListItemContainer_Message_4x4",
+          "Position": [
+            247.0,
+            246.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "timeline.empty_page",
+          "Position": [
+            247.0,
+            246.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "ListItem_vms",
+          "Position": [
+            247.0,
+            246.0,
+            1.0
+          ]
+        },
+        {
+          "name": "vms_hitbox",
+          "Position": [
+            14.0,
+            123.5,
+            -0.0
+          ]
+        },
+        {
+          "name": "textlabel.event",
+          "Position": [
+            108.0,
+            165.0,
+            -0.0
+          ],
+          "Size": [
+            1135542272,
+            0
+          ]
+        },
+        {
+          "name": "textlabel.length",
+          "Position": [
+            108.0,
+            194.0,
+            -0.0
+          ],
+          "Size": [
+            1135542272,
+            1101004800
+          ]
+        },
+        {
+          "name": "common_icon_voice_message_on.pn",
+          "Position": [
+            59.0,
+            165.0,
+            0.0
+          ],
+          "Size": [
+            60,
+            60
+          ],
+          "DiffuseMap": 39280382
+        },
+        {
+          "name": "message_photo_mask.png",
+          "Position": [
+            59.0,
+            168.0,
+            0.0
+          ],
+          "Size": [
+            72,
+            72
+          ],
+          "DiffuseMap": 479048177
+        },
+        {
+          "name": "common_divider_double_dark.9.pn",
+          "Position": [
+            244.5,
+            212.0,
+            0.0
+          ],
+          "Size": [
+            3,
+            4
+          ],
+          "DiffuseMap": 1963768521
+        },
+        {
+          "name": "timeline.photo_contact",
+          "Position": null
+        },
+        {
+          "name": "button.listitem.hitbox",
+          "Position": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "dynamicimage.photo",
+          "Position": [
+            36.0,
+            36.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "dynamicimage_photo",
+          "Position": [
+            36.0,
+            36.0,
+            0.0
+          ],
+          "Size": [
+            72,
+            72
+          ],
+          "DiffuseMap": 226809130
+        },
+        {
+          "name": "common_photo_frame_quick_contac",
+          "Position": [
+            39.0,
+            36.0,
+            0.0
+          ],
+          "Size": [
+            68,
+            68
+          ],
+          "DiffuseMap": 505098071
+        },
+        {
+          "name": "common_photo_frame_quick_contac",
+          "Position": [
+            39.0,
+            36.0,
+            -0.0
+          ],
+          "Size": [
+            68,
+            68
+          ],
+          "DiffuseMap": 678950303
+        },
+        {
+          "name": "button.icon_reply",
+          "Position": null
+        },
+        {
+          "name": "button.icon_reply.hitbox",
+          "Position": [
+            -14.875,
+            -18.25,
+            -0.0
+          ]
+        },
+        {
+          "name": "message_reply_press.png",
+          "Position": [
+            21.0,
+            17.5,
+            0.0
+          ],
+          "Size": [
+            42,
+            35
+          ],
+          "DiffuseMap": 805318068
+        },
+        {
+          "name": "message_reply.png",
+          "Position": [
+            21.0,
+            17.5,
+            -0.0
+          ],
+          "Size": [
+            42,
+            35
+          ],
+          "DiffuseMap": 1875445672
+        },
+        {
+          "name": "button.common_delete",
+          "Position": null
+        },
+        {
+          "name": "button.icon_delete.hitbox",
+          "Position": [
+            -12.25,
+            38.5,
+            -0.0
+          ]
+        },
+        {
+          "name": "message_delete.png",
+          "Position": null,
+          "Size": [
+            30,
+            39
+          ],
+          "DiffuseMap": 1552703855
+        },
+        {
+          "name": "message_delete.png",
+          "Position": null,
+          "Size": [
+            30,
+            39
+          ],
+          "DiffuseMap": 1552703855
+        },
+        {
+          "name": "textlabel.page",
+          "Position": null,
+          "Size": [
+            1131413504,
+            1099956224
+          ]
+        },
+        {
+          "name": "textlabel.time",
+          "Position": [
+            0.0,
+            26.0,
+            -0.0
+          ],
+          "Size": [
+            1135869952,
+            1101004800
+          ]
+        },
+        {
+          "name": "textlabel.name",
+          "Position": null,
+          "Size": [
+            1135869952,
+            0
+          ]
+        },
+        {
+          "name": "textlabel.primary",
+          "Position": [
+            0.0,
+            55.0,
+            -0.0
+          ],
+          "Size": [
+            1135869952,
+            0
+          ]
+        },
+        {
+          "name": "textlabel.secondary 2",
+          "Position": null,
+          "Size": [
+            1138425856,
+            1132724224
+          ]
+        },
+        {
+          "name": "textlabel.secondary",
+          "Position": null,
+          "Size": [
+            1138425856,
+            1132724224
+          ]
+        },
+        {
+          "name": "message_separator.png",
+          "Position": [
+            62.0,
+            15.0,
+            -0.0
+          ],
+          "Size": [
+            2,
+            42
+          ],
+          "DiffuseMap": 1922435117
+        },
+        {
+          "name": "message_separator.png",
+          "Position": null,
+          "Size": [
+            2,
+            42
+          ],
+          "DiffuseMap": 1922435117
+        },
+        {
+          "name": "message_divider_with_shadow.9.p",
+          "Position": null,
+          "Size": [
+            5,
+            30
+          ],
+          "DiffuseMap": 340801002
+        },
+        {
+          "name": "message_divider_with_shadow.9.p",
+          "Position": null,
+          "Size": [
+            5,
+            30
+          ],
+          "DiffuseMap": 340801002
+        },
+        {
+          "name": "mail_paper_02.png",
+          "Position": [
+            247.0,
+            245.5,
+            0.0
+          ],
+          "Size": [
+            462,
+            584
+          ],
+          "DiffuseMap": 1877429971
+        },
+        {
+          "name": "mail_paper_03.png",
+          "Position": [
+            236.7637176513672,
+            237.0800018310547,
+            -0.0
+          ],
+          "Size": [
+            438,
+            492
+          ],
+          "DiffuseMap": 1878615892
+        },
+        {
+          "name": "mail_paper_04.png",
+          "Position": [
+            275.252197265625,
+            245.39999389648438,
+            -0.0
+          ],
+          "Size": [
+            411,
+            449
+          ],
+          "DiffuseMap": 1879801813
+        },
+        {
+          "name": "mail_paper_05.png",
+          "Position": [
+            279.322998046875,
+            258.55999755859375,
+            -0.0
+          ],
+          "Size": [
+            383,
+            391
+          ],
+          "DiffuseMap": 1880987734
+        },
+        {
+          "name": "mail_paper_06.png",
+          "Position": [
+            252.7637176513672,
+            250.0800018310547,
+            -0.0
+          ],
+          "Size": [
+            282,
+            272
+          ],
+          "DiffuseMap": 1882173655
+        },
+        {
+          "name": "mail_paper_07.png",
+          "Position": null,
+          "Size": [
+            212,
+            209
+          ],
+          "DiffuseMap": 1883359576
+        },
+        {
+          "name": "mail_paper_08_shadow.png",
+          "Position": [
+            111.69136047363281,
+            116.47282409667969,
+            -11.139240264892578
+          ],
+          "Size": [
+            434,
+            424
+          ],
+          "DiffuseMap": 7591646
+        },
+        {
+          "name": "message_card.png",
+          "Position": [
+            247.0,
+            245.5,
+            -0.0
+          ],
+          "Size": [
+            494,
+            491
+          ],
+          "DiffuseMap": 1096924214
+        }
+      ]
+    },
+    {
+      "source": "system/app/com.htc.htcmsgwidgets3d.apk!/assets/Port/Messages_Card_ListView.m10",
+      "resource": "msg_widget_messages_card_listview.m10",
+      "sha256": "714bc0e48f20405d223b47361d0b07413b0d8e18218e4da46844fd756129fab0",
+      "nodes": [
+        {
+          "name": "__Page_template",
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "timeline.TimebaseList",
+          "Position": [
+            265.0,
+            374.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "timeline.common_notifiction",
+          "Position": null
+        },
+        {
+          "name": "textlabel.common_notifiction",
+          "Position": [
+            18.5,
+            26.0,
+            0.0
+          ],
+          "Size": [
+            1114636288,
+            1101004800
+          ]
+        },
+        {
+          "name": "common_notification_on.png",
+          "Position": [
+            18.5,
+            18.5,
+            0.0
+          ],
+          "Size": [
+            37,
+            37
+          ],
+          "DiffuseMap": 1749583779
+        },
+        {
+          "name": "common_button",
+          "Position": null
+        },
+        {
+          "name": "button.common_right",
+          "Position": [
+            153.5,
+            35.0,
+            0.0
+          ]
+        },
+        {
+          "name": "button.common_right.hitbox",
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "common_icon_compose.png",
+          "Position": [
+            48.0,
+            32.0,
+            0.0
+          ],
+          "Size": [
+            32,
+            32
+          ],
+          "DiffuseMap": 447295390
+        },
+        {
+          "name": "common_btn_right_press.png",
+          "Position": [
+            49.5,
+            35.0,
+            0.0
+          ],
+          "Size": [
+            99,
+            70
+          ],
+          "DiffuseMap": 1768889325
+        },
+        {
+          "name": "button.common_left",
+          "Position": [
+            54.5,
+            35.0,
+            0.0
+          ]
+        },
+        {
+          "name": "button.common_left.hitbox",
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "common_icon_list.png",
+          "Position": [
+            52.5,
+            33.5,
+            0.0
+          ],
+          "Size": [
+            37,
+            23
+          ],
+          "DiffuseMap": 929405028
+        },
+        {
+          "name": "common_btn_left_press.png",
+          "Position": [
+            49.5,
+            35.0,
+            0.0
+          ],
+          "Size": [
+            99,
+            70
+          ],
+          "DiffuseMap": 2092305690
+        },
+        {
+          "name": "common_btn_2_rest.png",
+          "Position": [
+            104.0,
+            35.0,
+            0.0
+          ],
+          "Size": [
+            202,
+            76
+          ],
+          "DiffuseMap": 1144128466
+        },
+        {
+          "name": "error_page",
+          "Position": [
+            22.0,
+            117.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "textlabel.empty_page",
+          "Position": [
+            246.0,
+            255.0,
+            -0.0
+          ],
+          "Size": [
+            1138425856,
+            0
+          ]
+        },
+        {
+          "name": "timeline.photo_contact",
+          "Position": [
+            431.0,
+            54.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "button.listitem.hitbox",
+          "Position": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "dynamicimage.photo",
+          "Position": [
+            36.0,
+            36.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "dynamicimage_photo",
+          "Position": [
+            36.0,
+            36.0,
+            0.0
+          ],
+          "Size": [
+            72,
+            72
+          ],
+          "DiffuseMap": 226809130
+        },
+        {
+          "name": "common_photo_frame_quick_contac",
+          "Position": [
+            39.0,
+            36.0,
+            0.0
+          ],
+          "Size": [
+            68,
+            68
+          ],
+          "DiffuseMap": 505098071
+        },
+        {
+          "name": "common_photo_frame_quick_contac",
+          "Position": [
+            39.0,
+            36.0,
+            -0.0
+          ],
+          "Size": [
+            68,
+            68
+          ],
+          "DiffuseMap": 678950303
+        },
+        {
+          "name": "button.icon_reply",
+          "Position": [
+            48.0,
+            456.5,
+            -0.0
+          ]
+        },
+        {
+          "name": "button.icon_reply.hitbox",
+          "Position": [
+            -14.875,
+            -18.25,
+            -0.0
+          ]
+        },
+        {
+          "name": "message_reply_press.png",
+          "Position": [
+            21.0,
+            17.5,
+            0.0
+          ],
+          "Size": [
+            42,
+            35
+          ],
+          "DiffuseMap": 805318068
+        },
+        {
+          "name": "message_reply.png",
+          "Position": [
+            21.0,
+            17.5,
+            -0.0
+          ],
+          "Size": [
+            42,
+            35
+          ],
+          "DiffuseMap": 1875445672
+        },
+        {
+          "name": "button.common_delete",
+          "Position": [
+            440.0,
+            422.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "button.icon_delete.hitbox",
+          "Position": [
+            -11.25,
+            43.25,
+            0.0
+          ]
+        },
+        {
+          "name": "message_delete.png",
+          "Position": null,
+          "Size": [
+            30,
+            39
+          ],
+          "DiffuseMap": 1552703855
+        },
+        {
+          "name": "message_delete.png",
+          "Position": null,
+          "Size": [
+            30,
+            39
+          ],
+          "DiffuseMap": 1552703855
+        },
+        {
+          "name": "textlabel.page",
+          "Position": [
+            244.0,
+            447.0,
+            -0.0
+          ],
+          "Size": [
+            1131413504,
+            1099956224
+          ]
+        },
+        {
+          "name": "textlabel.time",
+          "Position": [
+            24.0,
+            65.0,
+            -0.0
+          ],
+          "Size": [
+            1131413504,
+            1101004800
+          ]
+        },
+        {
+          "name": "textlabel.name",
+          "Position": [
+            24.0,
+            38.0,
+            -0.0
+          ],
+          "Size": [
+            1131413504,
+            1105723392
+          ]
+        },
+        {
+          "name": "textlabel.primary",
+          "Position": [
+            24.0,
+            93.0,
+            -0.0
+          ],
+          "Size": [
+            1137180672,
+            1102577664
+          ]
+        },
+        {
+          "name": "textlabel.secondary",
+          "Position": [
+            24.0,
+            141.0,
+            -0.0
+          ],
+          "Size": [
+            1138425856,
+            1133903872
+          ]
+        },
+        {
+          "name": "message_separator.png",
+          "Position": [
+            90.0,
+            454.0,
+            -0.0
+          ],
+          "Size": [
+            2,
+            42
+          ],
+          "DiffuseMap": 1922435117
+        },
+        {
+          "name": "message_separator.png",
+          "Position": [
+            399.0,
+            454.0,
+            -0.0
+          ],
+          "Size": [
+            2,
+            42
+          ],
+          "DiffuseMap": 1922435117
+        },
+        {
+          "name": "message_divider_with_shadow.9.p",
+          "Position": [
+            244.5,
+            435.0,
+            -0.0
+          ],
+          "Size": [
+            5,
+            30
+          ],
+          "DiffuseMap": 340801002
+        },
+        {
+          "name": "message_divider_with_shadow.9.p",
+          "Position": [
+            244.5,
+            119.0,
+            -0.0
+          ],
+          "Size": [
+            5,
+            30
+          ],
+          "DiffuseMap": 340801002
+        },
+        {
+          "name": "message_card.png",
+          "Position": [
+            247.0,
+            245.5,
+            -0.0
+          ],
+          "Size": [
+            494,
+            491
+          ],
+          "DiffuseMap": 1096924214
+        },
+        {
+          "name": "TBListview_Message_4x4",
+          "Position": null
+        },
+        {
+          "name": "listviewmask",
+          "Position": [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        },
+        {
+          "name": "listviewhitbox",
+          "Position": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        }
+      ]
+    },
+    {
+      "source": "system/app/com.htc.htcmsgwidgets3d.apk!/assets/Port/Messages_List_4x4_ListItem.m10",
+      "resource": "msg_widget_messages_list_4x4_listitem.m10",
+      "sha256": "918b5db728b31ac1431668d4f8c97bcfe26401717fe4cb9cd9aa6f006cfe7bda",
+      "nodes": [
+        {
+          "name": "ListItemScene",
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "ListItemAnimations",
+          "Position": [
+            253.0,
+            327.5,
+            -0.0
+          ]
+        },
+        {
+          "name": "button.listitem",
+          "Position": [
+            253.0,
+            37.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "button.listitem.hitbox",
+          "Position": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "ListItem",
+          "Position": [
+            253.0,
+            37.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "indicator_02",
+          "Position": [
+            442.0,
+            25.0,
+            0.0
+          ]
+        },
+        {
+          "name": "dynamicimage_indicator_02",
+          "Position": [
+            18.0,
+            18.0,
+            0.0
+          ],
+          "Size": [
+            36,
+            36
+          ],
+          "DiffuseMap": 0
+        },
+        {
+          "name": "indicator_01",
+          "Position": [
+            479.0,
+            25.0,
+            0.0
+          ]
+        },
+        {
+          "name": "dynamicimage_indicator_01",
+          "Position": [
+            18.0,
+            18.0,
+            0.0
+          ],
+          "Size": [
+            36,
+            36
+          ],
+          "DiffuseMap": 0
+        },
+        {
+          "name": "timeline.common_notifiction2",
+          "Position": [
+            65.5,
+            57.0,
+            0.0
+          ]
+        },
+        {
+          "name": "textlabel.common_notifiction",
+          "Position": [
+            18.5,
+            25.0,
+            0.0
+          ],
+          "Size": [
+            1114636288,
+            1101004800
+          ]
+        },
+        {
+          "name": "common_notification_on.png",
+          "Position": [
+            18.5,
+            18.5,
+            0.0
+          ],
+          "Size": [
+            37,
+            37
+          ],
+          "DiffuseMap": 1749583779
+        },
+        {
+          "name": "photo",
+          "Position": [
+            44.0,
+            37.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "ItemSize 2",
+          "Position": [
+            -2.7208824157714844,
+            -1.9788235425949097,
+            1.0
+          ]
+        },
+        {
+          "name": "dynamicimage.common_photos",
+          "Position": [
+            34.0,
+            34.0,
+            0.0
+          ]
+        },
+        {
+          "name": "dynamicimage_common_photos",
+          "Position": [
+            31.0,
+            31.0,
+            0.0
+          ],
+          "Size": [
+            62,
+            62
+          ],
+          "DiffuseMap": 421626425
+        },
+        {
+          "name": "common_photo_frame_quick_contac",
+          "Position": [
+            34.0,
+            34.0,
+            0.0
+          ],
+          "Size": [
+            68,
+            68
+          ],
+          "DiffuseMap": 505098071
+        },
+        {
+          "name": "common_photo_frame_quick_contac",
+          "Position": [
+            34.0,
+            34.0,
+            0.0
+          ],
+          "Size": [
+            68,
+            68
+          ],
+          "DiffuseMap": 678950303
+        },
+        {
+          "name": "textlabel.message_time",
+          "Position": [
+            494.0,
+            58.0,
+            0.0
+          ],
+          "Size": [
+            1124859904,
+            0
+          ]
+        },
+        {
+          "name": "textlabel.message_secondary",
+          "Position": [
+            90.0,
+            58.0,
+            0.0
+          ],
+          "Size": [
+            1132593152,
+            0
+          ]
+        },
+        {
+          "name": "textlabel.message_primary",
+          "Position": [
+            90.0,
+            30.0,
+            0.0
+          ],
+          "Size": [
+            1134559232,
+            0
+          ]
+        },
+        {
+          "name": "common_divider_double.9.png",
+          "Position": [
+            253.0,
+            73.0,
+            0.0
+          ],
+          "Size": [
+            3,
+            4
+          ],
+          "DiffuseMap": 2141685704
+        },
+        {
+          "name": "common_list_highlight",
+          "Position": [
+            253.0,
+            37.0,
+            -0.0
+          ],
+          "Size": [
+            74,
+            74
+          ],
+          "DiffuseMap": 1191158278
+        }
+      ]
+    },
+    {
+      "source": "system/app/com.htc.htcmsgwidgets3d.apk!/assets/Port/Messages_List_4x4_ListView.m10",
+      "resource": "msg_widget_messages_list_4x4_listview.m10",
+      "sha256": "56ceea7ca6f41554a29a0d9747f6430f22fd0310095ac55e455385e214b13ec3",
+      "nodes": [
+        {
+          "name": "_Page_template",
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "_List_P",
+          "Position": [
+            265.0,
+            374.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "message_icon_message.png",
+          "Position": null,
+          "Size": [
+            82,
+            80
+          ],
+          "DiffuseMap": 1664860969
+        },
+        {
+          "name": "textlabel.common_header_left",
+          "Position": null,
+          "Size": [
+            1136197632,
+            1105199104
+          ]
+        },
+        {
+          "name": "timeline.common_notifiction",
+          "Position": null
+        },
+        {
+          "name": "textlabel.common_notifiction99",
+          "Position": [
+            19.0,
+            27.0,
+            0.0
+          ],
+          "Size": [
+            1114636288,
+            1101004800
+          ]
+        },
+        {
+          "name": "textlabel.common_notifiction",
+          "Position": [
+            19.0,
+            27.0,
+            0.0
+          ],
+          "Size": [
+            1114636288,
+            1101004800
+          ]
+        },
+        {
+          "name": "common_notifiction2.png",
+          "Position": [
+            19.0,
+            19.0,
+            0.0
+          ],
+          "Size": [
+            38,
+            38
+          ],
+          "DiffuseMap": 186423896
+        },
+        {
+          "name": "common_button",
+          "Position": null
+        },
+        {
+          "name": "button.common_right",
+          "Position": [
+            153.5,
+            35.0,
+            0.0
+          ]
+        },
+        {
+          "name": "button.common_right.hitbox",
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "common_icon_add.png",
+          "Position": [
+            44.5,
+            34.5,
+            0.0
+          ],
+          "Size": [
+            29,
+            29
+          ],
+          "DiffuseMap": 2135223121
+        },
+        {
+          "name": "common_btn_right_press.png",
+          "Position": [
+            49.5,
+            35.0,
+            0.0
+          ],
+          "Size": [
+            99,
+            70
+          ],
+          "DiffuseMap": 1768889325
+        },
+        {
+          "name": "button.common_left",
+          "Position": [
+            54.5,
+            35.0,
+            0.0
+          ]
+        },
+        {
+          "name": "button.common_left.hitbox",
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "common_icon_list.png",
+          "Position": [
+            50.5,
+            35.5,
+            0.0
+          ],
+          "Size": [
+            37,
+            23
+          ],
+          "DiffuseMap": 929405028
+        },
+        {
+          "name": "common_btn_left_press.png",
+          "Position": [
+            49.5,
+            35.0,
+            0.0
+          ],
+          "Size": [
+            99,
+            70
+          ],
+          "DiffuseMap": 2092305690
+        },
+        {
+          "name": "common_btn_2_rest.png",
+          "Position": [
+            104.0,
+            35.0,
+            0.0
+          ],
+          "Size": [
+            202,
+            76
+          ],
+          "DiffuseMap": 1144128466
+        },
+        {
+          "name": "common_header_bar",
+          "Position": [
+            265.0,
+            42.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "common_header.png",
+          "Position": [
+            255.0,
+            33.5,
+            0.0
+          ],
+          "Size": [
+            514,
+            71
+          ],
+          "DiffuseMap": 1615986153
+        },
+        {
+          "name": "common_footer",
+          "Position": [
+            265.0,
+            739.5,
+            -0.0
+          ]
+        },
+        {
+          "name": "common_footer.png",
+          "Position": [
+            255.0,
+            8.5,
+            0.0
+          ],
+          "Size": [
+            513,
+            23
+          ],
+          "DiffuseMap": 542553615
+        },
+        {
+          "name": "timeline.main_page",
+          "Position": [
+            12.0,
+            76.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "app.hitbox",
+          "Position": [
+            2.842170943040401e-14,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "textlabel.welcome_page",
+          "Position": [
+            20.0,
+            40.0,
+            0.0
+          ],
+          "Size": [
+            1139802112,
+            0
+          ]
+        },
+        {
+          "name": "textlabel.empty_page",
+          "Position": [
+            253.0,
+            307.0,
+            0.0
+          ],
+          "Size": [
+            1139802112,
+            0
+          ]
+        },
+        {
+          "name": "scrollBar_P",
+          "Position": [
+            500.5,
+            327.5,
+            0.0
+          ]
+        },
+        {
+          "name": "scrollbar_handle_vertical.9.png",
+          "Position": null,
+          "Size": [
+            11,
+            29
+          ],
+          "DiffuseMap": 1430086343
+        },
+        {
+          "name": "ListViewViewPort",
+          "Position": [
+            253.0,
+            327.5,
+            -0.0
+          ]
+        },
+        {
+          "name": "listviewhitbox",
+          "Position": [
+            2.842170943040401e-14,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "common_panel_gradient.png",
+          "Position": [
+            265.0,
+            378.0,
+            -0.0
+          ],
+          "Size": [
+            512,
+            744
+          ],
+          "DiffuseMap": 1908676829
+        }
+      ]
+    },
+    {
+      "source": "system/app/com.htc.htcmsgwidgets3d.apk!/assets/Port/Messages_Summary_4x4_ListItem.m10",
+      "resource": "msg_widget_messages_summary_4x4_listitem.m10",
+      "sha256": "a2a332f1ef1592c6eeab3e0c26af3d522e2c7edb84720557604af3c57a8229fa",
+      "nodes": [
+        {
+          "name": "ListItemScene",
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "ListItemAnimations",
+          "Position": [
+            253.0,
+            500.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "button.listitem",
+          "Position": null
+        },
+        {
+          "name": "button.listitem.hitbox",
+          "Position": [
+            -5.684341886080802e-14,
+            -1.1368683772161603e-13,
+            -0.0
+          ]
+        },
+        {
+          "name": "ListItem",
+          "Position": [
+            253.0,
+            500.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "timeline.text_photo",
+          "Position": [
+            253.0,
+            47.0,
+            0.0
+          ]
+        },
+        {
+          "name": "dynamicimage.indicator_01",
+          "Position": [
+            481.0,
+            30.0,
+            0.0
+          ]
+        },
+        {
+          "name": "dynamicimage_indicator_01",
+          "Position": [
+            18.0,
+            18.0,
+            0.0
+          ],
+          "Size": [
+            36,
+            36
+          ],
+          "DiffuseMap": 0
+        },
+        {
+          "name": "dynamicimage.indicator_02",
+          "Position": [
+            448.0,
+            30.0,
+            0.0
+          ]
+        },
+        {
+          "name": "dynamicimage_indicator_02",
+          "Position": [
+            18.0,
+            18.0,
+            0.0
+          ],
+          "Size": [
+            36,
+            36
+          ],
+          "DiffuseMap": 0
+        },
+        {
+          "name": "timeline.list_notifiction",
+          "Position": [
+            79.0,
+            74.0,
+            0.0
+          ]
+        },
+        {
+          "name": "textlabel.common_notifiction",
+          "Position": [
+            18.5,
+            26.0,
+            0.0
+          ],
+          "Size": [
+            1114636288,
+            1101004800
+          ]
+        },
+        {
+          "name": "common_notification_on.png",
+          "Position": [
+            18.5,
+            18.5,
+            0.0
+          ],
+          "Size": [
+            37,
+            37
+          ],
+          "DiffuseMap": 1749583779
+        },
+        {
+          "name": "contact",
+          "Position": [
+            54.0,
+            47.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Null 3",
+          "Position": [
+            -1.25,
+            -1.5,
+            1.0
+          ]
+        },
+        {
+          "name": "dynamicimage.common_photos",
+          "Position": [
+            36.0,
+            36.0,
+            0.0
+          ]
+        },
+        {
+          "name": "dynamicimage_common_photos",
+          "Position": [
+            36.0,
+            36.0,
+            0.0
+          ],
+          "Size": [
+            72,
+            72
+          ],
+          "DiffuseMap": 167078746
+        },
+        {
+          "name": "common_photo_frame_quick_contac",
+          "Position": [
+            37.0,
+            36.0,
+            0.0
+          ],
+          "Size": [
+            68,
+            68
+          ],
+          "DiffuseMap": 505098071
+        },
+        {
+          "name": "common_photo_frame_quick_contac",
+          "Position": [
+            37.0,
+            36.0,
+            0.0
+          ],
+          "Size": [
+            68,
+            68
+          ],
+          "DiffuseMap": 678950303
+        },
+        {
+          "name": "textlabel.time",
+          "Position": [
+            105.0,
+            72.0,
+            0.0
+          ],
+          "Size": [
+            1136656384,
+            0
+          ]
+        },
+        {
+          "name": "textlabel.primary",
+          "Position": [
+            105.0,
+            47.0,
+            0.0
+          ],
+          "Size": [
+            1134264320,
+            0
+          ]
+        },
+        {
+          "name": "textlabel.maintext",
+          "Position": [
+            105.0,
+            110.0,
+            0.0
+          ],
+          "Size": [
+            1136852992,
+            0
+          ]
+        },
+        {
+          "name": "common_divider_double.9.png",
+          "Position": null,
+          "Size": [
+            3,
+            4
+          ],
+          "DiffuseMap": 2141685704
+        },
+        {
+          "name": "dataSize",
+          "Position": [
+            105.0,
+            94.5,
+            0.0
+          ]
+        },
+        {
+          "name": "ItemSize",
+          "Position": [
+            2.842170943040401e-14,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "common_list_highlight",
+          "Position": [
+            -2.842170943040401e-14,
+            -1.4210854715202004e-14,
+            -0.0
+          ],
+          "Size": [
+            74,
+            74
+          ],
+          "DiffuseMap": 1191158278
+        }
+      ]
+    },
+    {
+      "source": "system/app/com.htc.htcmsgwidgets3d.apk!/assets/Port/Messages_Summary_4x4_ListView.m10",
+      "resource": "msg_widget_messages_summary_4x4_listview.m10",
+      "sha256": "f7b2cf8330f6227d317a88c57d9b993b64b71d2ca235356ed6f7c815ce2eb88c",
+      "nodes": [
+        {
+          "name": "__Page_template",
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "_List_P",
+          "Position": [
+            265.0,
+            374.0,
+            0.0
+          ]
+        },
+        {
+          "name": "message_icon_message.png",
+          "Position": null,
+          "Size": [
+            82,
+            80
+          ],
+          "DiffuseMap": 1664860969
+        },
+        {
+          "name": "textlabel.common_header_left",
+          "Position": null,
+          "Size": [
+            1136197632,
+            1105199104
+          ]
+        },
+        {
+          "name": "timeline.common_notifiction",
+          "Position": null
+        },
+        {
+          "name": "textlabel.common_notifiction99",
+          "Position": [
+            19.0,
+            27.0,
+            0.0
+          ],
+          "Size": [
+            0,
+            1101004800
+          ]
+        },
+        {
+          "name": "textlabel.common_notifiction",
+          "Position": [
+            19.0,
+            27.0,
+            0.0
+          ],
+          "Size": [
+            0,
+            1101004800
+          ]
+        },
+        {
+          "name": "common_notifiction2.png",
+          "Position": [
+            19.0,
+            19.0,
+            0.0
+          ],
+          "Size": [
+            38,
+            38
+          ],
+          "DiffuseMap": 186423896
+        },
+        {
+          "name": "common_button",
+          "Position": null
+        },
+        {
+          "name": "button.common_right",
+          "Position": [
+            153.5,
+            35.0,
+            0.0
+          ]
+        },
+        {
+          "name": "button.common_right.hitbox",
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "common_icon_add.png",
+          "Position": [
+            44.5,
+            33.5,
+            0.0
+          ],
+          "Size": [
+            29,
+            29
+          ],
+          "DiffuseMap": 2135223121
+        },
+        {
+          "name": "common_btn_right_press.png",
+          "Position": [
+            49.5,
+            35.0,
+            0.0
+          ],
+          "Size": [
+            99,
+            70
+          ],
+          "DiffuseMap": 1768889325
+        },
+        {
+          "name": "button.common_left",
+          "Position": [
+            54.5,
+            35.0,
+            0.0
+          ]
+        },
+        {
+          "name": "button.common_left.hitbox",
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "common_icon_list.png",
+          "Position": [
+            50.5,
+            34.5,
+            0.0
+          ],
+          "Size": [
+            37,
+            23
+          ],
+          "DiffuseMap": 929405028
+        },
+        {
+          "name": "common_btn_left_press.png",
+          "Position": [
+            49.5,
+            35.0,
+            0.0
+          ],
+          "Size": [
+            99,
+            70
+          ],
+          "DiffuseMap": 2092305690
+        },
+        {
+          "name": "common_btn_2_rest.png",
+          "Position": [
+            104.0,
+            35.0,
+            0.0
+          ],
+          "Size": [
+            202,
+            76
+          ],
+          "DiffuseMap": 1144128466
+        },
+        {
+          "name": "common_header_bar",
+          "Position": [
+            265.0,
+            43.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "common_header.png",
+          "Position": [
+            255.0,
+            33.5,
+            0.0
+          ],
+          "Size": [
+            514,
+            71
+          ],
+          "DiffuseMap": 1615986153
+        },
+        {
+          "name": "common_footer",
+          "Position": [
+            265.0,
+            739.5,
+            -0.0
+          ]
+        },
+        {
+          "name": "common_footer.png",
+          "Position": [
+            255.0,
+            8.5,
+            0.0
+          ],
+          "Size": [
+            513,
+            23
+          ],
+          "DiffuseMap": 542553615
+        },
+        {
+          "name": "timeline.main_page",
+          "Position": [
+            12.0,
+            76.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "app.hitbox",
+          "Position": [
+            2.842170943040401e-14,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "textlabel.welcome_page",
+          "Position": [
+            20.0,
+            40.0,
+            -0.0
+          ],
+          "Size": [
+            1139802112,
+            0
+          ]
+        },
+        {
+          "name": "textlabel.empty_page",
+          "Position": [
+            253.0,
+            307.0,
+            -0.0
+          ],
+          "Size": [
+            1139802112,
+            0
+          ]
+        },
+        {
+          "name": "scrollBar_P",
+          "Position": [
+            500.5,
+            327.5,
+            0.0
+          ]
+        },
+        {
+          "name": "scrollbar_handle_vertical.9.png",
+          "Position": null,
+          "Size": [
+            11,
+            29
+          ],
+          "DiffuseMap": 1430086343
+        },
+        {
+          "name": "ListViewViewPort",
+          "Position": [
+            253.0,
+            327.5,
+            -0.0
+          ]
+        },
+        {
+          "name": "listviewhitbox",
+          "Position": [
+            2.842170943040401e-14,
+            0.0,
+            -0.0
+          ]
+        },
+        {
+          "name": "common_panel_gradient.png",
+          "Position": [
+            265.0,
+            379.0,
+            0.0
+          ],
+          "Size": [
+            512,
+            744
+          ],
+          "DiffuseMap": 1908676829
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "source": "system/app/com.htc.htcmsgwidgets3d.apk!/res/drawable-normal-hdpi/preview_messages_card.png",
+      "resource": "msg_widget_preview_card.png",
+      "sha256": "cc209d189e386e753218e6ac8a6bc33415ba41465a0d1ef6b7fd659d8986acb3"
+    },
+    {
+      "source": "system/app/com.htc.htcmsgwidgets3d.apk!/res/drawable-normal-hdpi/preview_messages_list.png",
+      "resource": "msg_widget_preview_list.png",
+      "sha256": "a629641c197c6063a1e9b81ad662f41108f4506e3d562b9bcb667c2d6864f358"
+    },
+    {
+      "source": "system/app/com.htc.htcmsgwidgets3d.apk!/res/drawable-normal-hdpi/preview_messages_summary.png",
+      "resource": "msg_widget_preview_summary.png",
+      "sha256": "06ce760d2ee220d793d62df0dc789ab6c8c919798328dcbbe587eca583ba373d"
+    },
+    {
+      "source": "system/app/com.htc.htcmsgwidgets3d.apk!/res/drawable/msg_default_photo.png",
+      "resource": "msg_widget_msg_default_photo.png",
+      "sha256": "4946f0ad34a6ab7a3e24cbad039fe0a49bbbbc7dffb6694f354ee0c7270e5745"
+    },
+    {
+      "source": "system/app/com.htc.htcmsgwidgets3d.apk!/res/drawable/icon_indicator_mms.png",
+      "resource": "msg_widget_icon_indicator_mms.png",
+      "sha256": "c1367d03f12a1e796966ee724b12e42973898a4e577689e04ad501bf64f32048"
+    },
+    {
+      "source": "system/app/com.htc.htcmsgwidgets3d.apk!/res/drawable/icon_indicator_sms.png",
+      "resource": "msg_widget_icon_indicator_sms.png",
+      "sha256": "dafd859ba3bd32342e8a11d46cb517e44bed660da114953687a26c6f3cda469b"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 7591646,
+      "flippedY": true,
+      "resource": "msg_widget_tex_0073d6de.png",
+      "width": 434,
+      "height": 424,
+      "format": 14,
+      "pixel_sha256": "d18996934c5ab19bd8b7802a731c95f2e7d16d7f5928fe07a9cebfe1ff8b3794"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 39280382,
+      "flippedY": true,
+      "resource": "msg_widget_tex_02575efe.png",
+      "width": 60,
+      "height": 60,
+      "format": 14,
+      "pixel_sha256": "1e466dcbbb769b0fdeb280ab83c145aa35c8e05dda301123031529b629e14f52"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 167078746,
+      "flippedY": true,
+      "resource": "msg_widget_tex_09f56b5a.png",
+      "width": 72,
+      "height": 72,
+      "format": 13,
+      "pixel_sha256": "a1737b4003c86491aff4f13dfc187ce33b4c5ca24d8407829148588f956398b7"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 186423896,
+      "flippedY": true,
+      "resource": "msg_widget_tex_0b1c9a58.png",
+      "width": 32,
+      "height": 32,
+      "format": 14,
+      "pixel_sha256": "01ae38db44cd27b73cd5d4359bbe9633e34d812acc43951ac0c1566a36672c7a"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 226809130,
+      "flippedY": true,
+      "resource": "msg_widget_tex_0d84d52a.png",
+      "width": 72,
+      "height": 72,
+      "format": 13,
+      "pixel_sha256": "a1737b4003c86491aff4f13dfc187ce33b4c5ca24d8407829148588f956398b7"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 340801002,
+      "flippedY": true,
+      "resource": "msg_widget_tex_145035ea.png",
+      "width": 3,
+      "height": 28,
+      "format": 14,
+      "pixel_sha256": "a99b297644a47f7421097f5186fb42d26f82d34ad6046d2a7aeb59b67c4ee7a8"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 421626425,
+      "flippedY": true,
+      "resource": "msg_widget_tex_19218239.png",
+      "width": 62,
+      "height": 62,
+      "format": 13,
+      "pixel_sha256": "25387ce24ff73147c2ada12a6260691b53b2fcb4238f1316d6b56034eec13c7c"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 447295390,
+      "flippedY": true,
+      "resource": "msg_widget_tex_1aa92f9e.png",
+      "width": 32,
+      "height": 32,
+      "format": 14,
+      "pixel_sha256": "f27e11f8185a5d9a365cdf5f53183ec8143558830b6466108d2ad71d3773ccff"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 479048177,
+      "flippedY": true,
+      "resource": "msg_widget_tex_1c8db1f1.png",
+      "width": 72,
+      "height": 72,
+      "format": 14,
+      "pixel_sha256": "082fb7435859b9ee3bc12cab9927f8a70c884f9ce0d7fcd531503f9fc7271b42"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 505098071,
+      "flippedY": true,
+      "resource": "msg_widget_tex_1e1b2f57.png",
+      "width": 66,
+      "height": 66,
+      "format": 14,
+      "pixel_sha256": "2acbeaee46dfcf4a57c77997ee77ae93af62fd65bc3317295e3ab49505ad2fc2"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 542553615,
+      "flippedY": true,
+      "resource": "msg_widget_tex_2056b60f.png",
+      "width": 513,
+      "height": 23,
+      "format": 14,
+      "pixel_sha256": "c7fc85c9cf0ffcd33a2cbb07bc085317f17812fe6026b66e9689bd09715608a9"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 678950303,
+      "flippedY": true,
+      "resource": "msg_widget_tex_2877f59f.png",
+      "width": 66,
+      "height": 66,
+      "format": 14,
+      "pixel_sha256": "793612fc40f6a8715ab75f9841c1a018bed6bd9cc17e8d239f25835b4606fbb6"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 805318068,
+      "flippedY": true,
+      "resource": "msg_widget_tex_30002db4.png",
+      "width": 42,
+      "height": 35,
+      "format": 14,
+      "pixel_sha256": "1ce04883df4ca1038341cb6bf23913d3de7c79641b910047590ca71fe08dfe2f"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 929405028,
+      "flippedY": true,
+      "resource": "msg_widget_tex_37659864.png",
+      "width": 37,
+      "height": 23,
+      "format": 14,
+      "pixel_sha256": "4832e29d2ccce15cae16553f3b6f48a6f1c7d0a8a49ff21affae75f3a8db77dc"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1096924214,
+      "flippedY": true,
+      "resource": "msg_widget_tex_4161bc36.png",
+      "width": 494,
+      "height": 491,
+      "format": 14,
+      "pixel_sha256": "f86c369d96f3e92dce85fa2968ec9452bdbb135a5749da0984c8b84e39d8cf70"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1144128466,
+      "flippedY": true,
+      "resource": "msg_widget_tex_443203d2.png",
+      "width": 202,
+      "height": 76,
+      "format": 14,
+      "pixel_sha256": "adb0f15a4e4d38ad934d68b4d3fd5b25b456db21f344bb30dc9f05f203949b3d"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1191158278,
+      "flippedY": true,
+      "resource": "msg_widget_tex_46ffa206.png",
+      "width": 72,
+      "height": 72,
+      "format": 14,
+      "pixel_sha256": "5c0c6480661c9e77e4ec078083e094147a2aff18e61b592b22fad9a7922a7a30"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1430086343,
+      "flippedY": true,
+      "resource": "msg_widget_tex_553d62c7.png",
+      "width": 9,
+      "height": 27,
+      "format": 14,
+      "pixel_sha256": "6adf29263fa77c8df3c532fc49379409e957f743742061068925aa284f4e9e9c"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1552703855,
+      "flippedY": true,
+      "resource": "msg_widget_tex_5c8c616f.png",
+      "width": 30,
+      "height": 37,
+      "format": 14,
+      "pixel_sha256": "f4aa66845024a1a9218912088e5acfcf1c26a98faeb9bc5033c02450e16727d9"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1615986153,
+      "flippedY": true,
+      "resource": "msg_widget_tex_6051fde9.png",
+      "width": 514,
+      "height": 71,
+      "format": 14,
+      "pixel_sha256": "c4a4f88ecd887ffbe33ec71637bf1ca6d44cd0db097634331e1cf745fab5b99c"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1664860969,
+      "flippedY": true,
+      "resource": "msg_widget_tex_633bc329.png",
+      "width": 82,
+      "height": 80,
+      "format": 14,
+      "pixel_sha256": "4e871c38875933b9eb986c951d01e7a0eab8dac0068909af796d640047f920a7"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1749583779,
+      "flippedY": true,
+      "resource": "msg_widget_tex_684887a3.png",
+      "width": 38,
+      "height": 38,
+      "format": 14,
+      "pixel_sha256": "f327c07dab1ed4d656504e42541390abbc2fc781921d71f98b9f68426d792e42"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1768889325,
+      "flippedY": true,
+      "resource": "msg_widget_tex_696f1bed.png",
+      "width": 99,
+      "height": 70,
+      "format": 14,
+      "pixel_sha256": "ad1a9787d172f667793f3d4e0589dfcc36f1595c91879da485f3a97c7ded5757"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1875445672,
+      "flippedY": true,
+      "resource": "msg_widget_tex_6fc907a8.png",
+      "width": 42,
+      "height": 35,
+      "format": 14,
+      "pixel_sha256": "dc48bb13ad5f633a4030c8d02d7ddf681abacaa464bacdb7fcf003aa64a08b48"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1877429971,
+      "flippedY": true,
+      "resource": "msg_widget_tex_6fe74ed3.png",
+      "width": 462,
+      "height": 584,
+      "format": 14,
+      "pixel_sha256": "9b6a30f554222d65b19b67f872928af5ad6d7096891319bfe54345ac4c1ab9b5"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1878615892,
+      "flippedY": true,
+      "resource": "msg_widget_tex_6ff96754.png",
+      "width": 438,
+      "height": 492,
+      "format": 14,
+      "pixel_sha256": "b95fef00bd90b394be8613b8ceb945ee01f820a80c44ad0822fd615083827be7"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1879801813,
+      "flippedY": true,
+      "resource": "msg_widget_tex_700b7fd5.png",
+      "width": 411,
+      "height": 449,
+      "format": 14,
+      "pixel_sha256": "82d4dcb3a75593a4cbd954a7f8942d5216f2e8aeb644925e6c93f138a50db713"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1880987734,
+      "flippedY": true,
+      "resource": "msg_widget_tex_701d9856.png",
+      "width": 383,
+      "height": 391,
+      "format": 14,
+      "pixel_sha256": "5affbd46c17df8f44f5a17ce545b5e3642cbd3f828119758a35b5b3a69beb9d4"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1882173655,
+      "flippedY": true,
+      "resource": "msg_widget_tex_702fb0d7.png",
+      "width": 282,
+      "height": 272,
+      "format": 14,
+      "pixel_sha256": "b5895e980262717d9b697f360552dbc0aa42a3825b73b5753ee80aa9359bc763"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1883359576,
+      "flippedY": true,
+      "resource": "msg_widget_tex_7041c958.png",
+      "width": 212,
+      "height": 209,
+      "format": 14,
+      "pixel_sha256": "179f2c2656c17812b74e791ba80b6589776d3f2c9fcb42929811fc55d4583095"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1908676829,
+      "flippedY": true,
+      "resource": "msg_widget_tex_71c418dd.png",
+      "width": 512,
+      "height": 744,
+      "format": 14,
+      "pixel_sha256": "8c7928a0c9745e007576590a729599943c93cbabd355ec8c604b46ce71beae1c"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1922435117,
+      "flippedY": true,
+      "resource": "msg_widget_tex_7296082d.png",
+      "width": 2,
+      "height": 42,
+      "format": 14,
+      "pixel_sha256": "dce227c1150f2420021f80a9c6dbc5860499d85ebd9e51c626e80f7cab47f1a5"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 1963768521,
+      "flippedY": true,
+      "resource": "msg_widget_tex_750cbac9.png",
+      "width": 1,
+      "height": 2,
+      "format": 14,
+      "pixel_sha256": "3b2ceb41a17f9f01beeba0c58c96773909bc4210aeef052644d5e17b49e3f8bb"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 2092305690,
+      "flippedY": true,
+      "resource": "msg_widget_tex_7cb60d1a.png",
+      "width": 99,
+      "height": 70,
+      "format": 14,
+      "pixel_sha256": "cdf1413ffe1457f27d59b79ac51d6a47f371a9460e393244785d4c775a4b76cb"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 2135223121,
+      "flippedY": true,
+      "resource": "msg_widget_tex_7f44eb51.png",
+      "width": 29,
+      "height": 29,
+      "format": 14,
+      "pixel_sha256": "d46fa7e3c1fbe2df41483e9793cbb0c7c8fb3526a21c8b04d9801808fcc5e865"
+    },
+    {
+      "source": "system/app/fusion.apk!/assets/Default/drawable/shared.m10",
+      "textureId": 2141685704,
+      "flippedY": true,
+      "resource": "msg_widget_tex_7fa787c8.png",
+      "width": 1,
+      "height": 2,
+      "format": 14,
+      "pixel_sha256": "f3a4bee245d3665290c60c04ecaa1de169d2afb197d6e423cd69362ce8b31e3c"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<resources>
+    <string name="messages_widget_list">Messages</string>
+    <string name="messages_widget_summary">Messages</string>
+    <string name="messages_widget_cards">Messages</string>
+    <string name="messages_widget_description">HTC Sense Messages widget with live SMS and MMS conversations</string>
+    <string name="messages_widget_description_list">HTC Messages list with live SMS and MMS conversations</string>
+    <string name="messages_widget_description_summary">HTC Messages summary with expanded conversation previews</string>
+    <string name="messages_widget_description_card">HTC Messages cards with a swipeable conversation stack</string>
+</resources>

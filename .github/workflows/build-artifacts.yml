@@ -27,6 +27,7 @@ jobs:
         uses: actions/checkout@v7
         with:
           persist-credentials: false
+          fetch-depth: 0
 
       - name: Verify extracted HTC assets
         run: python3 tools/verify_htc_assets.py
@@ -73,6 +74,7 @@ jobs:
         run: |
           python3 -m unittest discover -s tools -p test_ci_artifacts.py -v
           python3 -m unittest discover -s tools -p test_htc_assets.py -v
+          python3 -m unittest discover -s tools -p test_resolve_version.py -v
           python3 tools/test_suite_payload.py
           python3 tools/test_shared_framework.py
           python3 tools/collect_ci_artifacts.py

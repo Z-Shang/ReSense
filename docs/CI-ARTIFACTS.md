@@ -100,6 +100,45 @@ The status callback uses an explicit mutable PendingIntent, as required for
 Android static framework libraries are immutable at a given library version.
 When Android reports the version already installed, the installer reuses it;
 Android checks the required version and signing certificate for each dependent
-app. Framework code/resource changes require increasing `VERSION` in
-`tools/build_shared_framework.py`; the bundle cannot overwrite an existing
+app. Framework code/resource changes require increasing `senseFrameworkVersion` in
+`gradle.properties`; the bundle cannot overwrite an existing
 static framework version. A mismatched signature stops client installation.
+
+## Git-based versions
+
+Every application and the installer use the first 12 characters of `HEAD` as
+`versionName`. Android requires an integer `versionCode`, so it is the total
+reachable commit count (`git rev-list --count HEAD`), rather than a hash converted
+to an unordered number. Normal new commits increase it. Rebases, amendments and
+switching between branches can change the hash without increasing that count;
+Android permits manual same-code reinstalls, but rejects lower version codes.
+Commit new changes before distributing builds intended as newer updates.
+
+Uncommitted builds add `-dirty.<fingerprint>` to the name. The fingerprint covers
+tracked and nonignored untracked files, distinguishing local changes made after
+the same commit. Rebuilding the same source tree produces the same version.
+`tools/resolve_version.py` resolves the identity once during Gradle configuration;
+`build/version.properties` passes that exact identity to the shared packager.
+`distribution.json` records it alongside the library and signing information.
+
+CI checks out full Git history (`fetch-depth: 0`). Shallow checkouts fail with
+an actionable error instead of generating a misleading version code of 1.
+For source archives without Git, or an explicit numeric update sequence, supply
+both overrides consistently to Gradle:
+
+```sh
+SENSE_VERSION_CODE=100 SENSE_VERSION_NAME=archive-build ./gradlew assembleBundleDebug
+```
+
+The static shared framework retains its independent `senseFrameworkVersion` in
+`gradle.properties`. Published static-library revisions are immutable, so increase
+that number when its code/resources change. Clients automatically request the
+matching framework version. Android can keep older library versions for apps
+that still need them.
+
+Installing the installer APK updates only Sense Installer. Open it and continue
+through Android's package approvals to update the eight embedded packages.
+Updates retain app data and still require the same signing certificate.
+
+Android's distinction between the visible version name and numeric update code
+is documented in [app versioning](https://developer.android.com/studio/publish/versioning).

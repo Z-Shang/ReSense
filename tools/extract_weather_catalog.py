@@ -22,7 +22,7 @@ def texture_records(root):
         if name_hash('Pixels')in props and name_hash('ID')in props:yield record,props
 
 
-def decode_texture(record,props,output):
+def decode_texture(record,props,output,flip_y=False):
     width,height,fmt=(integer(props[name_hash(k)])for k in ('Width','Height','Format'))
     if not(0<width<=4096 and 0<height<=4096):raise ValueError('Invalid texture dimensions')
     pw,ph,offset,plane=struct.unpack('<4I',props[name_hash('Levels')].payload)
@@ -36,10 +36,17 @@ def decode_texture(record,props,output):
         for y in range(height):
             for x in range(width):
                 i=(y*pw+x)*3;rgba.extend((*rgb[i:i+3],alpha[i]))
+    elif fmt==13:
+        if len(raw)!=plane or plane!=((pw+3)//4)*((ph+3)//4)*8:raise ValueError('Invalid opaque ETC1 texture')
+        rgb=etc1(raw,pw,ph)
+        for y in range(height):
+            for x in range(width):
+                i=(y*pw+x)*3;rgba.extend((*rgb[i:i+3],255))
     elif fmt==6:
         if len(raw)!=pw*ph*4:raise ValueError('Invalid RGBA8888 texture')
         for y in range(height):rgba.extend(raw[y*pw*4:(y*pw+width)*4])
     else:raise ValueError(f'Unsupported texture format {fmt}')
+    if flip_y:rgba=b"".join(rgba[y*width*4:(y+1)*width*4] for y in range(height-1,-1,-1))
     png(output,width,height,rgba,alpha=True)
     return {'width':width,'height':height,'format':fmt,'pixel_sha256':hashlib.sha256(rgba).hexdigest()}
 

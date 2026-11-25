@@ -17,6 +17,18 @@
         </activity>
         <provider android:name=".MmsAttachmentProvider" android:authorities="${applicationId}.mms-attachment" android:exported="false" android:grantUriPermissions="true"/>
         <provider android:name=".MmsTransferProvider" android:authorities="${applicationId}.mms-transfer" android:exported="false" android:grantUriPermissions="true"/>
+        <receiver android:name=".MessagesWidgetProvider" android:exported="false" android:label="@string/messages_widget_list">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/messages_widget_list"/>
+        </receiver>
+        <receiver android:name=".MessagesSummaryWidgetProvider" android:exported="false" android:label="@string/messages_widget_summary">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/messages_widget_summary"/>
+        </receiver>
+        <receiver android:name=".MessagesCardWidgetProvider" android:exported="false" android:label="@string/messages_widget_cards">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/messages_widget_card"/>
+        </receiver>
         <receiver android:name=".MmsResultReceiver" android:exported="false"/>
         <receiver android:name=".SmsReceiver" android:exported="true" android:permission="android.permission.BROADCAST_SMS"><intent-filter><action android:name="android.provider.Telephony.SMS_DELIVER"/></intent-filter></receiver>
         <receiver android:name=".MmsReceiver" android:exported="true" android:permission="android.permission.BROADCAST_WAP_PUSH"><intent-filter><action android:name="android.provider.Telephony.WAP_PUSH_DELIVER"/><data android:mimeType="application/vnd.wap.mms-message"/></intent-filter></receiver>

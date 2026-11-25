@@ -36,7 +36,7 @@ research dumps and original APKs/libraries are excluded. Review the resource
 and manifest changes together before committing them. Normal builds never
 regenerate or overwrite this directory.
 
-The initial bundle contains 1,084 resources (about 61 MiB). Validation used an
+The initial bundle contains 1,084 resources (60.51 MiB). Validation used an
 isolated source checkout with no ROM or old build outputs: standalone/shared
 APKs and the framework AAR built successfully, the shared-resource ownership
 checks passed, and all 27 compiled nine-patches retained their metadata.
