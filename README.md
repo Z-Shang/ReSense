@@ -1,6 +1,8 @@
 # Sense Launcher
 
-Native Android launcher foundation for reconstructing the HTC Sense 3.6 home experience on Android 15 and later. This is an early prototype, not a working port of HTC Rosie or a visually faithful recreation yet.
+An independent project that reverse engineers HTC software and uses original HTC assets with modern Android code to recreate an experience similar to HTC Sense 3.x on Android 15 and later.
+
+**This is not an official HTC project. It is not affiliated with, endorsed by, or supported by HTC.**
 
 ## Current implementation
 
