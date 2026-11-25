@@ -57,6 +57,16 @@ final class WidgetPicker {
         }
         result.sort((a,b)->{int order=collator.compare(a.name(),b.name());return order!=0?order:a.key().compareTo(b.key());});return List.copyOf(result);
     }
+    /** One chooser entry per application/profile, with all of its widget variants. */
+    static List<Family> providerFamilies(Context context,List<Family> families){
+        var result=new java.util.ArrayList<Family>();
+        for(var provider:providerGroups(context,families)){
+            var styles=new java.util.ArrayList<Style>();
+            for(var family:provider.families())styles.addAll(family.styles());
+            result.add(new Family(provider.key(),provider.name(),provider.name(),List.copyOf(styles)));
+        }
+        return List.copyOf(result);
+    }
     static List<Family> families(Context context,List<AppWidgetProviderInfo> providers){
         java.util.Map<String,java.util.ArrayList<Style>> styles=new java.util.LinkedHashMap<>();
         java.util.Map<String,String> names=new java.util.HashMap<>(),applications=new java.util.HashMap<>();

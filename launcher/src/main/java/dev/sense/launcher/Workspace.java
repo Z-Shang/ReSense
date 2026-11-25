@@ -117,8 +117,8 @@ final class Workspace extends FrameLayout {
     void addWidget(int id){
         AppWidgetProviderInfo info=AppWidgetManager.getInstance(activity).getAppWidgetInfo(id);
         if(info==null){host.deleteAppWidgetId(id);return;}
-        int w=Math.min(columns,Math.max(1,(int)Math.ceil((double)info.minWidth/Math.max(1,getWidth()/columns))));
-        int h=Math.min(rows,Math.max(1,(int)Math.ceil((double)info.minHeight/Math.max(1,getHeight()/rows))));
+        int w=Math.min(columns,Math.max(1,info.targetCellWidth>0?info.targetCellWidth:(int)Math.ceil((double)info.minWidth/Math.max(1,getWidth()/columns))));
+        int h=Math.min(rows,Math.max(1,info.targetCellHeight>0?info.targetCellHeight:(int)Math.ceil((double)info.minHeight/Math.max(1,getHeight()/rows))));
         JSONObject j=new JSONObject();put(j,"type","widget");put(j,"id",id);put(j,"w",w);put(j,"h",h);
         place(j);save();render();post(()->beginResize(j));
     }
