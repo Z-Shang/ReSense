@@ -25,6 +25,8 @@ public final class MessagesInstrumentation extends Instrumentation {
     private int type(long id){try(Cursor c=getTargetContext().getContentResolver().query(ContentUris.withAppendedId(Telephony.Sms.CONTENT_URI,id),new String[]{"type"},null,null,null)){return c!=null&&c.moveToFirst()?c.getInt(0):-1;}}
     private void screenshot(String name)throws Exception{getTargetContext().getSystemService(NotificationManager.class).cancelAll();Thread.sleep(500);try(var output=getTargetContext().openFileOutput(name,0)){var bitmap=getUiAutomation().takeScreenshot();bitmap.compress(android.graphics.Bitmap.CompressFormat.PNG,100,output);bitmap.recycle();}}
     @Override public void onStart(){Bundle report=new Bundle();Context c=getTargetContext();String number="5550182026",prefix="SENSE_SMS_FIXTURE_"+System.currentTimeMillis();
+        if("widgets".equals(arguments.getString("suite"))){new MessagesWidgetInstrumentation(this).run();return;}
+        if("previews".equals(arguments.getString("suite"))){new MmsPreviewInstrumentation(this).run();return;}
         if("mms".equals(arguments.getString("suite"))){new MmsInstrumentation(this).run();return;}
         if("attachment-layout".equals(arguments.getString("suite"))){
             try{
@@ -35,7 +37,12 @@ public final class MessagesInstrumentation extends Instrumentation {
             }catch(Throwable failure){report.putString("error",android.util.Log.getStackTraceString(failure));finish(Activity.RESULT_CANCELED,report);}finally{if(activity!=null)main(activity::finish);}return;
         }
         if("true".equals(arguments.getString("cleanup-only"))){
-            try{check(MessageStore.isDefault(c),"Cleanup requires SMS role");c.getContentResolver().delete(Telephony.Sms.CONTENT_URI,"(address = ? AND body LIKE ?) OR (address = ? AND body LIKE ?)",new String[]{number,"SENSE_SMS_FIXTURE_%","5550182027","SENSE_SMS_EMULATOR_%"});c.getSystemService(NotificationManager.class).cancelAll();report.putString("result","PASS: emulator SMS fixtures removed");finish(Activity.RESULT_OK,report);}catch(Throwable e){report.putString("error",e.toString());finish(Activity.RESULT_CANCELED,report);}return;
+            try{check(MessageStore.isDefault(c),"Cleanup requires SMS role");c.getContentResolver().delete(Telephony.Sms.CONTENT_URI,"address = ? AND body LIKE ?",new String[]{"5550182042","HTC widget %message"});new android.appwidget.AppWidgetHost(c,20642).deleteHost();for(var fixture:MmsStore.messages(c,-1)){
+                    boolean widget=fixture.address().equals("5550182043")&&fixture.body().equals("HTC widget MMS message");
+                    boolean transport=fixture.address().equals("5550182038")&&(fixture.body().equals("MMS fixture 日本語 😀")||fixture.body().equals("Failure fixture"));
+                    boolean preview=fixture.address().equals("5550182040")&&MmsStore.parts(c,fixture.id()).stream().anyMatch(part->part.name().equals("Preview video.mp4"));
+                    if(widget||transport||preview)c.getContentResolver().delete(ContentUris.withAppendedId(Telephony.Mms.CONTENT_URI,fixture.id()),null,null);
+                }c.getContentResolver().delete(Telephony.Sms.CONTENT_URI,"(address = ? AND body LIKE ?) OR (address = ? AND body LIKE ?)",new String[]{number,"SENSE_SMS_FIXTURE_%","5550182027","SENSE_SMS_EMULATOR_%"});c.getSystemService(NotificationManager.class).cancelAll();report.putString("result","PASS: emulator SMS fixtures removed");finish(Activity.RESULT_OK,report);}catch(Throwable e){report.putString("error",e.toString());finish(Activity.RESULT_CANCELED,report);}return;
         }
         try{
             check(MessageStore.isDefault(c),"Test requires temporary SMS role");

@@ -45,6 +45,8 @@ def prepare(rom, output, contact_sheet=None):
     target.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     if contact_sheet:
         make_contact_sheet(assets, contact_sheet)
+    from prepare_messages_widget import prepare as prepare_widget
+    prepare_widget(rom, output)
     print(f'Recovered {len(report)} original Messages images')
     return report
 

@@ -1,0 +1,12 @@
+<resources>
+    <item type="drawable" name="msg_widget_header">@drawable/msg_widget_tex_6051fde9</item>
+    <item type="drawable" name="msg_widget_panel">@drawable/msg_widget_tex_71c418dd</item>
+    <item type="drawable" name="msg_widget_footer">@drawable/msg_widget_tex_2056b60f</item>
+    <item type="drawable" name="msg_widget_buttons">@drawable/msg_widget_tex_443203d2</item>
+    <item type="drawable" name="msg_widget_list">@drawable/msg_widget_tex_37659864</item>
+    <item type="drawable" name="msg_widget_add">@drawable/msg_widget_tex_7f44eb51</item>
+    <item type="drawable" name="msg_widget_message_icon">@drawable/msg_widget_tex_633bc329</item>
+    <item type="drawable" name="msg_widget_card">@drawable/msg_widget_tex_4161bc36</item>
+    <item type="drawable" name="msg_widget_reply">@drawable/msg_widget_tex_6fc907a8</item>
+    <item type="drawable" name="msg_widget_badge">@drawable/msg_widget_tex_0b1c9a58</item>
+</resources>

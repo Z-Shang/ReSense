@@ -57,6 +57,7 @@ public final class MessagesActivity extends Activity {
     }
     @Override protected void onStart(){super.onStart();started=true;getSharedPreferences("drafts",MODE_PRIVATE).registerOnSharedPreferenceChangeListener(draftChanged);syncSending();MessageStore.WORK.execute(()->{try(SendLedger ledger=new SendLedger(this);MmsTransfers mms=new MmsTransfers(this)){ledger.reconcile(this);mms.reconcile(this);}catch(RuntimeException ignored){}});observe();load();}
     private void observe(){
+        MessagesWidgetProvider.observe(this);MessagesWidgetProvider.refresh(this);
         getContentResolver().unregisterContentObserver(observer);
         try{if(MessageStore.permission(this,Manifest.permission.READ_SMS)){getContentResolver().registerContentObserver(Telephony.Sms.CONTENT_URI,true,observer);getContentResolver().registerContentObserver(Telephony.Mms.CONTENT_URI,true,observer);}}catch(SecurityException ignored){}
         try{if(MessageStore.permission(this,Manifest.permission.READ_CONTACTS))getContentResolver().registerContentObserver(ContactsContract.Contacts.CONTENT_URI,true,observer);}catch(SecurityException ignored){}
@@ -141,13 +142,43 @@ public final class MessagesActivity extends Activity {
         try{startActivityForResult(pick,5);}catch(ActivityNotFoundException e){toast("No document picker is installed.");}
     }).setNegativeButton("Cancel",null).show();}
     private void updateAttachments(){if(attachmentStrip==null)return;attachmentStrip.removeAllViews();attachmentStrip.setVisibility(attachments.isEmpty()?View.GONE:View.VISIBLE);if(attachmentScroll!=null){attachmentScroll.setVisibility(attachments.isEmpty()?View.GONE:View.VISIBLE);attachmentScroll.setLayoutParams(new LinearLayout.LayoutParams(-1,dp(48*Math.min(3,attachments.size()))));}
-        for(var file:attachments){LinearLayout row=new LinearLayout(this);row.setGravity(Gravity.CENTER_VERTICAL);row.setPadding(dp(8),0,dp(8),0);TextView label=text(file.name()+" · "+android.text.format.Formatter.formatShortFileSize(this,file.bytes()),14,0xff333333);label.setSingleLine();label.setEllipsize(TextUtils.TruncateAt.END);row.addView(label,new LinearLayout.LayoutParams(0,dp(48),1));Button remove=button("Remove",()->{if(busy||preparing)return;attachments.remove(file);MmsFiles.save(this,address,attachments);updateAttachments();updateCounter();});remove.setContentDescription("Remove attachment "+file.name());row.addView(remove,new LinearLayout.LayoutParams(dp(88),dp(48)));attachmentStrip.addView(row);}
+        for(var file:attachments){LinearLayout row=new LinearLayout(this);row.setGravity(Gravity.CENTER_VERTICAL);row.setPadding(dp(8),0,dp(8),0);if(file.mime().startsWith("image/")||file.mime().startsWith("video/")){MmsPreview preview=new MmsPreview(this,Uri.fromFile(MmsFiles.file(this,file)),file.mime(),null);LinearLayout.LayoutParams previewSize=new LinearLayout.LayoutParams(dp(48),dp(40));previewSize.setMarginEnd(dp(8));row.addView(preview,previewSize);}TextView label=text(file.name()+" · "+android.text.format.Formatter.formatShortFileSize(this,file.bytes()),14,0xff333333);label.setSingleLine();label.setEllipsize(TextUtils.TruncateAt.END);row.addView(label,new LinearLayout.LayoutParams(0,dp(48),1));Button remove=button("Remove",()->{if(busy||preparing)return;attachments.remove(file);MmsFiles.save(this,address,attachments);updateAttachments();updateCounter();});remove.setContentDescription("Remove attachment "+file.name());row.addView(remove,new LinearLayout.LayoutParams(dp(88),dp(48)));attachmentStrip.addView(row);}
     }
     private void importAttachments(Intent data){String number=pickerAddress;ArrayList<Uri> selected=new ArrayList<>();if(data.getClipData()!=null){for(int i=0;i<Math.min(11,data.getClipData().getItemCount());i++)selected.add(data.getClipData().getItemAt(i).getUri());}else if(data.getData()!=null)selected.add(data.getData());if(selected.isEmpty())return;
         toast("Adding attachment…");Context app=getApplicationContext();MessageStore.EVENTS.execute(()->{try{List<MmsFiles.Attachment> saved=new ArrayList<>(MmsFiles.draft(app,number));if(saved.size()+selected.size()>10)throw new java.io.IOException("Maximum ten attachments per MMS.");for(Uri uri:selected){var file=MmsFiles.copy(app,uri);saved.add(file);MmsFiles.save(app,number,saved);}main.post(()->{if(isDestroyed()||!composing||recipient==null||!SendCoordinator.key(recipient.getText().toString()).equals(SendCoordinator.key(number)))return;attachments.clear();attachments.addAll(saved);updateAttachments();updateCounter();});}catch(Exception failure){main.post(()->{if(!isDestroyed())toast(failure.getMessage()==null?"Cannot add attachment":failure.getMessage());});}});
     }
     private void downloadMms(MessageStore.Message message){MessageStore.EVENTS.execute(()->{try{MmsTransport.download(getApplicationContext(),message.id(),MmsTransport.CARRIER);main.post(()->toast("Downloading MMS…"));}catch(Exception failure){main.post(()->toast(failure.getMessage()==null?"Cannot download MMS":failure.getMessage()));}});}
-    private void mmsParts(LinearLayout bubble,MessageStore.Message message){Context app=getApplicationContext();MessageStore.WORK.execute(()->{try{var parts=MmsStore.parts(app,message.id());main.post(()->{if(isDestroyed()||!composing)return;for(var part:parts){if(part.mime().startsWith("image/")){ImageView image=new ImageView(this);image.setScaleType(ImageView.ScaleType.FIT_CENTER);image.setContentDescription("MMS photo");bubble.addView(image,new LinearLayout.LayoutParams(-1,dp(160)));MessageStore.WORK.execute(()->{try{Bitmap thumbnail=ImageDecoder.decodeBitmap(ImageDecoder.createSource(getContentResolver(),part.uri()),(decoder,details,source)->{int w=details.getSize().getWidth(),h=details.getSize().getHeight();float scale=Math.min(1,Math.min(480f/w,480f/h));decoder.setTargetSize(Math.max(1,(int)(w*scale)),Math.max(1,(int)(h*scale)));decoder.setAllocator(ImageDecoder.ALLOCATOR_SOFTWARE);});main.post(()->{if(!isDestroyed())image.setImageBitmap(thumbnail);});}catch(Exception ignored){}});}Button view=button(part.name().isBlank()?"Open "+part.mime():part.name(),()->{try{Uri uri=MmsAttachmentProvider.uri(this,Long.parseLong(part.uri().getLastPathSegment()));startActivity(new Intent(Intent.ACTION_VIEW).setDataAndType(uri,part.mime()).addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION));}catch(ActivityNotFoundException|SecurityException error){toast("No app can open this attachment.");}});bubble.addView(view,new LinearLayout.LayoutParams(-1,dp(48)));}});}catch(RuntimeException ignored){}});}
+    private void openMmsPart(MmsStore.Part part){
+        try{
+            Uri uri=MmsAttachmentProvider.uri(this,Long.parseLong(part.uri().getLastPathSegment()));
+            startActivity(new Intent(Intent.ACTION_VIEW).setDataAndType(uri,part.mime()).addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION));
+        }catch(ActivityNotFoundException|SecurityException error){toast("No app can open this attachment.");}
+    }
+    private void mmsParts(LinearLayout bubble,MessageStore.Message message,int maxWidth){
+        Context app=getApplicationContext();int request=generation;
+        MessageStore.WORK.execute(()->{
+            try{
+                var parts=MmsStore.parts(app,message.id());
+                main.post(()->{
+                    if(isDestroyed()||!composing||request!=generation)return;
+                    int width=Math.min(dp(240),Math.max(1,maxWidth));
+                    for(var part:parts){
+                        if(part.mime().startsWith("image/")||part.mime().startsWith("video/")){
+                            MmsPreview preview=new MmsPreview(this,part.uri(),part.mime(),()->openMmsPart(part));
+                            preview.setOnLongClickListener(v->{messageMenu(message);return true;});
+                            bubble.addView(preview,new LinearLayout.LayoutParams(width,dp(160)));
+                        }
+                        Button view=button(part.name().isBlank()?"Open "+part.mime():part.name(),()->openMmsPart(part));
+                        view.setSingleLine();view.setEllipsize(TextUtils.TruncateAt.END);
+                        bubble.addView(view,new LinearLayout.LayoutParams(width,dp(48)));
+                    }
+                });
+            }catch(RuntimeException unavailable){main.post(()->{
+                if(!isDestroyed()&&request==generation){TextView error=text("Attachments unavailable",14,0xff666666);bubble.addView(error);}
+            });}
+        });
+    }
+
 
     private void closeConversation(){saveDraft();getSystemService(InputMethodManager.class).hideSoftInputFromWindow(root.getWindowToken(),0);composing=false;thread=-1;filter="";navigationAnimation=-1;render();}
     private void open(long id,String number,String text){saveDraft();thread=id;address=number;draft=text;attachments.clear();attachments.addAll(MmsFiles.draft(this,number));composing=true;navigationAnimation=1;render();}
@@ -199,7 +230,7 @@ public final class MessagesActivity extends Activity {
                 LinearLayout bubble=vertical();bubble.setBackgroundResource(outgoing?R.drawable.msg_message_conversation_me:R.drawable.msg_message_conversation_others);
                 int left=outgoing?8:23,right=outgoing?23:8;int available=parent.getWidth()>0?parent.getWidth():getResources().getDisplayMetrics().widthPixels;
                 int width=Math.max(dp(60),available-dp(leading+trailing));bubble.setPadding(dp(left),dp(8),dp(right),dp(11));
-                TextView text=text(message.body(),17,0xff202020);text.setOnLongClickListener(v->{messageMenu(message);return true;});bubble.setOnLongClickListener(v->{messageMenu(message);return true;});text.setMaxWidth(Math.max(1,width-dp(left+right)));bubble.addView(text);if(message.mms()){if(message.download()){Button download=button("Download MMS",()->downloadMms(message));bubble.addView(download,new LinearLayout.LayoutParams(-1,dp(48)));}else{LinearLayout media=vertical();bubble.addView(media);mmsParts(media,message);}}
+                TextView text=text(message.body(),17,0xff202020);text.setOnLongClickListener(v->{messageMenu(message);return true;});bubble.setOnLongClickListener(v->{messageMenu(message);return true;});text.setMaxWidth(Math.max(1,width-dp(left+right)));bubble.addView(text);if(message.mms()){if(message.download()){Button download=button("Download MMS",()->downloadMms(message));bubble.addView(download,new LinearLayout.LayoutParams(-1,dp(48)));}else{LinearLayout media=vertical();bubble.addView(media);mmsParts(media,message,width-dp(left+right));}}
                 String status=message.type()==5?(message.error()==10001?"Send status unknown":"Not sent"):message.type()==4||message.type()==6?"Sending…":outgoing?(message.status()==0?"Delivered":message.status()>=64?"Delivery failed":"Sent"):"";
                 TextView stamp=text(DateUtils.formatDateTime(MessagesActivity.this,message.date(),DateUtils.FORMAT_SHOW_TIME|DateUtils.FORMAT_SHOW_DATE)+(status.isEmpty()?"":" · "+status),13,message.type()==5?0xffa52c22:0xff66665f);stamp.setPadding(0,dp(4),0,0);stamp.setMaxWidth(Math.max(1,width-dp(left+right)));bubble.addView(stamp);line.addView(bubble,new LinearLayout.LayoutParams(-2,-2));return line;
             }

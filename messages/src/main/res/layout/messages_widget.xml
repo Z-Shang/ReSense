@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@drawable/msg_widget_panel" android:paddingTop="6dp">
+    <FrameLayout android:id="@+id/widget_header" android:layout_width="match_parent" android:layout_height="48dp" android:background="@drawable/msg_widget_header">
+        <ImageView android:layout_width="48dp" android:layout_height="48dp" android:layout_gravity="start|center_vertical" android:src="@drawable/msg_widget_message_icon" android:scaleType="fitCenter" android:contentDescription="@null" />
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="56dp" android:text="Messages" android:textColor="#ffffff" android:textSize="19sp" android:gravity="center_vertical" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ListView android:id="@+id/widget_list" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/messages_widget_divider" android:dividerHeight="1dp" android:scrollbars="vertical" android:background="@android:color/transparent" />
+        <TextView android:id="@+id/widget_empty" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Open Messages to enable SMS access" android:gravity="center" android:padding="20dp" android:textSize="16sp" android:textColor="#dddddd" />
+    </FrameLayout>
+    <include layout="@layout/messages_widget_footer" />
+</LinearLayout>
