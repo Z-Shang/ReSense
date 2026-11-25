@@ -15,13 +15,23 @@ import subprocess
 import xml.etree.ElementTree as ET
 import zipfile
 from htc_assets import verify as verify_htc_assets
+from resolve_version import resolve as resolve_version
 
 ROOT = Path(__file__).resolve().parents[1]
 ANDROID = "{http://schemas.android.com/apk/res/android}"
 ET.register_namespace("android", ANDROID[1:-1])
 MODULES = ("launcher", "weather", "phone", "contacts", "messages", "lockscreen")
 LIBRARY = "dev.sense.framework"
-VERSION = 1
+# Share the same explicit release settings as all Gradle application modules.
+VERSION_PROPERTIES = dict(line.split("=", 1) for line in (ROOT / "gradle.properties").read_text().splitlines()
+                          if line.strip() and not line.lstrip().startswith("#") and "=" in line)
+VERSION = int(VERSION_PROPERTIES["senseFrameworkVersion"])
+version_file = ROOT / "build/version.properties"
+BUILD_VERSION = dict(line.split("=", 1) for line in version_file.read_text().splitlines() if "=" in line) if version_file.is_file() else resolve_version(ROOT)
+APP_VERSION_CODE = int(BUILD_VERSION["senseVersionCode"])
+APP_VERSION_NAME = BUILD_VERSION["senseVersionName"]
+if not (0 < VERSION <= 2147483647 and 0 < APP_VERSION_CODE <= 2147483647):
+    raise ValueError("Sense version codes must be positive Android integers")
 
 
 def run(*args):
@@ -65,7 +75,7 @@ def main():
     library_apk = output / "sense-framework-debug.apk"
     library_jar = work / "sense-framework.jar"
     summary = {"library": LIBRARY, "version": VERSION, "certificateSha256": digest,
-               "buildType": "debug", "applications": []}
+               "buildType": "debug", "appVersionCode": APP_VERSION_CODE, "appVersionName": APP_VERSION_NAME, "sourceVersion": BUILD_VERSION, "applications": []}
     shared_symbols = set()
     framework_resources = [ROOT / "sense-framework/src/main/res",
                            ROOT / "assets/htc/sense-framework/res"]

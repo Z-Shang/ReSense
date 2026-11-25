@@ -6,7 +6,7 @@ val prepareSuitePayload by tasks.registering(Exec::class) {
 android {
     namespace = "dev.sense.installer"
     compileSdk = 35
-    defaultConfig { applicationId = "dev.sense.installer"; minSdk = 35; targetSdk = 35; versionCode = 1; versionName = "0.1.0" }
+    defaultConfig { applicationId = "dev.sense.installer"; minSdk = 35; targetSdk = 35; versionCode = rootProject.extra["senseVersionCode"] as Int; versionName = rootProject.extra["senseVersionName"] as String }
     sourceSets.getByName("main").assets.srcDir(layout.buildDirectory.dir("generated/suite/assets"))
     androidResources { noCompress += "apk" }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
